@@ -1,3 +1,50 @@
+:root {
+    --bgcolor-gradient: linear-gradient(315deg, #542525, #1a1a1a, #2a2a2a, #641111, #3a3a3a, #1a1a1a, #542525);
+    --bg-gradient: linear-gradient(315deg, #1a1a1a, #2a2a2a, #3a3a3a, #2a2a2a, #1a1a1a);
+    --nav-bg-gradient: linear-gradient(315deg, #2a2a2a, #4a4a4a, #7a7a7a, #4a4a4a, #2a2a2a);
+    --text-color: #ffffff;
+    --nav-link-color: #ffffff;
+    /* improved contrast for dark mode */
+    --nav-link-hover-color: #f44242;
+    --basic-color: #ff0000;
+    --logo-bg-gradient: linear-gradient(45deg, #ff1818, #ff8585, #ff8630, #ea4335);
+    --logo-text-color: #ffffff;
+    --dropdown-bg: #2a2a2a;
+    /* dark dropdown */
+    --dropdown-hover-bg: #444444;
+    --dropdown-text-color: #ffffff;
+    --burger-line-color: #ffffff;
+    --mobile-nav-bg: var(--nav-bg-gradient);
+    --break-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    --frame-animation-color: linear-gradient(45deg, transparent 20%, rgba(244, 66, 66, 0.4) 50%, transparent 80%);
+    --title-texts: linear-gradient(45deg, #ff0000, #ffd2d1);
+    --profile-img-url: url("LogoDark.jpg");
+}
+
+/* Light theme overrides based on a cyan palette */
+body.light-theme {
+    --bgcolor-gradient: linear-gradient(315deg, #f0ffff, #e0ffff, #00ffff, #008b8b, #00ffff, #e0ffff, #f0ffff);
+    --bg-gradient: linear-gradient(315deg, #f0ffff, #e0ffff, #c0ffff, #e0ffff, #f0ffff);
+    --nav-bg-gradient: linear-gradient(315deg, #e0ffff, #d0ffff, #b2ffff, #008b8b, #e0ffff);
+    --text-color: #333333;
+    --nav-link-color: #333;
+    --nav-link-hover-color: #4285f4;
+    --basic-color: #00ffea;
+    --logo-bg-gradient: linear-gradient(45deg, #00e7e7, #007a7a, #0079cf, #15bcca);
+    --logo-text-color: #ffffff;
+    --dropdown-bg: #f0ffff;
+    --dropdown-hover-bg: #e0ffff;
+    --dropdown-text-color: #333;
+    --burger-line-color: #333;
+    --mobile-nav-bg: var(--nav-bg-gradient);
+    --break-gradient: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.399) 50%, rgba(0, 0, 0, 0) 100%);
+    --frame-animation-color: linear-gradient(45deg, transparent 20%, rgba(0, 255, 255, 0.4) 50%, transparent 80%);
+    --title-texts: linear-gradient(45deg, #78ffff, #293a3a);
+    --profile-img-url: url("LogoLight.jpg");
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,21 +54,21 @@
 }
 
 body {
-    background: linear-gradient(315deg, #542525, #1a1a1a, #2a2a2a, #641111, #3a3a3a, #1a1a1a, #542525);
+    background: var(--bgcolor-gradient);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: var(--text-color);
     height: 100%;
     overflow-x: visible;
 }
 
 nav {
-    background: linear-gradient(315deg, #542525, #1a1a1a, #2a2a2a, #641111, #3a3a3a, #1a1a1a, #542525);
+    background: var(--bgcolor-gradient);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 20s ease infinite;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -33,7 +80,7 @@ nav {
 }
 
 .logo {
-    background: linear-gradient(45deg, #ff1818, #ff8585, #ff8630, #ea4335);
+    background: var(--logo-bg-gradient);
     width: 40px;
     height: 40px;
     border-radius: 8px;
@@ -44,10 +91,30 @@ nav {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink {
+    animation: blink 2.5s ease-in-out forwards;
 }
 
 .logo:hover {
-    transform: scale(1.0);
+    transform: scale(1.1);
 }
 
 .name {
@@ -61,6 +128,11 @@ nav {
     padding-left: 25px;
 }
 
+.name a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -72,23 +144,23 @@ nav {
 }
 
 .nav-links li a {
-    color: white;
+    color: var(--nav-link-color);
     font-size: 20px;
     text-decoration: none;
-    padding: 1.2rem 1.2rem;
+    padding: 0.25rem 1rem;
     transition: all 0.3s ease;
     display: block;
 }
 
 .nav-links li a:hover {
-    color: #ff0000;
+    color: var(--nav-link-hover-color);
 }
 
 .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background: linear-gradient(315deg, #542525, #1a1a1a, #2a2a2a, #641111, #3a3a3a, #1a1a1a, #542525);
+    background: var(--bgcolor-gradient);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -105,7 +177,7 @@ nav {
 }
 
 .dropdown-menu li:hover {
-    background: #f8f9fa;
+    background: var(--text-color);
 }
 
 .nav-links li:hover .dropdown-menu {
@@ -125,7 +197,7 @@ nav {
 .burger .line {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: var(--burger-line-color);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -148,10 +220,7 @@ nav {
     width: 90%;
     height: 2px;
     margin: 3em;
-    background: linear-gradient(90deg,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 0.2) 50%,
-            rgba(255, 255, 255, 0) 100%);
+    background: var(--break-gradient);
     border-radius: 2px;
     animation: lineReveal 0.8s ease-out forwards;
 }
@@ -183,7 +252,7 @@ nav {
         top: 0;
         height: 100vh;
         width: 70%;
-        background: linear-gradient(315deg, #542525, #1a1a1a, #2a2a2a, #641111, #3a3a3a, #1a1a1a, #542525);
+        background: var(--bgcolor-gradient);
         background-size: 400% 400%;
         animation: gradient 7.5s ease infinite;
         font-size: larger;
@@ -276,19 +345,18 @@ nav {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg,
-            transparent 20%,
-            rgba(244, 66, 66, 0.4) 50%,
-            transparent 80%);
+    background: var(--frame-animation-color);
     animation: rotate-border 6s linear infinite;
 }
 
 .profile-img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1/1;
     border-radius: 15px;
     position: relative;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--profile-img-url);
+    background-size: cover;
+    background-position: center;
 }
 
 .info-container {
@@ -299,7 +367,7 @@ nav {
 }
 
 .greeting {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -307,7 +375,7 @@ nav {
 .title {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(45deg, #ff0000, #ffd2d1);
+    background: var(--title-texts);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -317,7 +385,7 @@ nav {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .button-container {
@@ -335,20 +403,20 @@ nav {
 }
 
 .cta-button {
-    background: #ff3330;
-    color: white;
+    background: var(--basic-color);
+    color: var(--text-color);
     border: 2px solid #000000;
 }
 
 .cta-button.secondary {
     background: transparent;
-    color: #ffffff;
-    border: 2px solid #ff3330;
+    color: var(--text-color);
+    border: 2px solid var(--basic-color);
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(244, 66, 66, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes rotate-border {
@@ -382,13 +450,13 @@ nav {
 }
 
 #highlight {
-    color: #ff1818;
+    color: var(--text-color);
 }
 
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -415,7 +483,7 @@ nav {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     font-size: 14px;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 .skill-card:hover img {
@@ -446,7 +514,7 @@ nav {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(45deg, #ff0000, #ffd2d1);
+    background: var(--title-texts);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -478,7 +546,6 @@ nav {
 }
 
 .social a:hover img {
-    color: #ff0000;
     filter: grayscale(0%);
 }
 
@@ -490,7 +557,7 @@ nav {
 .projects-title {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(45deg, #ff0000, #ffd2d1);
+    background: var(--title-texts);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -525,7 +592,7 @@ nav {
 }
 
 .project-card h1 {
-    background: linear-gradient(45deg, #ff0000, #ffd2d1);
+    background: var(--title-texts);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -553,7 +620,6 @@ nav {
 .project-tech {
     font-size: 1.25rem;
     margin: 1rem 0 0.5rem;
-    background: linear-gradient(45deg, #ff0000, #ffd2d1);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -594,23 +660,6 @@ nav {
     transform: scale(1.1);
 }
 
-.design-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #1f1f1f;
-    min-height: 100vh;
-    padding: 100px 0;
-    font-family: Jost;
-}
-
-.design {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .timeline {
     width: 80%;
     height: auto;
@@ -624,7 +673,17 @@ nav {
     font-size: 2.5rem;
     text-align: center;
     margin: 20px;
-    background: linear-gradient(45deg, #ff0000, #ffd2d1);
+    background: var(--title-texts);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.timeline h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: var(--title-texts);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -632,13 +691,13 @@ nav {
 
 .timeline-content {
     padding: 20px;
-    background: linear-gradient(315deg, #fe494975, #70232372, #2a2a2a7d, #6411117d);
+    background: var(--bg-gradient);
     background-size: 400% 400%;
     animation: gradient 7.5s ease infinite;
     -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     border-radius: 5px;
-    color: white;
+    color: var(--text-color);
     padding: 1.75rem;
     transition: 0.4s ease;
     overflow-wrap: break-word !important;
@@ -659,7 +718,7 @@ nav {
 
     .timeline-middle {
         position: relative;
-        background: linear-gradient(315deg, #54252575, #1a1a1a72, #2a2a2a7d, #6411117d, #3a3a3a8e, #1a1a1a6a, #542525);
+        background: var(--nav-bg-gradient);
         background-size: 400% 400%;
         animation: gradient 7.5s ease infinite;
         width: 3px;
@@ -677,7 +736,7 @@ nav {
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        background: linear-gradient(315deg, #542525, #1a1a1a, #2a2a2a, #641111, #3a3a3a, #1a1a1a, #542525);
+        background: var(--nav-bg-gradient);
         background-size: 400% 400%;
         animation: gradient 7.5s ease infinite;
         -webkit-transform: translateX(-50%);
@@ -692,7 +751,7 @@ nav {
         left: 50%;
         width: 50px;
         border-radius: 25px;
-        background: linear-gradient(315deg, #542525, #1a1a1a, #2a2a2a, #641111, #3a3a3a, #1a1a1a, #542525);
+        background: var(--nav-bg-gradient);
         background-size: 400% 400%;
         animation: gradient 7.5s ease infinite;
         -webkit-transform: translateX(-50%);
@@ -707,7 +766,7 @@ nav {
 /* Contact Me Section */
 #contact {
     padding: 2rem 2rem;
-    color: #ffffff;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -728,7 +787,7 @@ nav {
 #contact h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #ff0000, #ffd2d1);
+    background: var(--title-texts);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -746,26 +805,25 @@ nav {
 #contact p i {
     margin-right: 10px;
     font-size: 1.2rem;
-    color: #ff0000;
+    color: var(--basic-color);
 }
 
 #contact a {
-    color: #ffffff;
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #ffd2d1;
-    text-decoration: underline;
+    color: var(--basic-color);
 }
 
 .contact-btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 10px 20px;
-    background: #ff0000;
-    color: #ffffff;
+    background: var(--basic-color);
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
@@ -773,14 +831,14 @@ nav {
 }
 
 .contact-btn:hover {
-    background: #e60000;
+    background: var(--text-color);
     transform: scale(1.05);
 }
 
 /* Footer */
 footer {
     background: #1a1a1a67;
-    color: #ffffff;
+    color: var(--text-color);
     text-align: center;
     padding: 1rem;
 }
