@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna's Portfolio</title>
+    <title id="titleTop"></title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,26 +12,21 @@
     <div class="navbar"></div>
     <nav>
         <div class="name">
-            <a href="#" class="logo" style="color: white;">KS</a>
+            <a href="#" class="logo" id="name_abbrivation" style="color: white;"></a>
             <a href="#">
-                <h1 class="KS">Krishna Singh</h1>
+                <h1 class="KS" id="navbar_name"></h1>
             </a>
         </div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li class="dropdown">
                 <a href="#projects">Projects</a>
-                <ul class="dropdown-menu">
-
-                    <ul><a href="https://krishnasingh1920.github.io/PocketBank/">PocketBank</a></ul>
-                    <ul><a href="https://krishnasingh1920.github.io/TicTacToe/">Tic Tac Toe</a></ul>
-                    <ul><a href="https://krishnasingh1920.github.io/Portfolio/">Portfolio</a></ul>
-                    <ul><a href="https://krishnasingh1920.github.io/Gallery/">Gallery</a></ul>
-                    <ul><a href="https://krishnasingh1920.github.io/Snake/">Snake</a></ul>
-                </ul>
-
+                <ul class="dropdown-menu" id="project_links"></ul>
             </li>
-            <li><a href="https://drive.google.com/file/d/1xNYfrq1NvDH2FMi1liOlK2Tp_rJn08-b/view">Resume</a></li>
+            <li>
+                <a href="#" id="resume_link">Resume</a>
+            </li>
+
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="burger" aria-label="Toggle navigation menu">
@@ -51,258 +46,47 @@
 
         <!-- Information Section -->
         <div class="info-container">
-            <h2 class="greeting">Hi, I'm Krishna Singh</h2>
-            <h1 class="title">Web Developer & Designer</h1>
-            <p class="description">
-                Engineering student who loves combining coding and design.<br>Skilled in front-end development with
-                HTML, CSS, JavaScript, and experienced in programming languages C, Python, and Java.
+            <h2 class="greeting" id="greeting"></h2>
+            <h1 class="title" id="title"></h1>
+            <p class="description" id="description">
             </p>
             <div class="button-container">
                 <a href="#contact" class="cta-button">Contact Me</a>
-                <a href="https://drive.google.com/uc?export=download&id=1xNYfrq1NvDH2FMi1liOlK2Tp_rJn08-b"
-                    class="cta-button secondary">Download CV</a>
+                <a href="#" id="download_cv" class="cta-button secondary">Download CV</a>
             </div>
-            <div class="social">
-                <a href="https://www.chess.com/member/nether_god" target="_blank">
-                    <img src="https://img.icons8.com/?size=100&id=C5LTcmsc3cr0&format=png&color=000000" alt="Chess"
-                        width="40">
-                </a>
-                <a href="https://www.linkedin.com/in/krishnasingh1920" target="_blank">
-                    <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn"
-                        width="40">
-                </a>
-                <a href="https://github.com/KrishnaSingh1920" target="_blank">
-                    <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub"
-                        width="40">
-                </a>
-            </div>
+            <div class="social" id="social_links"></div>
+
         </div>
     </div>
     <div class="break"></div>
     <h1 class="skills">SKILLS</h1>
-    <div class="skills-container">
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML">
-            <p>HTML</p>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS">
-            <p>CSS</p>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript">
-            <p>JavaScript</p>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Python">
-            <p>Python</p>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=40670&format=png&color=000000" alt="C">
-            <p>C</p>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000" alt="Java">
-            <p>Java</p>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="Git">
-            <p>Git</p>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="GitHub">
-            <p>GitHub</p>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=13674&format=png&color=000000" alt="Ms Word">
-            <p>MS Word</p>
-        </div>
-        <div class="skill-card">
-            <img src="https://img.icons8.com/?size=100&id=81726&format=png&color=000000" alt="Ms PowerPoint">
-            <p>MS PowerPoint</p>
-        </div>
-    </div>
+    <div class="skills-container" id="skills_container"></div>
     <div class="break"></div>
     <!-- Projects Section -->
     <div class="projects-section">
         <h1 class="projects-title" id="projects">PROJECTS</h1>
         <div class="projects-container">
-
-            <!-- PocketBank Project -->
-            <div class="project-card">
-                <h1>PocketBank</h1>
-                <a href="https://krishnasingh1920.github.io/PocketBank/" target="_blank">
-                    <div class="project-image">
-                        <img src="PocketBankSS.jpg" alt="PocketBank Project">
-                    </div>
-                </a>
-                <div class="project-tech">
-                    <div class="tech-logos">
-                        <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML">
-                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS">
-                        <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript">
-                    </div>
-                </div>
-                <p class="project-desc">
-                    PocketBank is a banking application that stores variables in the browser's memory to keep finances
-                    managed.
-                </p>
-            </div>
-
-            <!-- Tic Tac Toe Project -->
-            <div class="project-card">
-                <h1>Tic Tac Toe</h1>
-                <a href="https://krishnasingh1920.github.io/TicTacToe/" target="_blank">
-                    <div class="project-image">
-                        <img src="TicTacToeSS.jpg" alt="Tic Tac Toe Project">
-                    </div>
-                </a>
-                <div class="project-tech">
-                    <div class="tech-logos">
-                        <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML">
-                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS">
-                        <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript">
-                    </div>
-                </div>
-                <p class="project-desc">
-                    This classic Tic Tac Toe game features a sleek, modern interface and interactive gameplay.
-                </p>
-            </div>
-
-            <!-- Portfolio Project -->
-            <div class="project-card">
-                <h1>Portfolio</h1>
-                <a href="https://krishnasingh1920.github.io/Portfolio/" target="_blank">
-                    <div class="project-image">
-                        <img src="PortfolioSS.jpg" alt="Portfolio Project">
-                    </div>
-                </a>
-                <div class="project-tech">
-                    <div class="tech-logos">
-                        <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML">
-                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS">
-                    </div>
-                </div>
-                <p class="project-desc">
-                    This portfolio website is designed to showcase my projects, skills, and experiences, all wrapped in
-                    a responsive and modern layout.
-                </p>
-            </div>
-
-            <!-- Gallery Project -->
-            <div class="project-card">
-                <h1>Gallery</h1>
-                <a href="https://krishnasingh1920.github.io/Gallery/" target="_blank">
-                    <div class="project-image">
-                        <img src="GallerySS.jpg" alt="Gallery Project">
-                    </div>
-                </a>
-                <div class="project-tech">
-                    <div class="tech-logos">
-                        <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML">
-                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS">
-                        <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript">
-                    </div>
-                </div>
-                <p class="project-desc">
-                    Gallery is a dynamic web application that hosts a collection of images, allowing users to easily
-                    navigate and explore the photos.
-                </p>
-            </div>
-
-            <!-- Snake Game Project -->
-            <div class="project-card">
-                <h1>Snake</h1>
-                <a href="https://krishnasingh1920.github.io/Snake/" target="_blank">
-                    <div class="project-image">
-                        <img src="SnakeSS.jpg" alt="Snake Game Project">
-                    </div>
-                </a>
-                <div class="project-tech">
-                    <div class="tech-logos">
-                        <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML">
-                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS">
-                        <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript">
-                    </div>
-                </div>
-                <p class="project-desc">
-                    Snake is a game where you control a snake, navigate through the grid, and avoid walls while growing
-                    longer with each item you collect.
-                </p>
-            </div>
-
+            <!-- Dynamic project cards will be injected here by JavaScript -->
         </div>
     </div>
 
     <div class="break"></div>
     <h1 class="timeline-heading">EDUCATION</h1>
     <div class="timeline">
-        <div class="timeline-empty"></div>
-        <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-        </div>
-        <!-- Timeline Component 1: Bachelor of Technology -->
-        <div class="timeline-component timeline-content">
-            <h3>2024-2028</h3>
-            <h1>Bachelor of Technology</h1>
-            <p>Babu Banarasi Das University</p>
-        </div>
-
-        <!-- Timeline Component 2: Intermediate -->
-        <div class="timeline-component timeline-content">
-            <h3>2022-2024</h3>
-            <h1>Intermediate</h1>
-            <p>City Convent School | Percentage: 91.4%</p>
-        </div>
-
-        <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-        </div>
-        <div class="timeline-empty"></div>
-        <div class="timeline-empty"></div>
-
-        <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-        </div>
-        <!-- Timeline Component 3: High School -->
-        <div class="timeline-component timeline-content">
-            <h3>2020-2022</h3>
-            <h1>High School</h1>
-            <p>City Convent School | Percentage: 90.4%</p>
-        </div>
-
-        <div class="timeline-middle"></div>
-        <div class="timeline-middle">
-            <div class="timeline-end"></div>
-        </div>
-        <div class="timeline-empty"></div>
     </div>
 
     </div>
 
     <div class="break education-break"></div>
     <!-- Contact Me Section -->
-    <section id="contact">
-        <div class="contact-container">
-            <h1>Contact Me</h1>
-            <p><i class="fas fa-user"></i> Name: Krishna Singh</p>
-            <p><i class="fas fa-phone-alt"></i> Phone: +91 9026316048</p>
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:krishnasinghprojects@gmail.com">
-                    KrishnaSingh</a></p>
-            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/krishnasingh1920"
-                    target="_blank"> KrishnaSingh1920</a></p>
-            <a class="contact-btn" style="text-decoration: none;" href="mailto:krishnasinghprojects@gmail.com">Send an
-                Email</a>
-        </div>
-    </section>
+    <!-- Contact Section Container -->
+    <section id="contact"></section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Krishna Singh. All Rights Reserved.</p>
-    </footer>
+    <footer></footer>
 
-    <!-- FontAwesome Script (if not already included) -->
-    <script src="https://kit.fontawesome.com/fc596df623.js" crossorigin="anonymous"></script>
+
+    <script src="info.js" crossorigin="anonymous"></script>
 
 
 
@@ -315,45 +99,45 @@
 
     <script>
 
-let canClick = true;
+        let canClick = true;
 
-document.querySelector('.name .logo').addEventListener('click', function(e) {
-  e.preventDefault();
+        document.querySelector('.name .logo').addEventListener('click', function (e) {
+            e.preventDefault();
 
-  // Prevent spamming.
-  if (!canClick) return;
-  canClick = false;
+            // Prevent spamming.
+            if (!canClick) return;
+            canClick = false;
 
-  // Define separate audio objects for dark and light theme changes.
-  const darkSound = new Audio('DarkChangeTheme.mp3');
-  const lightSound = new Audio('LightChangeTheme.mp3');
+            // Define separate audio objects for dark and light theme changes.
+            const darkSound = new Audio('DarkChangeTheme.mp3');
+            const lightSound = new Audio('LightChangeTheme.mp3');
 
-  // Determine current theme and choose the appropriate sound.
-  const wasLight = document.body.classList.contains('light-theme');
+            // Determine current theme and choose the appropriate sound.
+            const wasLight = document.body.classList.contains('light-theme');
 
-  if (wasLight) {
-    // When switching from light to dark, reduce the dark mode sound volume to 75%.
-    darkSound.volume = 0.20;
-    darkSound.play();
-  } else {
-    // When switching from dark to light, play the light mode sound.
-    lightSound.play();
-  }
+            if (wasLight) {
+                // When switching from light to dark, reduce the dark mode sound volume to 75%.
+                darkSound.volume = 0.20;
+                darkSound.play();
+            } else {
+                // When switching from dark to light, play the light mode sound.
+                lightSound.play();
+            }
 
-  // Start the blink animation on the body.
-  document.body.classList.add('blink');
+            // Start the blink animation on the body.
+            document.body.classList.add('blink');
 
-  // After half of the total duration (1250ms in a 2.5s animation), toggle the theme.
-  setTimeout(() => {
-    document.body.classList.toggle('light-theme');
-  }, 1250);
+            // After half of the total duration (1250ms in a 2.5s animation), toggle the theme.
+            setTimeout(() => {
+                document.body.classList.toggle('light-theme');
+            }, 1250);
 
-  // After the full 2.5s duration, remove the blink class and re-enable clicking.
-  setTimeout(() => {
-    document.body.classList.remove('blink');
-    canClick = true;
-  }, 2500);
-});
+            // After the full 2.5s duration, remove the blink class and re-enable clicking.
+            setTimeout(() => {
+                document.body.classList.remove('blink');
+                canClick = true;
+            }, 2500);
+        });
 
 
 
