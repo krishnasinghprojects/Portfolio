@@ -46,10 +46,9 @@ const details = {
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "Jsx" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" }
             ],
-            description:
-                "This portfolio website is designed to showcase my projects, skills, and experiences, all wrapped in a responsive and modern layout.",
+            description: "TypeQuest is an interactive typing app that helps users practice, track WPM, and improve accuracy in a clean and responsive interface."
         },
         {
             name: "PocketBank",
