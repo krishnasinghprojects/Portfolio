@@ -52,6 +52,19 @@ const details = {
             description: "TypeQuest is an interactive typing app that helps users practice, track WPM, and improve accuracy in a clean and responsive interface."
         },
         {
+            name: "PocketBank",
+            url: "https://krishnasingh1920.github.io/PocketBank/",
+            imgSrc: "PocketBankSS.jpg",
+            imgAlt: "PocketBank Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "PocketBank is a banking application that stores variables in the browser's memory to keep finances managed.",
+        },
+        {
             name: "Tic Tac Toe",
             url: "https://krishnasingh1920.github.io/TicTacToe/",
             imgSrc: "TicTacToeSS.jpg",
@@ -76,19 +89,6 @@ const details = {
             ],
             description:
                 "Gallery is a dynamic web application that hosts a collection of images, allowing users to easily navigate and explore the photos.",
-        },
-        {
-            name: "PocketBank",
-            url: "https://krishnasingh1920.github.io/PocketBank/",
-            imgSrc: "PocketBankSS.jpg",
-            imgAlt: "PocketBank Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "PocketBank is a banking application that stores variables in the browser's memory to keep finances managed.",
         },
         {
             name: "Snake",
