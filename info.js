@@ -65,19 +65,6 @@ const details = {
                 "This classic Tic Tac Toe game features a sleek, modern interface and interactive gameplay.",
         },
         {
-            name: "PocketBank",
-            url: "https://krishnasingh1920.github.io/PocketBank/",
-            imgSrc: "PocketBankSS.jpg",
-            imgAlt: "PocketBank Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "PocketBank is a banking application that stores variables in the browser's memory to keep finances managed.",
-        },
-        {
             name: "Gallery",
             url: "https://krishnasingh1920.github.io/Gallery/",
             imgSrc: "GallerySS.jpg",
@@ -89,6 +76,19 @@ const details = {
             ],
             description:
                 "Gallery is a dynamic web application that hosts a collection of images, allowing users to easily navigate and explore the photos.",
+        },
+        {
+            name: "PocketBank",
+            url: "https://krishnasingh1920.github.io/PocketBank/",
+            imgSrc: "PocketBankSS.jpg",
+            imgAlt: "PocketBank Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "PocketBank is a banking application that stores variables in the browser's memory to keep finances managed.",
         },
         {
             name: "Snake",
