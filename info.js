@@ -33,6 +33,7 @@ const details = {
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
             ],
             description:
                 "This portfolio website is designed to showcase my projects, skills, and experiences, all wrapped in a responsive and modern layout.",
@@ -49,6 +50,19 @@ const details = {
                 { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" }
             ],
             description: "TypeQuest is an interactive typing app that helps users practice, track WPM, and improve accuracy in a clean and responsive interface."
+        },
+        {
+            name: "Tic Tac Toe",
+            url: "https://krishnasingh1920.github.io/TicTacToe/",
+            imgSrc: "TicTacToeSS.jpg",
+            imgAlt: "Tic Tac Toe Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "This classic Tic Tac Toe game features a sleek, modern interface and interactive gameplay.",
         },
         {
             name: "PocketBank",
@@ -75,19 +89,6 @@ const details = {
             ],
             description:
                 "Gallery is a dynamic web application that hosts a collection of images, allowing users to easily navigate and explore the photos.",
-        },
-        {
-            name: "Tic Tac Toe",
-            url: "https://krishnasingh1920.github.io/TicTacToe/",
-            imgSrc: "TicTacToeSS.jpg",
-            imgAlt: "Tic Tac Toe Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "This classic Tic Tac Toe game features a sleek, modern interface and interactive gameplay.",
         },
         {
             name: "Snake",
