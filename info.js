@@ -147,6 +147,11 @@ const details = {
             alt: "JavaScript",
         },
         {
+            name: "Tailwind CSS",
+            imgSrc: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000",
+            alt: "Tailwind CSS",
+        },
+        {
             name: "React",
             imgSrc: "https://img.icons8.com/?size=100&id=123603&format=png&color=000000",
             alt: "React",
