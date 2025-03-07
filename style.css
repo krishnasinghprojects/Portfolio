@@ -16,9 +16,9 @@
     --burger-line-color: #ffffff;
     --mobile-nav-bg: var(--nav-bg-gradient);
     --break-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
-    --frame-animation-color: linear-gradient(45deg, transparent 20%, rgba(244, 66, 66, 0.4) 50%, transparent 80%);
+    --frame-animation-color: linear-gradient(45deg, transparent 20%, rgba(0, 0, 0, 0.4) 50%, transparent 80%);
     --title-texts: linear-gradient(45deg, #ff0000, #ffd2d1);
-    --profile-img-url: url("LogoDark.jpg");
+    --profile-img-url: url("KrishnaDark.jpg");
 }
 
 /* Light theme overrides based on a cyan palette */
@@ -28,7 +28,7 @@ body.light-theme {
     --nav-bg-gradient: linear-gradient(315deg, #e0ffff, #d0ffff, #b2ffff, #008b8b, #e0ffff);
     --text-color: #333333;
     --nav-link-color: #333;
-    --nav-link-hover-color: #4285f4;
+    --nav-link-hover-color: #95ffff;
     --basic-color: #00ffea;
     --logo-bg-gradient: linear-gradient(45deg, #00e7e7, #007a7a, #0079cf, #15bcca);
     --logo-text-color: #ffffff;
@@ -38,9 +38,9 @@ body.light-theme {
     --burger-line-color: #333;
     --mobile-nav-bg: var(--nav-bg-gradient);
     --break-gradient: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.399) 50%, rgba(0, 0, 0, 0) 100%);
-    --frame-animation-color: linear-gradient(45deg, transparent 20%, rgba(0, 255, 255, 0.4) 50%, transparent 80%);
+    --frame-animation-color: linear-gradient(45deg, transparent 20%, rgba(255, 255, 255, 0.4) 50%, transparent 80%);
     --title-texts: linear-gradient(45deg, #78ffff, #293a3a);
-    --profile-img-url: url("LogoLight.jpg");
+    --profile-img-url: url("KrishnaLight.jpg");
 }
 
 
@@ -123,7 +123,13 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
+#navbar_name {
+    font-size: 2rem;
+    background: var(--title-texts);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .KS {
     padding-left: 25px;
 }
@@ -335,7 +341,7 @@ nav {
 }
 
 .profile-frame:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .profile-frame::before {
@@ -709,7 +715,10 @@ nav {
 .timeline-component {
     margin: 0px 20px 20px 20px;
 }
-
+.timeline-component:hover
+{
+    transform: scale(1.025);
+}
 @media screen and (min-width: 768px) {
     .timeline {
         display: grid;
@@ -782,8 +791,12 @@ nav {
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
-
+.contact-container:hover
+{
+    transform: scale(1.075);
+}
 #contact h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
