@@ -65,6 +65,19 @@ const details = {
                 "PocketBank is a banking application that stores variables in the browser's memory to keep finances managed.",
         },
         {
+            name: "Gallery",
+            url: "https://krishnasingh1920.github.io/Gallery/",
+            imgSrc: "GallerySS.jpg",
+            imgAlt: "Gallery Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "Gallery is a dynamic web application that hosts a collection of images, allowing users to easily navigate and explore the photos.",
+        },
+        {
             name: "Tic Tac Toe",
             url: "https://krishnasingh1920.github.io/TicTacToe/",
             imgSrc: "TicTacToeSS.jpg",
@@ -78,17 +91,17 @@ const details = {
                 "This classic Tic Tac Toe game features a sleek, modern interface and interactive gameplay.",
         },
         {
-            name: "Gallery",
-            url: "https://krishnasingh1920.github.io/Gallery/",
-            imgSrc: "GallerySS.jpg",
-            imgAlt: "Gallery Project",
+            name: "QuickMaze",
+            url: "https://krishnasingh1920.github.io/QuickMaze/",
+            imgSrc: "QuickMazeSS.jpg",
+            imgAlt: "QuickMaze Project",
             tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "Jsx" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" }
             ],
-            description:
-                "Gallery is a dynamic web application that hosts a collection of images, allowing users to easily navigate and explore the photos.",
+            description: "QuickMaze is a puzzle game where you race through a maze to reach the anchor point. Each move costs score points, making efficiency key."
         },
         {
             name: "Snake",
