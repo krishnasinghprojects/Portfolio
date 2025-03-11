@@ -99,7 +99,8 @@ const details = {
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "Jsx" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" }
+                { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000", alt: "Vite" }
             ],
             description: "QuickMaze is a puzzle game where you race through a maze to reach the anchor point. Each move costs score points, making efficiency key."
         },
@@ -170,6 +171,11 @@ const details = {
             alt: "React",
         },
         {
+            name: "Vite",
+            imgSrc: "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000",
+            alt: "Vite",
+        },
+        {
             name: "Python",
             imgSrc: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
             alt: "Python",
@@ -193,6 +199,11 @@ const details = {
             name: "GitHub",
             imgSrc: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
             alt: "GitHub",
+        },
+        {
+            name: "Canva",
+            imgSrc: "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000",
+            alt: "Canva",
         },
         {
             name: "MS Word",
