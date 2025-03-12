@@ -176,6 +176,11 @@ const details = {
             alt: "Vite",
         },
         {
+            name: "Node JS",
+            imgSrc: "https://img.icons8.com/?size=100&id=54087&format=png&color=000000",
+            alt: "Node JS",
+        },
+        {
             name: "Python",
             imgSrc: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
             alt: "Python",
