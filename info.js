@@ -135,6 +135,13 @@ const details = {
             width: 40,
         },
         {
+            name: "Instagram",
+            url: "https://www.instagram.com/krishnasinghprojects",
+            imgSrc: "https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000",
+            alt: "Instagram",
+            width: 40,
+        },
+        {
             name: "GitHub",
             url: "https://github.com/KrishnaSingh1920",
             imgSrc: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
@@ -253,15 +260,13 @@ const details = {
     contact: {
         title: "Contact Me",
         info: [
-            { icon: "fas fa-user", text: "Name: Krishna Singh" },
-            { icon: "fas fa-phone-alt", text: "Phone: +91 9026316048" },
+            {text: "Name: Krishna Singh" },
+            {text: "Phone: +91 9026316048" },
             {
-                icon: "fas fa-envelope",
                 text: "Email: KrishnaSingh",
                 url: "mailto:krishnasinghprojects@gmail.com"
             },
             {
-                icon: "fab fa-linkedin",
                 text: "LinkedIn: KrishnaSingh1920",
                 url: "https://www.linkedin.com/in/krishnasingh1920"
             }
