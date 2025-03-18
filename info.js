@@ -128,6 +128,13 @@ const details = {
             width: 40,
         },
         {
+            name: "Reddit",
+            url: "https://www.reddit.com/user/KrishnaSingh1920",
+            imgSrc: "https://img.icons8.com/?size=100&id=D6dz6cibVkdT&format=png&color=000000",
+            alt: "Reddit",
+            width: 40,
+        },
+        {
             name: "LinkedIn",
             url: "https://www.linkedin.com/in/krishnasingh1920",
             imgSrc: "https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000",
