@@ -142,12 +142,20 @@ const details = {
             width: 40,
         },
         {
+            name: "Discord",
+            url: "https://discordapp.com/users/1351651268761882644",
+            imgSrc: "https://img.icons8.com/?size=100&id=30998&format=png&color=000000",
+            alt: "Discord",
+            width: 40,
+        },
+        {
             name: "GitHub",
             url: "https://github.com/KrishnaSingh1920",
             imgSrc: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
             alt: "GitHub",
             width: 40,
         },
+        
     ],
 
     // Skills Section
@@ -262,6 +270,7 @@ const details = {
         info: [
             {text: "Name: Krishna Singh" },
             {text: "Phone: +91 9026316048" },
+            {text: "Discord: krishnasinghprojects"},
             {
                 text: "Email: KrishnaSingh",
                 url: "mailto:krishnasinghprojects@gmail.com"
