@@ -39,6 +39,19 @@ const details = {
                 "This portfolio website is designed to showcase my projects, skills, and experiences, all wrapped in a responsive and modern layout.",
         },
         {
+            name: "Krishna Singh",
+            url: "https://krishnasingh1920.github.io/AboutKrishna/",
+            imgSrc: "AboutKrishnaSS.jpg",
+            imgAlt: "Personal Blog Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+               "This personal website is crafted to share my story, values, and passions, all presented in a responsive and modern design."
+        },
+        {
             name: "TypeQuest",
             url: "https://krishnasingh1920.github.io/TypeQuest/",
             imgSrc: "TypeQuestSS.jpg",
