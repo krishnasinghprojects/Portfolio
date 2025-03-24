@@ -39,6 +39,19 @@ const details = {
                 "This portfolio website is designed to showcase my projects, skills, and experiences, all wrapped in a responsive and modern layout.",
         },
         {
+            name: "Presently",
+            url: "https://krishnasingh1920.github.io/Presently/",
+            imgSrc: "PresentlySS.jpg",
+            imgAlt: "Presently Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "Presently is an app to calculate the number of extra classes you need to attend or skip to meet your required attendance percentage.",
+        },
+        {
             name: "Krishna Singh",
             url: "https://krishnasingh1920.github.io/AboutKrishna/",
             imgSrc: "AboutKrishnaSS.jpg",
