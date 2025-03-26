@@ -52,10 +52,10 @@ const details = {
                 "Presently is an app to calculate the number of extra classes you need to attend or skip to meet your required attendance percentage.",
         },
         {
-            name: "Acedemic Archive",
-            url: "https://krishnasingh1920.github.io/AcedemicArchive/",
-            imgSrc: "AcedemicArchiveSS.jpg",
-            imgAlt: "Acedemic Archive Project",
+            name: "Academic Archive",
+            url: "https://krishnasingh1920.github.io/AcademicArchive/",
+            imgSrc: "AcademicArchiveSS.jpg",
+            imgAlt: "Academic Archive Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
