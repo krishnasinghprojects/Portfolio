@@ -52,6 +52,19 @@ const details = {
                 "Presently is an app to calculate the number of extra classes you need to attend or skip to meet your required attendance percentage.",
         },
         {
+            name: "Acedemic Archive",
+            url: "https://krishnasingh1920.github.io/AcedemicArchive/",
+            imgSrc: "AcedemicArchiveSS.jpg",
+            imgAlt: "Acedemic Archive Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management.",
+        },
+        {
             name: "Krishna Singh",
             url: "https://krishnasingh1920.github.io/AboutKrishna/",
             imgSrc: "AboutKrishnaSS.jpg",
