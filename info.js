@@ -52,19 +52,6 @@ const details = {
                 "Presently is an app to calculate the number of extra classes you need to attend or skip to meet your required attendance percentage.",
         },
         {
-            name: "Academic Archive",
-            url: "https://krishnasingh1920.github.io/AcademicArchive/",
-            imgSrc: "AcademicArchiveSS.jpg",
-            imgAlt: "Academic Archive Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management.",
-        },
-        {
             name: "Passvault",
             url: "https://krishnasingh1920.github.io/Passvault/",
             imgSrc: "PassvaultSS.jpg",
@@ -76,6 +63,19 @@ const details = {
             ],
             description:
                 "This password manager web app features a minimalist design, offering a secure login page for entering your credentials and a streamlined interface to view and add passwords.",
+        },
+        {
+            name: "Academic Archive",
+            url: "https://krishnasingh1920.github.io/AcademicArchive/",
+            imgSrc: "AcademicArchiveSS.jpg",
+            imgAlt: "Academic Archive Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management.",
         },
         {
             name: "Krishna Singh",
@@ -155,19 +155,6 @@ const details = {
                 { imgSrc: "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000", alt: "Vite" }
             ],
             description: "QuickMaze is a puzzle game where you race through a maze to reach the anchor point. Each move costs score points, making efficiency key."
-        },
-        {
-            name: "Snake",
-            url: "https://krishnasingh1920.github.io/Snake/",
-            imgSrc: "SnakeSS.jpg",
-            imgAlt: "Snake Game Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "Snake is a game where you control a snake, navigate through the grid, and avoid walls while growing longer with each item you collect.",
         },
     ],
     // Social Links
