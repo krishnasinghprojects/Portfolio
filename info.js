@@ -65,6 +65,19 @@ const details = {
                 "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management.",
         },
         {
+            name: "Passvault",
+            url: "https://krishnasingh1920.github.io/Passvault/",
+            imgSrc: "PassvaultSS.jpg",
+            imgAlt: "Passvault Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "This password manager web app features a minimalist design, offering a secure login page for entering your credentials and a streamlined interface to view and add passwords.",
+        },
+        {
             name: "Krishna Singh",
             url: "https://krishnasingh1920.github.io/AboutKrishna/",
             imgSrc: "AboutKrishnaSS.jpg",
