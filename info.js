@@ -242,6 +242,16 @@ const details = {
             alt: "Node JS",
         },
         {
+            name: "Mongo DB",
+            imgSrc: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000",
+            alt: "Mongo DB",
+        },
+        {
+            name: "Express JS",
+            imgSrc: "https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000",
+            alt: "Express JS",
+        },
+        {
             name: "Python",
             imgSrc: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
             alt: "Python",
