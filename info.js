@@ -257,6 +257,11 @@ const details = {
             alt: "Python",
         },
         {
+            name: "Streamlit",
+            imgSrc: "https://img.icons8.com/?size=100&id=Rffi8qeb2fK5&format=png&color=000000",
+            alt: "Streamlit",
+        },
+        {
             name: "C",
             imgSrc: "https://img.icons8.com/?size=100&id=40670&format=png&color=000000",
             alt: "C",
