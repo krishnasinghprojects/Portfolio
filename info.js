@@ -331,7 +331,6 @@ const details = {
         info: [
             {text: "Name: Krishna Singh" },
             {text: "Phone: +91 9026316048" },
-            {text: "Discord: krishnasinghprojects"},
             {
                 text: "Email: KrishnaSingh",
                 url: "mailto:krishnasinghprojects@gmail.com"
@@ -468,6 +467,7 @@ details.skills.forEach((skill) => {
     const img = document.createElement("img");
     img.src = skill.imgSrc;
     img.alt = skill.alt;
+    img.style.borderRadius = "40px";
 
     const p = document.createElement("p");
     p.innerText = skill.name;
