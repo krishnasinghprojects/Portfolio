@@ -17,7 +17,7 @@ const details = {
         greeting: "Hi, I'm Krishna Singh",
         title: "Web Developer & Designer",
         description:
-            "Engineering student who loves combining coding and design.\nSkilled in front-end development with HTML, CSS, JavaScript, and experienced in programming languages C, Python, and Java.",
+            "Engineering student who loves combining coding and design.\nSkilled in front-end development with HTML, CSS, JavaScript, also experienced in programming languages C, Python, Typescript and Java.",
         downloadCV: {
             text: "Download CV",
             url: "https://drive.google.com/uc?export=download&id=1xNYfrq1NvDH2FMi1liOlK2Tp_rJn08-b",
@@ -101,7 +101,7 @@ const details = {
                 { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
             ],
             description:
-               "Express PDF is a fast, offline image-to-PDF tool with drag-and-drop, reordering, presets for size and quality, dark mode, and a simple interface."
+                "Express PDF is a fast, offline image-to-PDF tool with drag-and-drop, reordering, presets for size and quality, dark mode, and a simple interface."
         },
         {
             name: "PocketBank",
@@ -197,11 +197,11 @@ const details = {
         {
             name: "GitHub",
             url: "https://github.com/KrishnaSingh1920",
-            imgSrc: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
+            imgSrc: "https://img.icons8.com/?size=100&id=D5XsEXNbhkMI&format=png&color=000000",
             alt: "GitHub",
             width: 40,
         },
-        
+
     ],
 
     // Skills Section
@@ -218,8 +218,13 @@ const details = {
         },
         {
             name: "JavaScript",
-            imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+            imgSrc: "https://img.icons8.com/?size=100&id=YX2eDFImIaWh&format=png&color=000000",
             alt: "JavaScript",
+        },
+        {
+            name: "TypeScript",
+            imgSrc: "https://img.icons8.com/?size=100&id=Xf1sHBmY73hA&format=png&color=000000",
+            alt: "TypeScript",
         },
         {
             name: "Tailwind CSS",
@@ -230,6 +235,11 @@ const details = {
             name: "React",
             imgSrc: "https://img.icons8.com/?size=100&id=123603&format=png&color=000000",
             alt: "React",
+        },
+        {
+            name: "React Native",
+            imgSrc: "https://img.icons8.com/?size=100&id=t4YbEbA834uH&format=png&color=000000",
+            alt: "React Native",
         },
         {
             name: "Vite",
@@ -329,8 +339,11 @@ const details = {
     contact: {
         title: "Contact Me",
         info: [
-            {text: "Name: Krishna Singh" },
-            {text: "Phone: +91 9026316048" },
+            { text: "Name: Krishna Singh" },
+            {
+                text: "Phone: +91 9026316048",
+                url: "tel:+919026316048"
+            },
             {
                 text: "Email: KrishnaSingh",
                 url: "mailto:krishnasinghprojects@gmail.com"
@@ -467,7 +480,7 @@ details.skills.forEach((skill) => {
     const img = document.createElement("img");
     img.src = skill.imgSrc;
     img.alt = skill.alt;
-    img.style.borderRadius = "40px";
+    img.style.borderRadius = "5px";
 
     const p = document.createElement("p");
     p.innerText = skill.name;
@@ -500,7 +513,8 @@ function createContentDiv(edu) {
     contentDiv.innerHTML = `
       <h3>${edu.period}</h3>
       <h1>${edu.degree}</h1>
-      <p>${edu.institution}${edu.percentage ? ' | Percentage: ' + edu.percentage + '%' : ''}</p>
+      <p>${edu.institution}</p>
+      <p>${edu.percentage ? 'Percentage: ' + edu.percentage + '%' : ''}</p>
     `;
     return contentDiv;
 }

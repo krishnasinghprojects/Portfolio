@@ -462,7 +462,7 @@ nav {
 .skills-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
 }
@@ -471,14 +471,15 @@ nav {
     width: 80px;
     height: 80px;
     position: relative;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .skill-card img {
     width: 100%;
     height: auto;
-    filter: grayscale(80%);
-    transition: filter 0.3s ease-in-out;
+    filter: grayscale(75%);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .skill-card p {
@@ -545,6 +546,7 @@ nav {
     object-fit: cover;
     transition: opacity 0.3s ease-in-out;
     filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .social a:hover {
@@ -693,6 +695,9 @@ nav {
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.timeline p{
+    margin: 5px 0px;
 }
 
 .timeline-content {
