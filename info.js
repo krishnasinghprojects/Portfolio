@@ -176,7 +176,10 @@ const details = {
             imgSrc: "Badge3.jpg",
             imgAlt: "Badge 1",
         },
-       
+        {
+            imgSrc: "Certificate1.jpg",
+            imgAlt: "Badge 1",
+        },
     ],
     // Social Links
     social: [
@@ -475,25 +478,32 @@ details.projects.forEach((project) => {
 });
 
 details.certificates.forEach((certificate) => {
-    // Create the anchor element
-    const certLink = document.createElement("a");
-    certLink.href = certificate.url;
-    certLink.target = "_blank";
-    certLink.classList.add("certificate-link");
-
     // Create the image element
     const certImage = document.createElement("img");
     certImage.src = certificate.imgSrc;
-    certImage.alt = certificate.alt;
+    certImage.alt = certificate.alt || "Certificate";
     certImage.classList.add("certificate-image");
 
-    // Append image to link
-    certLink.appendChild(certImage);
-
-    // Append to container
     const certContainer = document.querySelector(".certificates-container");
-    certContainer.appendChild(certLink);
+
+    if (certificate.url) {
+        // Wrap image in an anchor tag if URL exists
+        const certLink = document.createElement("a");
+        certLink.href = certificate.url;
+        certLink.target = "_blank";
+        certLink.classList.add("certificate-link");
+        certLink.appendChild(certImage);
+        certContainer.appendChild(certLink);
+    } else {
+        // Wrap in an anchor that links to the same section (no-op)
+        const certLink = document.createElement("a");
+        certLink.href = "#certificates"; // or simply "#" if no ID is present
+        certLink.classList.add("certificate-link");
+        certLink.appendChild(certImage);
+        certContainer.appendChild(certLink);
+    }
 });
+
 
 // -- Dynamic Social Links --
 const socialLinksElement = document.getElementById("social_links");
