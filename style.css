@@ -668,6 +668,55 @@ nav {
     transform: scale(1.1);
 }
 
+.certification-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.certification-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--title-texts);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.certificates-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual certificate item (anchor element) */
+.certificate-link {
+    display: block;
+    width: 475px;
+    aspect-ratio: 4 / 3; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    background: linear-gradient(315deg, #d7d7d73d, #1a1a1a4e, #ffffff3d);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.certificate-link:hover {
+    transform: scale(1.05);
+}
+
+/* Certificate image inside the link */
+.certificate-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
 .timeline {
     width: 80%;
     height: auto;

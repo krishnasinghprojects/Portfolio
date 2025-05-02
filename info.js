@@ -157,6 +157,27 @@ const details = {
             description: "QuickMaze is a puzzle game where you race through a maze to reach the anchor point. Each move costs score points, making efficiency key."
         },
     ],
+    certificates: [
+        {
+
+            url: "https://www.credly.com/badges/3dcd711c-c089-451c-9fb0-e61a087ae0ee/public_url",
+            imgSrc: "Badge1.jpg",
+            imgAlt: "Badge 1",
+        },
+        {
+
+            url: "https://www.credly.com/badges/f79fcfdd-1d06-48f6-b089-1cf286d856d0/public_url",
+            imgSrc: "Badge2.jpg",
+            imgAlt: "Badge 1",
+        },
+        {
+
+            url: "https://www.credly.com/badges/f61e996f-81bb-493d-b6c7-3751d4b78f60/public_url",
+            imgSrc: "Badge3.jpg",
+            imgAlt: "Badge 1",
+        },
+       
+    ],
     // Social Links
     social: [
         {
@@ -451,6 +472,27 @@ details.projects.forEach((project) => {
 
     // Append the card to the projects container
     projectsContainer.appendChild(projectCard);
+});
+
+details.certificates.forEach((certificate) => {
+    // Create the anchor element
+    const certLink = document.createElement("a");
+    certLink.href = certificate.url;
+    certLink.target = "_blank";
+    certLink.classList.add("certificate-link");
+
+    // Create the image element
+    const certImage = document.createElement("img");
+    certImage.src = certificate.imgSrc;
+    certImage.alt = certificate.alt;
+    certImage.classList.add("certificate-image");
+
+    // Append image to link
+    certLink.appendChild(certImage);
+
+    // Append to container
+    const certContainer = document.querySelector(".certificates-container");
+    certContainer.appendChild(certLink);
 });
 
 // -- Dynamic Social Links --
