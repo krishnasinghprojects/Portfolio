@@ -168,17 +168,23 @@ const details = {
 
             url: "https://www.credly.com/badges/f79fcfdd-1d06-48f6-b089-1cf286d856d0/public_url",
             imgSrc: "Badge2.jpg",
-            imgAlt: "Badge 1",
+            imgAlt: "Badge 2",
         },
         {
 
             url: "https://www.credly.com/badges/f61e996f-81bb-493d-b6c7-3751d4b78f60/public_url",
             imgSrc: "Badge3.jpg",
-            imgAlt: "Badge 1",
+            imgAlt: "Badge 3",
+        },
+        {
+
+            url: "https://www.credly.com/badges/5d0c5a42-dc93-488d-ace0-903973d924f0/public_url",
+            imgSrc: "Badge4.jpg",
+            imgAlt: "Badge 4",
         },
         {
             imgSrc: "Certificate1.jpg",
-            imgAlt: "Badge 1",
+            imgAlt: "Certificate 1",
         },
     ],
     // Social Links
