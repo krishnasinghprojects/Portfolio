@@ -17,7 +17,7 @@ const details = {
         greeting: "Hi, I'm Krishna Singh",
         title: "Web Developer & Designer",
         description:
-            "Engineering student who loves combining coding and design.\nSkilled in front-end development with HTML, CSS, JavaScript, also experienced in programming languages C, Python, Typescript and Java.",
+            "Engineering student who loves combining coding and design. Skilled in Front-End Development with HTML, CSS, JavaScript, ReactJS also experienced with programming languages C, Python, Java and TypeScript.",
         downloadCV: {
             text: "Download CV",
             url: "https://drive.google.com/uc?export=download&id=1xNYfrq1NvDH2FMi1liOlK2Tp_rJn08-b",
@@ -27,7 +27,7 @@ const details = {
     projects: [
         {
             name: "Portfolio",
-            url: "https://krishnasingh1920.github.io/Portfolio/",
+            url: "https://krishnasinghprojects.github.io/Portfolio/",
             imgSrc: "PortfolioSS.jpg",
             imgAlt: "Portfolio Project",
             tech: [
@@ -40,7 +40,7 @@ const details = {
         },
         {
             name: "Presently",
-            url: "https://krishnasingh1920.github.io/Presently/",
+            url: "https://krishnasinghprojects.github.io/Presently/",
             imgSrc: "PresentlySS.jpg",
             imgAlt: "Presently Project",
             tech: [
@@ -53,7 +53,7 @@ const details = {
         },
         {
             name: "Passvault",
-            url: "https://krishnasingh1920.github.io/Passvault/",
+            url: "https://krishnasinghprojects.github.io/Passvault/",
             imgSrc: "PassvaultSS.jpg",
             imgAlt: "Passvault Project",
             tech: [
@@ -66,7 +66,7 @@ const details = {
         },
         {
             name: "Academic Archive",
-            url: "https://krishnasingh1920.github.io/AcademicArchive/",
+            url: "https://krishnasinghprojects.github.io/AcademicArchive/",
             imgSrc: "AcademicArchiveSS.jpg",
             imgAlt: "Academic Archive Project",
             tech: [
@@ -79,7 +79,7 @@ const details = {
         },
         {
             name: "TypeQuest",
-            url: "https://krishnasingh1920.github.io/TypeQuest/",
+            url: "https://krishnasinghprojects.github.io/TypeQuest/",
             imgSrc: "TypeQuestSS.jpg",
             imgAlt: "TypeQuest Project",
             tech: [
@@ -92,7 +92,7 @@ const details = {
         },
         {
             name: "Express PDF",
-            url: "https://krishnasingh1920.github.io/ExpressPDF/",
+            url: "https://krishnasinghprojects.github.io/ExpressPDF/",
             imgSrc: "ExpressPDFSS.jpg",
             imgAlt: "Express PDF Project",
             tech: [
@@ -105,7 +105,7 @@ const details = {
         },
         {
             name: "PocketBank",
-            url: "https://krishnasingh1920.github.io/PocketBank/",
+            url: "https://krishnasinghprojects.github.io/PocketBank/",
             imgSrc: "PocketBankSS.jpg",
             imgAlt: "PocketBank Project",
             tech: [
@@ -118,7 +118,7 @@ const details = {
         },
         {
             name: "Gallery",
-            url: "https://krishnasingh1920.github.io/Gallery/",
+            url: "https://krishnasinghprojects.github.io/Gallery/",
             imgSrc: "GallerySS.jpg",
             imgAlt: "Gallery Project",
             tech: [
@@ -131,7 +131,7 @@ const details = {
         },
         {
             name: "Tic Tac Toe",
-            url: "https://krishnasingh1920.github.io/TicTacToe/",
+            url: "https://krishnasinghprojects.github.io/TicTacToe/",
             imgSrc: "TicTacToeSS.jpg",
             imgAlt: "Tic Tac Toe Project",
             tech: [
@@ -144,7 +144,7 @@ const details = {
         },
         {
             name: "QuickMaze",
-            url: "https://krishnasingh1920.github.io/QuickMaze/",
+            url: "https://krishnasinghprojects.github.io/QuickMaze/",
             imgSrc: "QuickMazeSS.jpg",
             imgAlt: "QuickMaze Project",
             tech: [
@@ -190,24 +190,24 @@ const details = {
     // Social Links
     social: [
         {
-            name: "Chess",
-            url: "https://www.chess.com/member/nether_god",
-            imgSrc: "https://img.icons8.com/?size=100&id=C5LTcmsc3cr0&format=png&color=000000",
-            alt: "Chess",
-            width: 40,
-        },
-        {
-            name: "Reddit",
-            url: "https://www.reddit.com/user/KrishnaSingh1920",
-            imgSrc: "https://img.icons8.com/?size=100&id=D6dz6cibVkdT&format=png&color=000000",
-            alt: "Reddit",
+            name: "GitHub",
+            url: "https://github.com/krishnasinghprojects",
+            imgSrc: "https://img.icons8.com/?size=100&id=D5XsEXNbhkMI&format=png&color=000000",
+            alt: "GitHub",
             width: 40,
         },
         {
             name: "LinkedIn",
-            url: "https://www.linkedin.com/in/krishnasingh1920",
+            url: "https://www.linkedin.com/in/krishnasinghprojects",
             imgSrc: "https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000",
             alt: "LinkedIn",
+            width: 40,
+        },
+        {
+            name: "Reddit",
+            url: "https://www.reddit.com/user/krishnasinghprojects",
+            imgSrc: "https://img.icons8.com/?size=100&id=D6dz6cibVkdT&format=png&color=000000",
+            alt: "Reddit",
             width: 40,
         },
         {
@@ -224,14 +224,6 @@ const details = {
             alt: "Discord",
             width: 40,
         },
-        {
-            name: "GitHub",
-            url: "https://github.com/KrishnaSingh1920",
-            imgSrc: "https://img.icons8.com/?size=100&id=D5XsEXNbhkMI&format=png&color=000000",
-            alt: "GitHub",
-            width: 40,
-        },
-
     ],
 
     // Skills Section
@@ -371,7 +363,7 @@ const details = {
         info: [
             { text: "Name: Krishna Singh" },
             {
-                text: "Phone: +91 9026316048",
+                text: "Phone: +91 90263 16048",
                 url: "tel:+919026316048"
             },
             {
@@ -379,8 +371,8 @@ const details = {
                 url: "mailto:krishnasinghprojects@gmail.com"
             },
             {
-                text: "LinkedIn: KrishnaSingh1920",
-                url: "https://www.linkedin.com/in/krishnasingh1920"
+                text: "LinkedIn: krishnasinghprojects",
+                url: "https://www.linkedin.com/in/krishnasinghprojects"
             }
         ],
         button: {
