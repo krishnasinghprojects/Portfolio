@@ -304,6 +304,16 @@ const details = {
             alt: "Java",
         },
         {
+            name: "Kotlin",
+            imgSrc: "https://img.icons8.com/?size=100&id=ZoxjA0jZDdFZ&format=png&color=000000",
+            alt: "Kotlin",
+        },
+        {
+            name: "Android Studio",
+            imgSrc: "https://img.icons8.com/?size=100&id=EgOU93v1DHjU&format=png&color=000000",
+            alt: "Android Studio",
+        },
+        {
             name: "Git",
             imgSrc: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
             alt: "Git",
