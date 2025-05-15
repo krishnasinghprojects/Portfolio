@@ -52,19 +52,6 @@ const details = {
                 "Presently is an app to calculate the number of extra classes you need to attend or skip to meet your required attendance percentage.",
         },
         {
-            name: "Passvault",
-            url: "https://krishnasinghprojects.github.io/Passvault/",
-            imgSrc: "PassvaultSS.jpg",
-            imgAlt: "Passvault Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "This password manager web app features a minimalist design, offering a secure login page for entering your credentials and a streamlined interface to view and add passwords.",
-        },
-        {
             name: "Academic Archive",
             url: "https://krishnasinghprojects.github.io/AcademicArchive/",
             imgSrc: "AcademicArchiveSS.jpg",
@@ -78,17 +65,17 @@ const details = {
                 "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management.",
         },
         {
-            name: "TypeQuest",
-            url: "https://krishnasinghprojects.github.io/TypeQuest/",
-            imgSrc: "TypeQuestSS.jpg",
-            imgAlt: "TypeQuest Project",
+            name: "Resume Crafter",
+            url: "https://krishnasinghprojects.github.io/ResumeCrafter/",
+            imgSrc: "ResumeCrafterSS.jpg",
+            imgAlt: "Resume Crafter Project",
             tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "Jsx" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" }
             ],
-            description: "TypeQuest is an interactive typing app that helps users practice, track WPM, and improve accuracy in a clean and responsive interface."
+            description:
+                "Gallery is a dynamic web application that hosts a collection of images, allowing users to easily navigate and explore the photos.",
         },
         {
             name: "Express PDF",
@@ -104,6 +91,19 @@ const details = {
                 "Express PDF is a fast, offline image-to-PDF tool with drag-and-drop, reordering, presets for size and quality, dark mode, and a simple interface."
         },
         {
+            name: "Passvault",
+            url: "https://krishnasinghprojects.github.io/Passvault/",
+            imgSrc: "PassvaultSS.jpg",
+            imgAlt: "Passvault Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "This password manager web app features a minimalist design, offering a secure login page for entering your credentials and a streamlined interface to view and add passwords.",
+        },
+        {
             name: "PocketBank",
             url: "https://krishnasinghprojects.github.io/PocketBank/",
             imgSrc: "PocketBankSS.jpg",
@@ -117,17 +117,17 @@ const details = {
                 "PocketBank is a banking application that stores variables in the browser's memory to keep finances managed.",
         },
         {
-            name: "Gallery",
-            url: "https://krishnasinghprojects.github.io/Gallery/",
-            imgSrc: "GallerySS.jpg",
-            imgAlt: "Gallery Project",
+            name: "TypeQuest",
+            url: "https://krishnasinghprojects.github.io/TypeQuest/",
+            imgSrc: "TypeQuestSS.jpg",
+            imgAlt: "TypeQuest Project",
             tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "Jsx" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
                 { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" }
             ],
-            description:
-                "Gallery is a dynamic web application that hosts a collection of images, allowing users to easily navigate and explore the photos.",
+            description: "TypeQuest is an interactive typing app that helps users practice, track WPM, and improve accuracy in a clean and responsive interface."
         },
         {
             name: "Tic Tac Toe",
