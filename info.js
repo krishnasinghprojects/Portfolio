@@ -75,7 +75,7 @@ const details = {
                 { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
             ],
             description:
-                "Gallery is a dynamic web application that hosts a collection of images, allowing users to easily navigate and explore the photos.",
+                "Resume Crafter is a smart web app for creating professional resumes. It features live preview, mobile-friendly design, and customizable sections for personalized results.",
         },
         {
             name: "Express PDF",
