@@ -28,7 +28,7 @@ const details = {
         {
             name: "Portfolio",
             url: "https://krishnasinghprojects.github.io/Portfolio/",
-            imgSrc: "PortfolioSS.jpg",
+            imgSrc: "Project Images/PortfolioSS.jpg",
             imgAlt: "Portfolio Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
@@ -41,7 +41,7 @@ const details = {
         {
             name: "Presently",
             url: "https://krishnasinghprojects.github.io/Presently/",
-            imgSrc: "PresentlySS.jpg",
+            imgSrc: "Project Images/PresentlySS.jpg",
             imgAlt: "Presently Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
@@ -54,7 +54,7 @@ const details = {
         {
             name: "Academic Archive",
             url: "https://krishnasinghprojects.github.io/AcademicArchive/",
-            imgSrc: "AcademicArchiveSS.jpg",
+            imgSrc: "Project Images/AcademicArchiveSS.jpg",
             imgAlt: "Academic Archive Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
@@ -67,7 +67,7 @@ const details = {
         {
             name: "Resume Crafter",
             url: "https://krishnasinghprojects.github.io/ResumeCrafter/",
-            imgSrc: "ResumeCrafterSS.jpg",
+            imgSrc: "Project Images/ResumeCrafterSS.jpg",
             imgAlt: "Resume Crafter Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
@@ -80,7 +80,7 @@ const details = {
         {
             name: "Express PDF",
             url: "https://krishnasinghprojects.github.io/ExpressPDF/",
-            imgSrc: "ExpressPDFSS.jpg",
+            imgSrc: "Project Images/ExpressPDFSS.jpg",
             imgAlt: "Express PDF Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
@@ -93,7 +93,7 @@ const details = {
         {
             name: "Passvault",
             url: "https://krishnasinghprojects.github.io/Passvault/",
-            imgSrc: "PassvaultSS.jpg",
+            imgSrc: "Project Images/PassvaultSS.jpg",
             imgAlt: "Passvault Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
@@ -106,7 +106,7 @@ const details = {
         {
             name: "PocketBank",
             url: "https://krishnasinghprojects.github.io/PocketBank/",
-            imgSrc: "PocketBankSS.jpg",
+            imgSrc: "Project Images/PocketBankSS.jpg",
             imgAlt: "PocketBank Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
@@ -119,7 +119,7 @@ const details = {
         {
             name: "TypeQuest",
             url: "https://krishnasinghprojects.github.io/TypeQuest/",
-            imgSrc: "TypeQuestSS.jpg",
+            imgSrc: "Project Images/TypeQuestSS.jpg",
             imgAlt: "TypeQuest Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "Jsx" },
@@ -132,7 +132,7 @@ const details = {
         {
             name: "Tic Tac Toe",
             url: "https://krishnasinghprojects.github.io/TicTacToe/",
-            imgSrc: "TicTacToeSS.jpg",
+            imgSrc: "Project Images/TicTacToeSS.jpg",
             imgAlt: "Tic Tac Toe Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
@@ -145,7 +145,7 @@ const details = {
         {
             name: "QuickMaze",
             url: "https://krishnasinghprojects.github.io/QuickMaze/",
-            imgSrc: "QuickMazeSS.jpg",
+            imgSrc: "Project Images/QuickMazeSS.jpg",
             imgAlt: "QuickMaze Project",
             tech: [
                 { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "Jsx" },
