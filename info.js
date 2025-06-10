@@ -192,6 +192,10 @@ const details = {
             imgSrc: "Certifications/Certificate1.jpg",
             imgAlt: "Certificate 1",
         },
+        {
+            imgSrc: "Certifications/Certificate2.jpg",
+            imgAlt: "Certificate 2",
+        },
     ],
     // Social Links
     social: [
