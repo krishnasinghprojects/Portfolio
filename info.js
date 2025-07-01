@@ -189,12 +189,16 @@ const details = {
             imgAlt: "Badge 5",
         },
         {
-            imgSrc: "Certifications/Certificate1.jpg",
+            imgSrc: "Certifications/Certificate1.jpeg",
             imgAlt: "Certificate 1",
         },
         {
             imgSrc: "Certifications/Certificate2.jpg",
             imgAlt: "Certificate 2",
+        },
+        {
+            imgSrc: "Certifications/Certificate3.jpg",
+            imgAlt: "Certificate 3",
         },
     ],
     // Social Links
