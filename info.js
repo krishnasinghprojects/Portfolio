@@ -159,36 +159,6 @@ const details = {
     ],
     certificates: [
         {
-
-            url: "https://www.credly.com/badges/3dcd711c-c089-451c-9fb0-e61a087ae0ee/public_url",
-            imgSrc: "Certifications/Badge1.jpg",
-            imgAlt: "Badge 1",
-        },
-        {
-
-            url: "https://www.credly.com/badges/f79fcfdd-1d06-48f6-b089-1cf286d856d0/public_url",
-            imgSrc: "Certifications/Badge2.jpg",
-            imgAlt: "Badge 2",
-        },
-        {
-
-            url: "https://www.credly.com/badges/f61e996f-81bb-493d-b6c7-3751d4b78f60/public_url",
-            imgSrc: "Certifications/Badge3.jpg",
-            imgAlt: "Badge 3",
-        },
-        {
-
-            url: "https://www.credly.com/badges/5d0c5a42-dc93-488d-ace0-903973d924f0/public_url",
-            imgSrc: "Certifications/Badge4.jpg",
-            imgAlt: "Badge 4",
-        },
-        {
-
-            url: "https://www.credly.com/badges/73a28331-a4a7-444c-bbf9-799225745a25/public_url",
-            imgSrc: "Certifications/Badge5.jpg",
-            imgAlt: "Badge 5",
-        },
-        {
             imgSrc: "Certifications/Certificate1.jpeg",
             imgAlt: "Certificate 1",
         },
@@ -199,6 +169,14 @@ const details = {
         {
             imgSrc: "Certifications/Certificate3.jpg",
             imgAlt: "Certificate 3",
+        },
+        {
+            imgSrc: "Certifications/Certificate4.jpg",
+            imgAlt: "Certificate 4",
+        },
+        {
+            imgSrc: "Certifications/Certificate5.jpg",
+            imgAlt: "Certificate 5",
         },
     ],
     // Social Links
