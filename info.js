@@ -178,6 +178,10 @@ const details = {
             imgSrc: "Certifications/Certificate5.jpg",
             imgAlt: "Certificate 5",
         },
+        {
+            imgSrc: "Certifications/Certificate6.jpg",
+            imgAlt: "Certificate 6",
+        },
     ],
     // Social Links
     social: [
