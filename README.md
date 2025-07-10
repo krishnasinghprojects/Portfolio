@@ -4,6 +4,8 @@
 
 Welcome to my personal portfolio website! This platform is designed to **showcase my projects, skills, and experiences** in a **clean, modern, and fully responsive layout**. I've built this site to provide a comprehensive overview of my work and professional journey.
 
+---
+
 ### ✨ Clean & Modern Design
 
 Experience a sleek, intuitive, and visually appealing user interface. My goal was to create a website that is not only functional but also a pleasure to navigate, ensuring a seamless user experience.
