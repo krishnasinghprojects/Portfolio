@@ -208,6 +208,14 @@ const details = {
             imgSrc: 'Certifications/Badge6.png',
             imgAlt: 'Badge 6',
         },
+        {
+            imgSrc: 'Certifications/Badge7.png',
+            imgAlt: 'Badge 8',
+        },
+        {
+            imgSrc: 'Certifications/Badge8.png',
+            imgAlt: 'Badge 8',
+        },
     ],
     // Social Links
     social: [
