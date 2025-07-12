@@ -185,23 +185,23 @@ const details = {
     ],
     badges:[
         {
-            imgSrc: 'Certifications/Badge1.jpeg',
+            imgSrc: 'Certifications/Badge1.png',
             imgAlt: 'Badge 1',
         },
         {
-            imgSrc: 'Certifications/Badge2.jpeg',
+            imgSrc: 'Certifications/Badge2.png',
             imgAlt: 'Badge 2',
         },
         {
-            imgSrc: 'Certifications/Badge3.jpeg',
+            imgSrc: 'Certifications/Badge3.png',
             imgAlt: 'Badge 3',
         },
         {
-            imgSrc: 'Certifications/Badge4.jpeg',
+            imgSrc: 'Certifications/Badge4.png',
             imgAlt: 'Badge 4',
         },
         {
-            imgSrc: 'Certifications/Badge5.jpeg',
+            imgSrc: 'Certifications/Badge5.png',
             imgAlt: 'Badge 5',
         },
         {

@@ -928,14 +928,13 @@ footer {
 .badge-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
     justify-content: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 .badge {
-    width: 175px;
-    height: 175px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
