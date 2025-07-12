@@ -183,6 +183,32 @@ const details = {
             imgAlt: "Certificate 6",
         },
     ],
+    badges:[
+        {
+            imgSrc: 'Certifications/Badge1.jpeg',
+            imgAlt: 'Badge 1',
+        },
+        {
+            imgSrc: 'Certifications/Badge2.jpeg',
+            imgAlt: 'Badge 2',
+        },
+        {
+            imgSrc: 'Certifications/Badge3.jpeg',
+            imgAlt: 'Badge 3',
+        },
+        {
+            imgSrc: 'Certifications/Badge4.jpeg',
+            imgAlt: 'Badge 4',
+        },
+        {
+            imgSrc: 'Certifications/Badge5.jpeg',
+            imgAlt: 'Badge 5',
+        },
+        {
+            imgSrc: 'Certifications/Badge6.png',
+            imgAlt: 'Badge 6',
+        },
+    ],
     // Social Links
     social: [
         {
@@ -507,6 +533,18 @@ details.certificates.forEach((certificate) => {
         certContainer.appendChild(certLink);
     }
 });
+details.badges.forEach((badge) => {
+    // Create the image element
+    const badgeImage = document.createElement("img");
+    badgeImage.src = badge.imgSrc;
+    badgeImage.alt = badge.alt || "Badge";
+    badgeImage.classList.add("badge");
+
+    // Append to the badge container
+    const badgeContainer = document.querySelector(".badge-container");
+    badgeContainer.appendChild(badgeImage);
+});
+
 
 
 // -- Dynamic Social Links --

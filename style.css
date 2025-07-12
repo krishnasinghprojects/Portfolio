@@ -49,7 +49,7 @@ body.light-theme {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Source Serif 4', Times, serif;
     scroll-behavior: smooth;
 }
 
@@ -602,6 +602,7 @@ nav {
 
 .project-card h1 {
     background: var(--title-texts);
+    font-size: 1.5rem;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -923,4 +924,30 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.badge {
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.badge:hover {
+    transform: scale(1.1);
 }
