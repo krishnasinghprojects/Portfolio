@@ -182,6 +182,10 @@ const details = {
             imgSrc: "Certifications/Certificate6.jpg",
             imgAlt: "Certificate 6",
         },
+        {
+            imgSrc: "Certifications/Certificate7.png",
+            imgAlt: "Certificate 7",
+        },
     ],
     badges:[
         {
@@ -216,6 +220,7 @@ const details = {
             imgSrc: 'Certifications/Badge8.png',
             imgAlt: 'Badge 8',
         },
+        
     ],
     // Social Links
     social: [
