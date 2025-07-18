@@ -756,8 +756,8 @@ nav {
     background: var(--bg-gradient);
     background-size: 400% 400%;
     animation: gradient 7.5s ease infinite;
-    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    -webkit-box-shadow: 5px 5px 10px #1a1a1a59, -5px -5px 10px #24242475;
+    box-shadow: 5px 5px 10px #1a1a1a71, -5px -5px 10px #24242474;
     border-radius: 5px;
     color: var(--text-color);
     padding: 1.75rem;

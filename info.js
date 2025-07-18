@@ -186,6 +186,10 @@ const details = {
             imgSrc: "Certifications/Certificate7.png",
             imgAlt: "Certificate 7",
         },
+        {
+            imgSrc: "Certifications/Certificate8.jpg",
+            imgAlt: "Certificate 8",
+        },
     ],
     badges:[
         {
