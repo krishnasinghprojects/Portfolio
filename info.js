@@ -243,10 +243,10 @@ const details = {
             width: 40,
         },
         {
-            name: "Reddit",
-            url: "https://www.reddit.com/user/krishnasinghprojects",
-            imgSrc: "https://img.icons8.com/?size=100&id=D6dz6cibVkdT&format=png&color=000000",
-            alt: "Reddit",
+            name: "X",
+            url: "https://x.com/krishnasingh_28",
+            imgSrc: "https://img.icons8.com/?size=100&id=bG29Ckcdp6YP&format=png&color=000000",
+            alt: "X",
             width: 40,
         },
         {
