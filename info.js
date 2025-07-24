@@ -52,6 +52,19 @@ const details = {
                 "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management.",
         },
         {
+            name: "Flashcard Archive",
+            url: "https://krishnasinghprojects.github.io/FlashcardArchive/",
+            imgSrc: "Project Images/FlashcardArchiveSS.jpg",
+            imgAlt: "FlashcardArchive Project",
+            tech: [
+                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
+                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
+            ],
+            description:
+                "Flashcard Archive helps students master concepts through flashcard learning. It supports CSV upload and offers dark mode with an intuitive card interface for effective study sessions.",
+        },
+        {
             name: "Inlighn Tech",
             url: "https://krishnasinghprojects.github.io/InlighnTechHackathon/",
             imgSrc: "Project Images/InlighnTechSS.jpg",
@@ -115,19 +128,6 @@ const details = {
             ],
             description:
                 "This password manager web app features a minimalist design, offering a secure login page for entering your credentials and a streamlined interface to view and add passwords.",
-        },
-        {
-            name: "PocketBank",
-            url: "https://krishnasinghprojects.github.io/PocketBank/",
-            imgSrc: "Project Images/PocketBankSS.jpg",
-            imgAlt: "PocketBank Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "PocketBank is a banking application that stores variables in the browser's memory to keep finances managed.",
         },
         {
             name: "TypeQuest",
