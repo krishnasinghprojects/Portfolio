@@ -323,6 +323,16 @@ const details = {
             alt: "Express JS",
         },
         {
+            name: "Next JS",
+            imgSrc: "https://img.icons8.com/?size=100&id=r2OarXWQc7B6&format=png&color=000000",
+            alt: "Next JS",
+        },
+        {
+            name: "Docker",
+            imgSrc: "https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000",
+            alt: "Docker",
+        },
+        {
             name: "Python",
             imgSrc: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
             alt: "Python",
