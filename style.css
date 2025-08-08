@@ -7,6 +7,7 @@
     /* improved contrast for dark mode */
     --nav-link-hover-color: #f44242;
     --basic-color: #ff0000;
+    --basic-shadow-color: #ffffff7a;
     --logo-bg-gradient: linear-gradient(45deg, #ff1818, #ff8585, #ff8630, #ea4335);
     --logo-text-color: #ffffff;
     --dropdown-bg: #2a2a2a;
@@ -29,7 +30,8 @@ body.light-theme {
     --text-color: #333333;
     --nav-link-color: #333;
     --nav-link-hover-color: #95ffff;
-    --basic-color: #00ffea;
+    --basic-color: #00ffea88;
+    --basic-shadow-color: #007286;
     --logo-bg-gradient: linear-gradient(45deg, #00e7e7, #007a7a, #0079cf, #15bcca);
     --logo-text-color: #ffffff;
     --dropdown-bg: #f0ffff;
@@ -588,7 +590,7 @@ nav {
     border: 2px solid rgba(255, 255, 255, 0.2);
     padding: 10px;
     border-radius: 10px;
-    width: 300px;
+    width: 275px;
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -638,7 +640,7 @@ nav {
 }
 
 .project-desc {
-    font-size: 1rem;
+    font-size: 0.75rem;
     padding: 0 1rem 1rem;
     line-height: 1.5;
 }
@@ -696,7 +698,7 @@ nav {
 /* Individual certificate item (anchor element) */
 .certificate-link {
     display: block;
-    width: 400px;
+    width: 300px;
     aspect-ratio: 4 / 3; 
     overflow: hidden;
     border-radius: 10px;
@@ -937,10 +939,10 @@ footer {
 
 .badge {
     width: auto; /* or remove this if you want auto width */
-    height: 250px;
+    height: 200px;
     padding: 20px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     border-radius: 12px;
     display: inline-block; /* ensure badges flow nicely */
      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
@@ -955,5 +957,6 @@ footer {
 
 
 .badge:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
+    filter: drop-shadow(0 0px 8px var(--basic-shadow-color));
 }

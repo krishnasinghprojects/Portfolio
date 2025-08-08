@@ -218,11 +218,19 @@ const details = {
         },
         {
             imgSrc: 'Certifications/Badge7.png',
-            imgAlt: 'Badge 8',
+            imgAlt: 'Badge 7',
         },
         {
             imgSrc: 'Certifications/Badge8.png',
             imgAlt: 'Badge 8',
+        },
+        {
+            imgSrc: 'Certifications/Badge9.png',
+            imgAlt: 'Badge 9',
+        },
+        {
+            imgSrc: 'Certifications/Badge10.png',
+            imgAlt: 'Badge 10',
         },
         
     ],
