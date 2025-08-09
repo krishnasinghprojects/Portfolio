@@ -232,7 +232,14 @@ const details = {
             imgSrc: 'Certifications/Badge10.png',
             imgAlt: 'Badge 10',
         },
-        
+        {
+            imgSrc: 'Certifications/Badge11.png',
+            imgAlt: 'Badge 11',
+        },
+        {
+            imgSrc: 'Certifications/Badge12.png',
+            imgAlt: 'Badge 12',
+        },
     ],
     // Social Links
     social: [
