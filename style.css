@@ -1038,7 +1038,7 @@ footer {
 
 .badge {
     width: auto; /* or remove this if you want auto width */
-    height: 200px;
+    height: 180px;
     padding: 20px;
     overflow: hidden;
     transition: all 0.3s ease;
