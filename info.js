@@ -191,7 +191,7 @@ const details = {
             imgAlt: "Certificate 8",
         },
     ],
-    badges:[
+    badges: [
         {
             imgSrc: 'Certifications/Badge1.png',
             imgAlt: 'Badge 1',
@@ -280,134 +280,154 @@ const details = {
         },
     ],
 
-    // Skills Section
-    skills: [
-        {
-            name: "HTML",
-            imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
-            alt: "HTML",
-        },
-        {
-            name: "CSS",
-            imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
-            alt: "CSS",
-        },
-        {
-            name: "JavaScript",
-            imgSrc: "https://img.icons8.com/?size=100&id=YX2eDFImIaWh&format=png&color=000000",
-            alt: "JavaScript",
-        },
-        {
-            name: "TypeScript",
-            imgSrc: "https://img.icons8.com/?size=100&id=Xf1sHBmY73hA&format=png&color=000000",
-            alt: "TypeScript",
-        },
-        {
-            name: "Tailwind CSS",
-            imgSrc: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000",
-            alt: "Tailwind CSS",
-        },
-        {
-            name: "React",
-            imgSrc: "https://img.icons8.com/?size=100&id=123603&format=png&color=000000",
-            alt: "React",
-        },
-        {
-            name: "React Native",
-            imgSrc: "https://img.icons8.com/?size=100&id=t4YbEbA834uH&format=png&color=000000",
-            alt: "React Native",
-        },
-        {
-            name: "Vite",
-            imgSrc: "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000",
-            alt: "Vite",
-        },
-        {
-            name: "Node JS",
-            imgSrc: "https://img.icons8.com/?size=100&id=54087&format=png&color=000000",
-            alt: "Node JS",
-        },
-        {
-            name: "Mongo DB",
-            imgSrc: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000",
-            alt: "Mongo DB",
-        },
-        {
-            name: "Express JS",
-            imgSrc: "https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000",
-            alt: "Express JS",
-        },
-        {
-            name: "Next JS",
-            imgSrc: "https://img.icons8.com/?size=100&id=r2OarXWQc7B6&format=png&color=000000",
-            alt: "Next JS",
-        },
-        {
-            name: "Docker",
-            imgSrc: "https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000",
-            alt: "Docker",
-        },
-        {
-            name: "Python",
-            imgSrc: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
-            alt: "Python",
-        },
-        {
-            name: "Streamlit",
-            imgSrc: "https://img.icons8.com/?size=100&id=Rffi8qeb2fK5&format=png&color=000000",
-            alt: "Streamlit",
-        },
-        {
-            name: "C",
-            imgSrc: "https://img.icons8.com/?size=100&id=40670&format=png&color=000000",
-            alt: "C",
-        },
-        {
-            name: "Java",
-            imgSrc: "https://img.icons8.com/?size=100&id=13679&format=png&color=000000",
-            alt: "Java",
-        },
-        {
-            name: "Kotlin",
-            imgSrc: "https://img.icons8.com/?size=100&id=ZoxjA0jZDdFZ&format=png&color=000000",
-            alt: "Kotlin",
-        },
-        {
-            name: "Android Studio",
-            imgSrc: "https://img.icons8.com/?size=100&id=EgOU93v1DHjU&format=png&color=000000",
-            alt: "Android Studio",
-        },
-        {
-            name: "Git",
-            imgSrc: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
-            alt: "Git",
-        },
-        {
-            name: "GitHub",
-            imgSrc: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
-            alt: "GitHub",
-        },
-        {
-            name: "Canva",
-            imgSrc: "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000",
-            alt: "Canva",
-        },
-        {
-            name: "MS Word",
-            imgSrc: "https://img.icons8.com/?size=100&id=13674&format=png&color=000000",
-            alt: "Ms Word",
-        },
-        {
-            name: "MS PowerPoint",
-            imgSrc: "https://img.icons8.com/?size=100&id=81726&format=png&color=000000",
-            alt: "Ms PowerPoint",
-        },
-        {
-            name: "MS Excel",
-            imgSrc: "https://img.icons8.com/?size=100&id=13654&format=png&color=000000",
-            alt: "Ms Excel",
-        },
-    ],
+    // Skills Section - Organized by Categories
+    skills: {
+        "Programming Languages": [
+            {
+                name: "JavaScript",
+                imgSrc: "https://img.icons8.com/?size=100&id=YX2eDFImIaWh&format=png&color=000000",
+                alt: "JavaScript",
+            },
+            {
+                name: "TypeScript",
+                imgSrc: "https://img.icons8.com/?size=100&id=Xf1sHBmY73hA&format=png&color=000000",
+                alt: "TypeScript",
+            },
+            {
+                name: "Python",
+                imgSrc: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000",
+                alt: "Python",
+            },
+            {
+                name: "C",
+                imgSrc: "https://img.icons8.com/?size=100&id=40670&format=png&color=000000",
+                alt: "C",
+            },
+            {
+                name: "Java",
+                imgSrc: "https://img.icons8.com/?size=100&id=13679&format=png&color=000000",
+                alt: "Java",
+            },
+            {
+                name: "Kotlin",
+                imgSrc: "https://img.icons8.com/?size=100&id=ZoxjA0jZDdFZ&format=png&color=000000",
+                alt: "Kotlin",
+            },
+        ],
+        "Full Stack Development": [
+            {
+                name: "HTML",
+                imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+                alt: "HTML",
+            },
+            {
+                name: "CSS",
+                imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
+                alt: "CSS",
+            },
+            {
+                name: "React",
+                imgSrc: "https://img.icons8.com/?size=100&id=123603&format=png&color=000000",
+                alt: "React",
+            },
+            {
+                name: "Next JS",
+                imgSrc: "https://img.icons8.com/?size=100&id=r2OarXWQc7B6&format=png&color=000000",
+                alt: "Next JS",
+            },
+            {
+                name: "Tailwind CSS",
+                imgSrc: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000",
+                alt: "Tailwind CSS",
+            },
+            {
+                name: "Node JS",
+                imgSrc: "https://img.icons8.com/?size=100&id=54087&format=png&color=000000",
+                alt: "Node JS",
+            },
+            {
+                name: "Express JS",
+                imgSrc: "https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000",
+                alt: "Express JS",
+            },
+            {
+                name: "Mongo DB",
+                imgSrc: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000",
+                alt: "Mongo DB",
+            },
+        ],
+        "Tools & Technologies": [
+            {
+                name: "Git",
+                imgSrc: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
+                alt: "Git",
+            },
+            {
+                name: "GitHub",
+                imgSrc: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000",
+                alt: "GitHub",
+            },
+            {
+                name: "Docker",
+                imgSrc: "https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000",
+                alt: "Docker",
+            },
+            {
+                name: "Vite",
+                imgSrc: "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000",
+                alt: "Vite",
+            },
+            {
+                name: "Streamlit",
+                imgSrc: "https://img.icons8.com/?size=100&id=Rffi8qeb2fK5&format=png&color=000000",
+                alt: "Streamlit",
+            },
+            {
+                name: "Canva",
+                imgSrc: "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000",
+                alt: "Canva",
+            },
+        ],
+        "MS Office": [
+            {
+                name: "MS Word",
+                imgSrc: "https://img.icons8.com/?size=100&id=13674&format=png&color=000000",
+                alt: "MS Word",
+            },
+            {
+                name: "MS PowerPoint",
+                imgSrc: "https://img.icons8.com/?size=100&id=81726&format=png&color=000000",
+                alt: "MS PowerPoint",
+            },
+            {
+                name: "MS Excel",
+                imgSrc: "https://img.icons8.com/?size=100&id=13654&format=png&color=000000",
+                alt: "MS Excel",
+            },
+        ],
+        "AWS": [
+            {
+                name: "IAM",
+                imgSrc: "Icons/IAM.svg",
+                alt: "IAM",
+            },
+            {
+                name: "Lambda",
+                imgSrc: "Icons/Lambda.svg",
+                alt: "Lambda",
+            },
+            {
+                name: "EC2",
+                imgSrc: "Icons/EC2.svg",
+                alt: "EC2",
+            },
+            {
+                name: "S3",
+                imgSrc: "Icons/S3.svg",
+                alt: "S3",
+            },
+        ],
+    },
 
     //Education Details
     education: [
@@ -609,22 +629,63 @@ details.social.forEach((social) => {
 // -- Dynamic Skills Section --
 const skillsContainer = document.getElementById("skills_container");
 skillsContainer.innerHTML = "";
-details.skills.forEach((skill) => {
-    const skillCard = document.createElement("div");
-    skillCard.classList.add("skill-card");
 
-    const img = document.createElement("img");
-    img.src = skill.imgSrc;
-    img.alt = skill.alt;
-    img.style.borderRadius = "5px";
+// Create two rows for the layout
+const firstRow = document.createElement("div");
+firstRow.classList.add("skills-row", "skills-row-first");
 
-    const p = document.createElement("p");
-    p.innerText = skill.name;
+const secondRow = document.createElement("div");
+secondRow.classList.add("skills-row", "skills-row-second");
 
-    skillCard.appendChild(img);
-    skillCard.appendChild(p);
-    skillsContainer.appendChild(skillCard);
+// Get all categories and distribute them between rows
+const categories = Object.keys(details.skills);
+
+categories.forEach((category, index) => {
+    // Create category container
+    const categoryContainer = document.createElement("div");
+    categoryContainer.classList.add("skill-category");
+
+    // Create category title
+    const categoryTitle = document.createElement("h2");
+    categoryTitle.classList.add("skill-category-title");
+    categoryTitle.innerText = category;
+    categoryContainer.appendChild(categoryTitle);
+
+    // Create skills grid for this category
+    const skillsGrid = document.createElement("div");
+    skillsGrid.classList.add("skills-grid");
+
+    // Add skills to the grid
+    details.skills[category].forEach((skill) => {
+        const skillCard = document.createElement("div");
+        skillCard.classList.add("skill-card");
+
+        const img = document.createElement("img");
+        img.src = skill.imgSrc;
+        img.alt = skill.alt;
+        img.style.borderRadius = "5px";
+
+        const p = document.createElement("p");
+        p.innerText = skill.name;
+
+        skillCard.appendChild(img);
+        skillCard.appendChild(p);
+        skillsGrid.appendChild(skillCard);
+    });
+
+    categoryContainer.appendChild(skillsGrid);
+
+    // First 3 categories go to first row, remaining go to second row
+    if (index < 3) {
+        firstRow.appendChild(categoryContainer);
+    } else {
+        secondRow.appendChild(categoryContainer);
+    }
 });
+
+// Append rows to the main container
+skillsContainer.appendChild(firstRow);
+skillsContainer.appendChild(secondRow);
 
 
 // Function to Create Timeline Elements
