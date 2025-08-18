@@ -470,7 +470,7 @@ const details = {
                 url: "tel:+919026316048"
             },
             {
-                text: "Email: KrishnaSingh",
+                text: "Email: krishnasinghprojects@gmail.com",
                 url: "mailto:krishnasinghprojects@gmail.com"
             },
             {
