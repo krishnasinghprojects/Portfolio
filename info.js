@@ -377,6 +377,11 @@ const details = {
                 alt: "Docker",
             },
             {
+                name: "N8N",
+                imgSrc: "Icons/N8N.png",
+                alt: "N8N",
+            },
+            {
                 name: "Vite",
                 imgSrc: "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000",
                 alt: "Vite",
