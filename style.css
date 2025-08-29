@@ -519,7 +519,7 @@ nav {
     transition: transform 0.3s ease;
     flex: 1;
     min-width: 300px;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .skill-category:hover {
@@ -545,8 +545,8 @@ nav {
 }
 
 .skill-card {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     position: relative;
     transition: transform 0.5s ease-in-out;
     margin-bottom: 20px;
@@ -561,7 +561,6 @@ nav {
 
 .skill-card p {
     position: absolute;
-    bottom: -25px;
     width: 100%;
     text-align: center;
     opacity: 0;

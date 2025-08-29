@@ -317,6 +317,11 @@ const details = {
                 imgSrc: "https://img.icons8.com/?size=100&id=ZoxjA0jZDdFZ&format=png&color=000000",
                 alt: "Kotlin",
             },
+            {
+                name: "C++",
+                imgSrc: "https://img.icons8.com/?size=100&id=40669&format=png&color=000000",
+                alt: "C++",
+            },
         ],
         "Full Stack Development": [
             {
@@ -358,6 +363,16 @@ const details = {
                 name: "Mongo DB",
                 imgSrc: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000",
                 alt: "Mongo DB",
+            },
+            {
+                name: "React Native",
+                imgSrc: "https://img.icons8.com/?size=100&id=t4YbEbA834uH&format=png&color=000000",
+                alt: "React Native",
+            },
+            {
+                name: "Expo",
+                imgSrc: "https://img.icons8.com/?size=100&id=GaRO0SragvjM&format=png&color=000000",
+                alt: "Expo",
             },
         ],
         "Tools & Technologies": [
@@ -434,6 +449,33 @@ const details = {
                 name: "S3",
                 imgSrc: "Icons/S3.svg",
                 alt: "S3",
+            },
+        ],
+        "AI Integrations": [
+            {
+                name: "Gemini SDK",
+                imgSrc: "https://img.icons8.com/?size=100&id=rnK88i9FvAFO&format=png&color=000000",
+                alt: "Gemini SDK",
+            },
+            {
+                name: "ChatGPT SDK",
+                imgSrc: "https://img.icons8.com/?size=100&id=ka3InxFU3QZa&format=png&color=000000",
+                alt: "ChatGPT SDK",
+            },
+            {
+                name: "Ollama SDK",
+                imgSrc: "Icons/Ollama.png",
+                alt: "Ollama SDK",
+            },
+            {
+                name: "Fine Tuning",
+                imgSrc: "https://img.icons8.com/?size=100&id=48174&format=png&color=000000",
+                alt: "Fine Tuning",
+            },
+            {
+                name: "RAG",
+                imgSrc: "Icons/RAG.png",
+                alt: "RAG",
             },
         ],
     },
