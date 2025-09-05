@@ -805,7 +805,7 @@ nav {
 /* Individual certificate item (anchor element) */
 .certificate-link {
     display: block;
-    width: 300px;
+    width: 250px;
     aspect-ratio: 4 / 3; 
     overflow: hidden;
     border-radius: 10px;

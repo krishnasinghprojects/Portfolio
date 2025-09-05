@@ -190,6 +190,14 @@ const details = {
             imgSrc: "Certifications/Certificate8.png",
             imgAlt: "Certificate 8",
         },
+        {
+            imgSrc: "Certifications/Certificate9.jpg",
+            imgAlt: "Certificate 9",
+        },
+        {
+            imgSrc: "Certifications/Certificate10.jpeg",
+            imgAlt: "Certificate 10",
+        },
     ],
     badges: [
         {
