@@ -8,7 +8,7 @@ const details = {
         name_abbrivation: "KS",
         resume: {
             text: "Resume",
-            url: "https://drive.google.com/file/d/1xNYfrq1NvDH2FMi1liOlK2Tp_rJn08-b/view",
+            url: "https://drive.google.com/file/d/11jxzIugquY2VEaXx7q4kysZuBjye1JV4/view",
         },
     },
 
@@ -20,7 +20,7 @@ const details = {
             "Engineering student who loves combining coding and design. Skilled in Front-End Development with HTML, CSS, JavaScript, ReactJS also experienced with programming languages C, Python, Java and TypeScript.",
         downloadCV: {
             text: "Download CV",
-            url: "https://drive.google.com/uc?export=download&id=1xNYfrq1NvDH2FMi1liOlK2Tp_rJn08-b",
+            url: "https://drive.google.com/file/d/11jxzIugquY2VEaXx7q4kysZuBjye1JV4/view",
         },
     },
     // Project Details
