@@ -175,7 +175,7 @@ const details = {
             imgAlt: "Certificate 4",
         },
         {
-            imgSrc: "Certifications/Certificate5.jpg",
+            imgSrc: "Certifications/Certificate5.png",
             imgAlt: "Certificate 5",
         },
         {
