@@ -415,9 +415,19 @@ const details = {
                 alt: "Streamlit",
             },
             {
+                name: "FastAPI",
+                imgSrc: "Icons/FastAPI.png",
+                alt: "FastAPI",
+            },
+            {
                 name: "Canva",
                 imgSrc: "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000",
                 alt: "Canva",
+            },
+            {
+                name: "Postman",
+                imgSrc: "https://img.icons8.com/?size=100&id=EPbEfEa7o8CB&format=png&color=000000",
+                alt: "Postman",
             },
         ],
         "MS Office": [
