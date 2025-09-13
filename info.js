@@ -175,7 +175,7 @@ const details = {
             imgAlt: "Certificate 4",
         },
         {
-            imgSrc: "Certifications/Certificate5.png",
+            imgSrc: "Certifications/Certificate5.jpg",
             imgAlt: "Certificate 5",
         },
         {
@@ -195,8 +195,24 @@ const details = {
             imgAlt: "Certificate 9",
         },
         {
-            imgSrc: "Certifications/Certificate10.jpeg",
+            imgSrc: "Certifications/Certificate10.png",
             imgAlt: "Certificate 10",
+        },
+        {
+            imgSrc: "Certifications/Certificate11.jpg",
+            imgAlt: "Certificate 11",
+        },
+        {
+            imgSrc: "Certifications/Certificate12.jpg",
+            imgAlt: "Certificate 12",
+        },
+        {
+            imgSrc: "Certifications/Certificate13.jpg",
+            imgAlt: "Certificate 13",
+        },
+        {
+            imgSrc: "Certifications/Certificate14.jpeg",
+            imgAlt: "Certificate 14",
         },
     ],
     badges: [
