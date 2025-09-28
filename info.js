@@ -199,7 +199,7 @@ const details = {
             imgAlt: "Certificate 10",
         },
         {
-            imgSrc: "Certifications/Certificate11.jpg",
+            imgSrc: "Certifications/Certificate11.png",
             imgAlt: "Certificate 11",
         },
         {
@@ -213,6 +213,10 @@ const details = {
         {
             imgSrc: "Certifications/Certificate14.jpeg",
             imgAlt: "Certificate 14",
+        },
+        {
+            imgSrc: "Certifications/Certificate15.jpg",
+            imgAlt: "Certificate 15",
         },
     ],
     badges: [
@@ -668,22 +672,8 @@ details.certificates.forEach((certificate) => {
 
     const certContainer = document.querySelector(".certificates-container");
 
-    if (certificate.url) {
-        // Wrap image in an anchor tag if URL exists
-        const certLink = document.createElement("a");
-        certLink.href = certificate.url;
-        certLink.target = "_blank";
-        certLink.classList.add("certificate-link");
-        certLink.appendChild(certImage);
-        certContainer.appendChild(certLink);
-    } else {
-        // Wrap in an anchor that links to the same section (no-op)
-        const certLink = document.createElement("a");
-        certLink.href = "#certificates"; // or simply "#" if no ID is present
-        certLink.classList.add("certificate-link");
-        certLink.appendChild(certImage);
-        certContainer.appendChild(certLink);
-    }
+    // Add image directly to container
+    certContainer.appendChild(certImage);
 });
 details.badges.forEach((badge) => {
     // Create the image element

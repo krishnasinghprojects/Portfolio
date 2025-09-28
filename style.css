@@ -126,6 +126,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 #navbar_name {
     font-size: 2rem;
     background: var(--title-texts);
@@ -134,6 +135,7 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .KS {
     padding-left: 25px;
 }
@@ -583,7 +585,7 @@ nav {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .skill-category {
         max-width: 500px;
         width: 100%;
@@ -595,17 +597,17 @@ nav {
         gap: 2rem;
         padding: 10px;
     }
-    
+
     .skill-category {
         padding: 1.5rem;
         min-width: 280px;
     }
-    
+
     .skill-category-title {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-    
+
     .skills-grid {
         gap: 15px;
     }
@@ -624,11 +626,11 @@ nav {
     .skill-card p {
         font-size: 12px;
     }
-    
+
     .skill-category-title {
         font-size: 1.3rem;
     }
-    
+
     .skill-category {
         min-width: 250px;
         padding: 1rem;
@@ -796,37 +798,78 @@ nav {
 }
 
 .certificates-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
+    column-count: 4;
+    column-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 2rem auto;
 }
 
-/* Individual certificate item (anchor element) */
-.certificate-link {
-    display: block;
-    width: 250px;
-    aspect-ratio: 4 / 3; 
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-    background: linear-gradient(315deg, #d7d7d73d, #1a1a1a4e, #ffffff3d);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
-    transition: transform 0.3s ease;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.certificate-link:hover {
-    transform: scale(1.05);
-}
-
-/* Certificate image inside the link */
+/* Certificate image - Pinterest masonry style with zoom */
 .certificate-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    break-inside: avoid;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.certificate-image:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0px 8px var(--basic-shadow-color));
+    z-index: 10;
+    position: relative;
+}
+
+/* Responsive columns for different screen sizes */
+@media (max-width: 1200px) {
+    .certificates-container {
+        column-count: 3;
+        max-width: 900px;
+        column-gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificates-container {
+        column-count: 2;
+        column-gap: 15px;
+        max-width: 600px;
+        padding: 15px;
+    }
+
+    .certificate-image {
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    .certificate-image:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0px 6px var(--basic-shadow-color));
+    }
+}
+
+@media (max-width: 480px) {
+    .certificates-container {
+        column-count: 1;
+        column-gap: 0;
+        max-width: 350px;
+        padding: 10px;
+    }
+
+    .certificate-image {
+        margin-bottom: 20px;
+    }
+
+    .certificate-image:hover {
+        transform: scale(1.08);
+        filter: drop-shadow(0 0px 6px var(--basic-shadow-color));
+    }
 }
 
 
@@ -860,7 +903,8 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.timeline p{
+
+.timeline p {
     margin: 5px 0px;
 }
 
@@ -885,10 +929,11 @@ nav {
     margin: 0px 20px 20px 20px;
     border: solid 1px var(--dropdown-hover-bg);
 }
-.timeline-component:hover
-{
+
+.timeline-component:hover {
     transform: scale(1.025);
 }
+
 @media screen and (min-width: 768px) {
     .timeline {
         display: grid;
@@ -963,10 +1008,11 @@ nav {
     animation: fadeIn 1s ease-in-out;
     transition: transform 0.3s ease-in-out;
 }
-.contact-container:hover
-{
+
+.contact-container:hover {
     transform: scale(1.075);
 }
+
 #contact h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -1040,6 +1086,7 @@ footer {
         transform: translateY(0);
     }
 }
+
 .badge-container {
     display: flex;
     flex-wrap: wrap;
@@ -1048,20 +1095,23 @@ footer {
 }
 
 .badge {
-    width: auto; /* or remove this if you want auto width */
+    width: auto;
+    /* or remove this if you want auto width */
     height: 180px;
     padding: 20px;
     overflow: hidden;
     transition: all 0.3s ease;
     border-radius: 12px;
-    display: inline-block; /* ensure badges flow nicely */
-     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    display: inline-block;
+    /* ensure badges flow nicely */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 .badge img {
     width: 100%;
     height: auto;
-    aspect-ratio: auto; /* helps browsers preserve ratio if supported */
+    aspect-ratio: auto;
+    /* helps browsers preserve ratio if supported */
     display: block;
 }
 
