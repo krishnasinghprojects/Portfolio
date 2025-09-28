@@ -511,6 +511,11 @@ const details = {
                 imgSrc: "Icons/RAG.png",
                 alt: "RAG",
             },
+            {
+                name: "MCP",
+                imgSrc: "Icons/MCP.jpg",
+                alt: "MCP",
+            },
         ],
     },
 
