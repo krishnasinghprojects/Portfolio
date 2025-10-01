@@ -506,14 +506,9 @@ const details = {
                 alt: "Ollama SDK",
             },
             {
-                name: "Fine Tuning",
+                name: "Fine Tuning And RAG",
                 imgSrc: "https://img.icons8.com/?size=100&id=48174&format=png&color=000000",
-                alt: "Fine Tuning",
-            },
-            {
-                name: "RAG",
-                imgSrc: "Icons/RAG.png",
-                alt: "RAG",
+                alt: "Fine Tuning And RAG",
             },
             {
                 name: "MCP",
