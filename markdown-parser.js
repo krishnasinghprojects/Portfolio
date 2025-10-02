@@ -124,7 +124,7 @@ class MarkdownParser {
 
         // Handle multiple images on the same line (wrap in image-row div)
         html = html.replace(/(<img[^>]*class="blog-image"[^>]*\/?>)(\s*)(<img[^>]*class="blog-image"[^>]*\/?>)/g, 
-            (match, img1, space, img2) => {
+            (match, img1, _, img2) => {
                 // Check if there are more images following
                 const remainingHtml = html.substring(html.indexOf(match) + match.length);
                 const nextImgMatch = remainingHtml.match(/^\s*(<img[^>]*class="blog-image"[^>]*\/?>)/);
@@ -175,19 +175,49 @@ class BlogRenderer {
     constructor() {
         this.parser = new MarkdownParser();
         this.blogFolder = 'blogs/';
+        
+        // Add cache to avoid repeated requests
+        this.cache = new Map();
     }
 
     async loadMarkdownFile(filename) {
-        try {
-            const response = await fetch(`${this.blogFolder}${filename}.md`);
-            if (!response.ok) {
-                throw new Error(`Failed to load ${filename}.md`);
-            }
-            return await response.text();
-        } catch (error) {
-            console.error('Error loading markdown file:', error);
-            return null;
+        // Check cache first
+        if (this.cache.has(filename)) {
+            console.log(`Cache hit for: ${filename}`);
+            return this.cache.get(filename);
         }
+        
+        // Try multiple path strategies for different hosting environments
+        const pathStrategies = [
+            `${this.blogFolder}${filename}.md`,           // Direct relative path
+            `./${this.blogFolder}${filename}.md`,         // Explicit relative path
+            `/${this.blogFolder}${filename}.md`,          // Absolute path from root
+        ];
+        
+        for (let i = 0; i < pathStrategies.length; i++) {
+            const filePath = pathStrategies[i];
+            try {
+                console.log(`Attempt ${i + 1}: Loading markdown file: ${filePath}`);
+                
+                const response = await fetch(filePath);
+                if (response.ok) {
+                    const content = await response.text();
+                    console.log(`Success: Loaded ${filePath}`);
+                    
+                    // Cache the successful result
+                    this.cache.set(filename, content);
+                    return content;
+                }
+                console.log(`Failed: ${filePath} - HTTP ${response.status}: ${response.statusText}`);
+            } catch (error) {
+                console.log(`Error with ${filePath}:`, error.message);
+            }
+        }
+        
+        console.error(`All attempts failed for filename: ${filename}`);
+        // Cache the null result to avoid repeated failed requests
+        this.cache.set(filename, null);
+        return null;
     }
 
     async renderBlog(projectName) {
@@ -225,7 +255,10 @@ class BlogRenderer {
     }
 
     async renderBlogWithMetadata(projectName) {
-        const markdown = await this.loadMarkdownFile(projectName.toLowerCase().replace(/\s+/g, '-'));
+        const filename = projectName.toLowerCase().replace(/\s+/g, '-');
+        console.log(`Rendering blog for project: "${projectName}" -> filename: "${filename}"`);
+        
+        const markdown = await this.loadMarkdownFile(filename);
         
         if (!markdown) {
             return { 
