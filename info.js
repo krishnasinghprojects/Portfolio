@@ -36,8 +36,9 @@ const details = {
                 { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
             ],
             description:
-                "This portfolio website is designed to showcase my projects, skills, and experiences, all wrapped in a responsive and modern layout.",
+                "Portfolio showcases my projects, skills, and achievements in a clean, responsive design. It includes project previews, tech stacks, and an organized layout that adapts across devices."
         },
+        
         {
             name: "Academic Archive",
             url: "https://krishnasinghprojects.github.io/AcademicArchive/",
@@ -49,112 +50,7 @@ const details = {
                 { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
             ],
             description:
-                "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management.",
-        },
-        {
-            name: "Flashcard Archive",
-            url: "https://krishnasinghprojects.github.io/FlashcardArchive/",
-            imgSrc: "Project Images/FlashcardArchiveSS.jpg",
-            imgAlt: "FlashcardArchive Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "Flashcard Archive helps students master concepts through flashcard learning. It supports CSV upload and offers dark mode with an intuitive card interface for effective study sessions.",
-        },
-        {
-            name: "Inlighn Tech",
-            url: "https://krishnasinghprojects.github.io/InlighnTechHackathon/",
-            imgSrc: "Project Images/InlighnTechSS.jpg",
-            imgAlt: "Inlign Tech Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "A modern UI/UX redesign of Inlighn Tech website, featuring a glowing “light within darkness” theme, liquid glass aesthetics, intuitive navigation, and dynamic JS-based program rendering — all built without frameworks.",
-        },
-        {
-            name: "Resume Crafter",
-            url: "https://krishnasinghprojects.github.io/ResumeCrafter/",
-            imgSrc: "Project Images/ResumeCrafterSS.jpg",
-            imgAlt: "Resume Crafter Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "Resume Crafter is a smart web app for creating professional resumes. It features live preview, mobile-friendly design, and customizable sections for personalized results.",
-        },
-        {
-            name: "Express PDF",
-            url: "https://krishnasinghprojects.github.io/ExpressPDF/",
-            imgSrc: "Project Images/ExpressPDFSS.jpg",
-            imgAlt: "Express PDF Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "Express PDF is a fast, offline image-to-PDF tool with drag-and-drop, reordering, presets for size and quality, dark mode, and a simple interface."
-        },
-        {
-            name: "Presently",
-            url: "https://krishnasinghprojects.github.io/Presently/",
-            imgSrc: "Project Images/PresentlySS.jpg",
-            imgAlt: "Presently Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "Presently is an app to calculate the number of extra classes you need to attend or skip to meet your required attendance percentage.",
-        },
-        {
-            name: "Passvault",
-            url: "https://krishnasinghprojects.github.io/Passvault/",
-            imgSrc: "Project Images/PassvaultSS.jpg",
-            imgAlt: "Passvault Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "HTML" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-            ],
-            description:
-                "This password manager web app features a minimalist design, offering a secure login page for entering your credentials and a streamlined interface to view and add passwords.",
-        },
-        {
-            name: "TypeQuest",
-            url: "https://krishnasinghprojects.github.io/TypeQuest/",
-            imgSrc: "Project Images/TypeQuestSS.jpg",
-            imgAlt: "TypeQuest Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "Jsx" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" }
-            ],
-            description: "TypeQuest is an interactive typing app that helps users practice, track WPM, and improve accuracy in a clean and responsive interface."
-        },
-        {
-            name: "QuickMaze",
-            url: "https://krishnasinghprojects.github.io/QuickMaze/",
-            imgSrc: "Project Images/QuickMazeSS.jpg",
-            imgAlt: "QuickMaze Project",
-            tech: [
-                { imgSrc: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000", alt: "Jsx" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000", alt: "CSS" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000", alt: "JavaScript" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000", alt: "React" },
-                { imgSrc: "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000", alt: "Vite" }
-            ],
-            description: "QuickMaze is a puzzle game where you race through a maze to reach the anchor point. Each move costs score points, making efficiency key."
+                "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management."
         },
     ],
     certificates: [
@@ -605,21 +501,18 @@ projectsContainer.innerHTML = ""; // Clear existing content
 
 
 
-details.projects.forEach((project) => {
+details.projects.forEach((project, index) => {
     // Create the card container
     const projectCard = document.createElement("div");
     projectCard.classList.add("project-card");
+    projectCard.style.cursor = "pointer";
 
     // Project Title
     const projectTitle = document.createElement("h1");
     projectTitle.innerText = project.name;
     projectCard.appendChild(projectTitle);
 
-    // Project link with image
-    const projectLink = document.createElement("a");
-    projectLink.href = project.url;
-    projectLink.target = "_blank";
-
+    // Project image (clickable for blog post)
     const projectImageDiv = document.createElement("div");
     projectImageDiv.classList.add("project-image");
 
@@ -628,8 +521,7 @@ details.projects.forEach((project) => {
     projectImage.alt = project.imgAlt;
 
     projectImageDiv.appendChild(projectImage);
-    projectLink.appendChild(projectImageDiv);
-    projectCard.appendChild(projectLink);
+    projectCard.appendChild(projectImageDiv);
 
     // Technology logos section
     const projectTechDiv = document.createElement("div");
@@ -642,6 +534,7 @@ details.projects.forEach((project) => {
         const techImg = document.createElement("img");
         techImg.src = tech.imgSrc;
         techImg.alt = tech.alt;
+        techImg.classList.add("tech-logo");
         techLogosDiv.appendChild(techImg);
     });
 
@@ -654,8 +547,155 @@ details.projects.forEach((project) => {
     projectDesc.innerText = project.description;
     projectCard.appendChild(projectDesc);
 
+    // Add blog indicator for all projects (will try to load markdown)
+    const blogIndicator = document.createElement("div");
+    blogIndicator.classList.add("blog-indicator");
+    blogIndicator.innerHTML = "Read More";
+    projectCard.appendChild(blogIndicator);
+
+    // Add click event for blog post (always try to load markdown)
+    projectCard.addEventListener('click', () => {
+        openBlogPost(project);
+    });
+
     // Append the card to the projects container
     projectsContainer.appendChild(projectCard);
+});
+
+// Blog Post Functions - Updated for Markdown
+async function openBlogPost(project) {
+    const modal = document.getElementById('blogModal');
+    const title = document.getElementById('blogTitle');
+    const subtitle = document.getElementById('blogSubtitle');
+    const content = document.getElementById('blogContent');
+
+    // Show loading state
+    title.textContent = 'Loading...';
+    subtitle.textContent = '';
+    content.innerHTML = '<p>Loading blog content...</p>';
+
+    // Show modal with animation
+    modal.style.display = 'block';
+    modal.classList.remove('hide');
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
+
+    // Store current scroll position
+    const scrollY = window.scrollY;
+    document.body.dataset.scrollY = scrollY;
+
+    // Prevent background scrolling
+    document.body.style.overflow = 'hidden';
+    document.body.classList.add('modal-open');
+
+    try {
+        // Load and render markdown content
+        const { html, metadata } = await window.blogRenderer.renderBlogWithMetadata(project.name);
+        
+        // Update modal content
+        title.textContent = metadata.title;
+        subtitle.textContent = metadata.subtitle;
+        content.innerHTML = html;
+        
+        // Add date if available
+        if (metadata.date) {
+            const dateElement = document.createElement('p');
+            dateElement.className = 'blog-date';
+            dateElement.textContent = `Published: ${metadata.date}`;
+            content.insertBefore(dateElement, content.firstChild);
+        }
+    } catch (error) {
+        console.error('Error loading blog content:', error);
+        title.textContent = project.name;
+        subtitle.textContent = 'Blog Post';
+        content.innerHTML = `
+            <p>Sorry, the blog content for this project is not available yet.</p>
+            <p>Please check back later or visit the project directly:</p>
+            <a href="${project.url}" target="_blank" class="cta-button">View Project</a>
+        `;
+    }
+}
+
+// Safety function to restore scrolling
+function ensureScrollingRestored() {
+    const modal = document.getElementById('blogModal');
+    if (!modal || modal.style.display === 'none' || !modal.classList.contains('show')) {
+        forceRestoreScrolling();
+    }
+}
+
+// Force restore scrolling function
+function forceRestoreScrolling() {
+    // Restore scrolling
+    document.body.style.overflow = '';
+    document.body.classList.remove('modal-open');
+
+    // Restore scroll position
+    const scrollY = document.body.dataset.scrollY;
+    if (scrollY) {
+        window.scrollTo(0, parseInt(scrollY));
+        delete document.body.dataset.scrollY;
+    }
+}
+
+function closeBlogModal() {
+    const modal = document.getElementById('blogModal');
+
+    modal.classList.remove('show');
+    modal.classList.add('hide');
+
+    setTimeout(() => {
+        modal.style.display = 'none';
+        modal.classList.remove('hide');
+        // Force restore scrolling after animation completes
+        forceRestoreScrolling();
+    }, 400); // Match the CSS transition duration
+}
+
+// Markdown rendering is now handled by the BlogRenderer class
+
+// Close modal functionality
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('blogModal');
+    const closeBtn = document.querySelector('.blog-close');
+
+    // Close when clicking the X button
+    closeBtn.addEventListener('click', function () {
+        closeBlogModal();
+    });
+
+    // Close when clicking outside the modal
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            closeBlogModal();
+        }
+    });
+
+    // Close with Escape key
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && modal.classList.contains('show')) {
+            closeBlogModal();
+        }
+    });
+
+    // Safety check to restore scrolling on window focus
+    window.addEventListener('focus', ensureScrollingRestored);
+
+    // Safety check on page visibility change
+    document.addEventListener('visibilitychange', function () {
+        if (!document.hidden) {
+            ensureScrollingRestored();
+        }
+    });
+
+    // Emergency scroll restore on any click outside modal when it should be closed
+    document.addEventListener('click', function (e) {
+        const modal = document.getElementById('blogModal');
+        if (modal && modal.style.display === 'none' && document.body.classList.contains('modal-open')) {
+            forceRestoreScrolling();
+        }
+    });
 });
 
 details.certificates.forEach((certificate) => {

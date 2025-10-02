@@ -20,7 +20,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Young+Serif&display=swap" rel="stylesheet">
     <meta name="google-site-verification" content="q3P43rmCtFN7fFrwa64d9LOFFD59Rl0wNQDkWEP0B_Q" />
 </head>
 
@@ -124,10 +124,23 @@
     <!-- Contact Section Container -->
     <section id="contact"></section>
 
+    <!-- Blog Post Modal -->
+    <div id="blogModal" class="blog-modal">
+        <div class="blog-modal-content">
+            <span class="blog-close">&times;</span>
+            <div class="blog-header">
+                <h1 id="blogTitle" class="blog-title"></h1>
+                <h2 id="blogSubtitle" class="blog-subtitle"></h2>
+            </div>
+            <div id="blogContent" class="blog-content"></div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer></footer>
 
 
+    <script src="markdown-parser.js" crossorigin="anonymous"></script>
     <script src="info.js" crossorigin="anonymous"></script>
 
 
