@@ -422,7 +422,7 @@ const details = {
             },
             {
                 name: "Ollama SDK",
-                imgSrc: "Icons/Ollama.png",
+                imgSrc: "Icons/Ollama.svg",
                 alt: "Ollama SDK",
             },
             {
