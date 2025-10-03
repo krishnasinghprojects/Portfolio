@@ -140,7 +140,7 @@ body {
   padding: 0;
   color: var(--text-color);
   height: 100%;
-  overflow-x: visible;
+  overflow-x: hidden;
 }
 
 nav {
@@ -384,7 +384,7 @@ nav {
     position: fixed;
     right: 20px;
     top: 20px;
-    z-index: 2000;
+    z-index: 9999;
   }
 
   .nav-links {
@@ -399,10 +399,11 @@ nav {
     animation: gradient 7.5s ease infinite;
     font-size: larger;
     flex-direction: column;
-    padding: 10px 2rem;
+    padding: 80px 2rem 2rem 2rem;
     transform: translateX(100%);
     box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+    z-index: 9998;
+    overflow-y: auto;
   }
 
   .nav-links li {
@@ -410,6 +411,32 @@ nav {
     margin: 1rem 0;
     transform: translateX(50px);
     transition: all 0.3s ease;
+  }
+
+  .nav-links li a {
+    padding: 1rem;
+    font-size: 1.1rem;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links li a:hover {
+    transform: scale(1.05);
+  }
+
+  /* Improve mobile navigation UX */
+  .nav-links.nav-active {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
   }
 
   .dropdown-menu {
@@ -1387,6 +1414,21 @@ html.modal-open {
   overflow: hidden !important;
 }
 
+/* Ensure mobile menu doesn't interfere with modal */
+@media (max-width: 768px) {
+  .blog-modal.show ~ nav .nav-links.nav-active {
+    z-index: 9000; /* Lower than modal */
+  }
+  
+  .blog-modal.show {
+    z-index: 10000; /* Highest priority */
+  }
+  
+  .burger {
+    z-index: 9999; /* Below modal but above nav */
+  }
+}
+
 /* Blog Modal Styles */
 .blog-modal {
   display: none;
@@ -1774,62 +1816,169 @@ html.modal-open {
 @media (max-width: 768px) {
   .blog-modal-content {
     width: 95%;
-    margin: 5% auto;
-    max-height: 85vh;
+    max-width: 95%;
+    margin: 2% auto;
+    max-height: 95vh;
+    border-radius: 15px;
   }
   
   .blog-header {
-    padding: 20px 25px 15px;
+    padding: 15px 15px 10px 15px;
   }
   
   .blog-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
   }
   
   .blog-subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
   }
   
   .blog-content {
-    padding: 25px;
-    height: calc(85vh - 120px);
+    padding: 15px;
+    height: calc(95vh - 100px);
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
   
   .blog-content h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.6rem 0;
   }
   
   .blog-content h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    margin: 0.8rem 0 0.5rem 0;
   }
   
   .blog-content h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin: 0.6rem 0 0.4rem 0;
+  }
+  
+  .blog-content p {
+    margin-bottom: 0.8rem;
+  }
+  
+  .blog-content ul, .blog-content ol {
+    margin: 0.6rem 0;
+    padding-left: 1.2rem;
+  }
+  
+  .blog-content li {
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+  }
+  
+  .blog-content .blog-image[style*="width"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  .blog-content .image-row {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .blog-content .image-row .blog-image {
+    width: 100% !important;
+    max-width: 100% !important;
   }
   
   .blog-close {
-    right: 15px;
-    top: 10px;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
+    right: 12px;
+    top: 8px;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10001;
+  }
+
+  .blog-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
   }
 }
 
 @media (max-width: 480px) {
   .blog-modal-content {
     width: 98%;
-    margin: 2% auto;
-    max-height: 90vh;
+    max-width: 98%;
+    margin: 1% auto;
+    max-height: 98vh;
+    border-radius: 12px;
   }
   
   .blog-header {
-    padding: 15px 20px 10px;
+    padding: 12px 12px 8px 12px;
+  }
+  
+  .blog-title {
+    font-size: 1.4rem;
+    line-height: 1.1;
+  }
+  
+  .blog-subtitle {
+    font-size: 0.8rem;
+    line-height: 1.2;
   }
   
   .blog-content {
-    padding: 20px;
-    height: calc(90vh - 100px);
+    padding: 12px;
+    height: calc(98vh - 80px);
+    font-size: 0.85rem;
+  }
+  
+  .blog-content h1 {
+    font-size: 1.3rem;
+    margin: 0.8rem 0 0.4rem 0;
+  }
+  
+  .blog-content h2 {
+    font-size: 1.1rem;
+    margin: 0.6rem 0 0.3rem 0;
+  }
+  
+  .blog-content h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.2rem 0;
+  }
+  
+  .blog-close {
+    right: 8px;
+    top: 6px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10001;
+  }
+
+  .blog-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
   }
   
   .glass-button {
@@ -2150,56 +2299,7 @@ html.modal-open {
   border-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .blog-modal-content {
-    width: 95%;
-    margin: 3% auto;
-    max-height: 94vh;
-    border-radius: 15px;
-  }
-
-  .blog-title {
-    font-size: 1.8rem;
-  }
-
-  .blog-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .blog-header {
-    padding: 20px 20px 15px 20px;
-  }
-
-  .blog-content {
-    padding: 25px;
-    height: calc(94vh - 120px);
-    box-sizing: border-box;
-  }
-
-  .blog-content h1 {
-    font-size: 2rem;
-    margin: 2rem 0 1rem 0;
-  }
-
-  .blog-content h1::after {
-    width: 60px;
-    height: 3px;
-  }
-
-  .blog-content h2 {
-    font-size: 1.6rem;
-    margin: 2rem 0 1rem 0;
-  }
-
-  .blog-content h3 {
-    font-size: 1.3rem;
-  }
-
-  .blog-content p {
-    font-size: 1rem;
-    margin: 1.2rem 0;
-  }
+/* Duplicate mobile styles removed - using the consolidated version above */
 
   .blog-content li {
     padding: 10px 15px;

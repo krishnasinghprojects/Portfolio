@@ -569,6 +569,15 @@ async function openBlogPost(project) {
     const subtitle = document.getElementById('blogSubtitle');
     const content = document.getElementById('blogContent');
 
+    // Close mobile menu if open
+    const nav = document.querySelector('.nav-links');
+    const burger = document.querySelector('.burger');
+    if (nav && nav.classList.contains('nav-active')) {
+        nav.classList.remove('nav-active');
+        burger.classList.remove('burger-active');
+        document.querySelectorAll('.nav-links li').forEach(link => link.style.animation = '');
+    }
+
     // Show loading state
     title.textContent = 'Loading...';
     subtitle.textContent = '';

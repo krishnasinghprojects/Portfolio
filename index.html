@@ -202,18 +202,37 @@
         const dropdowns = document.querySelectorAll('.dropdown');
 
         // Mobile menu toggle
-        burger.addEventListener('click', () => {
-            nav.classList.toggle('nav-active');
-            burger.classList.toggle('burger-active');
+        burger.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const isActive = nav.classList.contains('nav-active');
+            
+            if (isActive) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+
+        function openMobileMenu() {
+            nav.classList.add('nav-active');
+            burger.classList.add('burger-active');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
 
             navLinks.forEach((link, index) => {
-                if (link.style.animation) {
-                    link.style.animation = '';
-                } else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index * 0.1 + 0.3}s`;
-                }
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index * 0.1 + 0.3}s`;
             });
-        });
+        }
+
+        function closeMobileMenu() {
+            nav.classList.remove('nav-active');
+            burger.classList.remove('burger-active');
+            document.body.style.overflow = ''; // Restore scrolling
+            
+            dropdowns.forEach(d => d.classList.remove('active'));
+            navLinks.forEach(link => link.style.animation = '');
+        }
 
         // Dropdown handling for mobile
         dropdowns.forEach(dropdown => {
@@ -221,6 +240,7 @@
             link.addEventListener('click', (e) => {
                 if (window.innerWidth <= 768) {
                     e.preventDefault();
+                    e.stopPropagation();
                     dropdown.classList.toggle('active');
                 }
             });
@@ -230,24 +250,28 @@
         document.addEventListener('click', (e) => {
             if (window.innerWidth <= 768) {
                 if (!nav.contains(e.target) && !burger.contains(e.target)) {
-                    nav.classList.remove('nav-active');
-                    burger.classList.remove('burger-active');
-                    dropdowns.forEach(d => d.classList.remove('active'));
-                    navLinks.forEach(link => link.style.animation = '');
+                    closeMobileMenu();
                 }
             }
         });
 
-        // Close menu when clicking links
+        // Close menu when clicking navigation links (but not dropdowns)
         navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 768 && !link.classList.contains('dropdown')) {
-                    nav.classList.remove('nav-active');
-                    burger.classList.remove('burger-active');
-                    dropdowns.forEach(d => d.classList.remove('active'));
-                    navLinks.forEach(l => l.style.animation = '');
-                }
-            });
+            const linkElement = link.querySelector('a');
+            if (linkElement && !link.classList.contains('dropdown')) {
+                linkElement.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        closeMobileMenu();
+                    }
+                });
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMobileMenu();
+            }
         });
 
         // Animation keyframes
