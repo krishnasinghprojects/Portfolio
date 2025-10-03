@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://krishnasingh.live/sitemap.xml
+
+# Disallow crawling of certain file types
+Disallow: /*.mp3$
+Disallow: /DarkChangeTheme.mp3
+Disallow: /LightChangeTheme.mp3
+
+# Allow crawling of important resources
+Allow: /Project Images/
+Allow: /Certifications/
+Allow: /Icons/
+Allow: /Blogs/
+Allow: /blogs/
+Allow: /Favicon.png
+Allow: /style.css
+Allow: /info.js
+Allow: /markdown-parser.js
+
+# Crawl delay (optional)
+Crawl-delay: 1

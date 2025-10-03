@@ -15,9 +15,9 @@ const details = {
     // About Details
     about: {
         greeting: "Hi, I'm Krishna Singh",
-        title: "Web Developer & Designer",
+        title: "Full Stack Software Developer",
         description:
-            "Engineering student who loves combining coding and design. Skilled in Front-End Development with HTML, CSS, JavaScript, ReactJS also experienced with programming languages C, Python, Java and TypeScript.",
+            "An engineering student skilled in Full-Stack Development for Web and Mobile Platforms using React and React Native. I specialize in integrating AI functionalities directly into applications to build smarter, more responsive user experiences.",
         downloadCV: {
             text: "Download CV",
             url: "https://drive.google.com/file/d/11jxzIugquY2VEaXx7q4kysZuBjye1JV4/view",

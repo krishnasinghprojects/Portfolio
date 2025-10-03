@@ -4,124 +4,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon -->
+
+    <!-- Primary Meta Tags -->
+    <title id="titleTop">Krishna Singh - Full Stack Software Developer | Portfolio</title>
+    <meta name="title" content="Krishna Singh - Full Stack Software Developer | Portfolio">
+    <meta name="description"
+        content="Krishna Singh is an engineering student skilled in Full-Stack Development for Web and Mobile Platforms using React and React Native. Specializes in integrating AI functionalities into applications for smarter user experiences.">
+    <meta name="keywords"
+        content="Krishna Singh, Full Stack Software Developer, React Developer, React Native, Mobile Development, AI Integration, JavaScript, Python, Node.js, Web Development, Portfolio, Frontend Developer, Backend Developer, Software Engineer">
+    <meta name="author" content="Krishna Singh">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://krishnasingh.live">
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+    <!-- Favicon and Icons -->
     <link rel="icon" href="Favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="Favicon.png">
+    <link rel="shortcut icon" href="Favicon.png" type="image/png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Krishna's Portfolio">
-    <meta property="og:description" content="Hi, I'm Krishna Singh. I am a Web Developer & Programmer.">
-    <meta property="og:image"
-        content="https://raw.githubusercontent.com/KrishnaSingh1920/Portfolio/refs/heads/main/PortfolioSS.jpg">
-    <meta property="og:url" content="https://krishnasingh1920.github.io/Portfolio/">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://krishnasingh.live">
+    <meta property="og:title" content="Krishna Singh - Full Stack Software Developer | Portfolio">
+    <meta property="og:description"
+        content="Explore Krishna Singh's portfolio showcasing expertise in Full-Stack Development for Web and Mobile Platforms using React and React Native, with AI integration capabilities.">
+    <meta property="og:image"
+        content="https://krishnasingh.live/Project%20Images/PortfolioSS.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Krishna Singh Portfolio - Full Stack Web Developer">
+    <meta property="og:site_name" content="Krishna Singh Portfolio">
+    <meta property="og:locale" content="en_US">
 
-    <title id="titleTop"></title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://krishnasingh.live">
+    <meta name="twitter:title" content="Krishna Singh - Full Stack Software Developer | Portfolio">
+    <meta name="twitter:description"
+        content="Explore Krishna Singh's portfolio showcasing expertise in Full-Stack Development for Web and Mobile Platforms using React and React Native, with AI integration capabilities.">
+    <meta name="twitter:image"
+        content="https://krishnasingh.live/Project%20Images/PortfolioSS.jpg">
+    <meta name="twitter:image:alt" content="Krishna Singh Portfolio - Full Stack Web Developer">
+    <meta name="twitter:creator" content="@krishnasingh_28">
+    <meta name="twitter:site" content="@krishnasingh_28">
 
+    <!-- LinkedIn -->
+    <meta property="og:image:secure_url"
+        content="https://krishnasingh.live/Project%20Images/PortfolioSS.jpg">
+
+    <!-- WhatsApp -->
+    <meta property="og:image:type" content="image/jpeg">
+
+    <!-- Telegram -->
+    <meta name="telegram:channel" content="@krishnasinghprojects">
+
+    <!-- Instagram -->
+    <meta property="instagram:image"
+        content="https://krishnasingh.live/Project%20Images/PortfolioSS.jpg">
+    
+    <!-- Additional Social Media Meta Tags -->
+    <meta property="article:author" content="Krishna Singh">
+    <meta property="profile:first_name" content="Krishna">
+    <meta property="profile:last_name" content="Singh">
+    <meta property="profile:username" content="krishnasinghprojects">
+    
+    <!-- Rich Snippets for Portfolio -->
+    <meta name="application-name" content="Krishna Singh Portfolio">
+    <meta name="msapplication-tooltip" content="Full Stack Software Developer Portfolio">
+    <meta name="msapplication-starturl" content="https://krishnasingh.live">
+    <meta name="msapplication-navbutton-color" content="#ff0000">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#ff0000">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="msapplication-TileImage" content="Favicon.png">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Krishna Singh",
+        "jobTitle": "Full Stack Software Developer",
+        "description": "Engineering student skilled in Full-Stack Development for Web and Mobile Platforms using React and React Native, specializing in integrating AI functionalities into applications",
+        "url": "https://krishnasingh.live",
+        "image": "https://krishnasingh.live/Project%20Images/PortfolioSS.jpg",
+        "sameAs": [
+            "https://github.com/krishnasinghprojects",
+            "https://www.linkedin.com/in/krishnasinghprojects",
+            "https://x.com/krishnasingh_28",
+            "https://www.instagram.com/krishnasinghprojects"
+        ],
+        "knowsAbout": [
+            "JavaScript",
+            "TypeScript", 
+            "React",
+            "React Native",
+            "Node.js",
+            "Python",
+            "Full Stack Development",
+            "Mobile Development",
+            "AI Integration",
+            "Web Design",
+            "HTML",
+            "CSS",
+            "MongoDB",
+            "Express.js"
+        ],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Babu Banarasi Das University"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-90263-16048",
+            "contactType": "personal",
+            "email": "krishnasinghprojects@gmail.com"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        },
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Full Stack Software Developer",
+            "occupationLocation": {
+                "@type": "Country",
+                "name": "India"
+            }
+        }
+    }
+    </script>
+    
+    <!-- Additional Structured Data for Portfolio -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Krishna Singh Portfolio",
+        "url": "https://krishnasingh.live",
+        "description": "Full Stack Software Developer Portfolio showcasing projects, skills, and achievements",
+        "author": {
+            "@type": "Person",
+            "name": "Krishna Singh"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://krishnasingh.live/#projects",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://krishnasingh.live"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projects",
+                "item": "https://krishnasingh.live/#projects"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Certificates",
+                "item": "https://krishnasingh.live/#certificates-redirect"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Contact",
+                "item": "https://krishnasingh.live/#contact"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://img.icons8.com">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Search Console -->
     <meta name="google-site-verification" content="q3P43rmCtFN7fFrwa64d9LOFFD59Rl0wNQDkWEP0B_Q" />
+    
+    <!-- Additional Performance and SEO Meta Tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Krishna Singh Portfolio">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="info.js" as="script">
+    <link rel="preload" href="Favicon.png" as="image">
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//img.icons8.com">
+    <link rel="dns-prefetch" href="//drive.google.com">
+    <link rel="dns-prefetch" href="//github.com">
+    <link rel="dns-prefetch" href="//linkedin.com">
+    <link rel="dns-prefetch" href="//x.com">
+    <link rel="dns-prefetch" href="//instagram.com">
+    
+    <!-- Resource hints for better performance -->
+    <link rel="prefetch" href="Project Images/PortfolioSS.jpg">
+    <link rel="prefetch" href="Project Images/AcademicArchiveSS.jpg">
 </head>
 
 <body>
     <div class="navbar"></div>
-    <nav>
-        <div class="name">
-            <a href="#" class="logo" id="name_abbrivation" style="color: white;"></a>
-            <a href="#">
-                <h1 class="KS" id="navbar_name"></h1>
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#certificates-redirect">Certificates</a>
-            </li>
-            <li>
-                <a href="#badges-redirect">Badges</a>
-            </li>
-            <li>
-                <a href="#" id="resume_link">Resume</a>
-            </li>
-
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="burger" aria-label="Toggle navigation menu">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-        </button>
-    </nav>
-    <div class="portfolio-section">
-        <!-- Image Section -->
-        <div class="image-container">
-            <div class="profile-frame">
-                <div class="profile-img"></div>
+    <header>
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="name">
+                <a href="#" class="logo" id="name_abbrivation" style="color: white;"
+                    aria-label="Krishna Singh - Home"></a>
+                <a href="#" aria-label="Krishna Singh Portfolio Home">
+                    <h1 class="KS" id="navbar_name"></h1>
+                </a>
             </div>
-        </div>
-
-
-        <!-- Information Section -->
-        <div class="info-container">
-            <h2 class="greeting" id="greeting"></h2>
-            <h1 class="title" id="title"></h1>
-            <p class="description" id="description">
-            </p>
-            <div class="button-container">
-                <a href="#contact" class="cta-button">Contact Me</a>
-                <a href="#" id="download_cv" class="cta-button secondary">Download CV</a>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#" role="menuitem" aria-label="Go to home section">Home</a></li>
+                <li class="dropdown" role="none">
+                    <a href="#projects" role="menuitem" aria-label="Go to projects section">Projects</a>
+                </li>
+                <li role="none">
+                    <a href="#certificates-redirect" role="menuitem"
+                        aria-label="Go to certifications section">Certificates</a>
+                </li>
+                <li role="none">
+                    <a href="#badges-redirect" role="menuitem" aria-label="Go to badges section">Badges</a>
+                </li>
+                <li role="none">
+                    <a href="#" id="resume_link" role="menuitem" aria-label="Download Krishna Singh's resume"
+                        target="_blank" rel="noopener">Resume</a>
+                </li>
+                <li role="none"><a href="#contact" role="menuitem" aria-label="Go to contact section">Contact</a></li>
+            </ul>
+            <button class="burger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </button>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <main>
+        <section class="portfolio-section" aria-label="About Krishna Singh">
+            <!-- Image Section -->
+            <div class="image-container">
+                <div class="profile-frame">
+                    <div class="profile-img" role="img" aria-label="Krishna Singh - Full Stack Web Developer"></div>
+                </div>
             </div>
-            <div class="social" id="social_links"></div>
 
-        </div>
-    </div>
-    <div class="break"></div>
-    <!-- Skills Section -->
-    <div class="skills-section">
-        <h1 class="skills-title" id="skills">Skills</h1>
-        <div class="skills-container" id="skills_container"></div>
-    </div>
-    <div class="break"></div>
-    <!-- Projects Section -->
-    <div class="projects-section">
-        <h1 class="projects-title" id="projects">Projects</h1>
-        <div class="projects-container">
-            <!-- Dynamic project cards will be injected here by JavaScript -->
-        </div>
-    </div>
+            <!-- Information Section -->
+            <div class="info-container">
+                <h2 class="greeting" id="greeting"></h2>
+                <h1 class="title" id="title"></h1>
+                <p class="description" id="description">
+                </p>
+                <div class="button-container">
+                    <a href="#contact" class="cta-button" aria-label="Contact Krishna Singh">Contact Me</a>
+                    <a href="#" id="download_cv" class="cta-button secondary"
+                        aria-label="Download Krishna Singh's CV">Download CV</a>
+                </div>
+                <div class="social" id="social_links" role="list" aria-label="Social media links"></div>
+            </div>
+        </section>
+        <div class="break"></div>
 
-    <div class="break"></div>
+        <!-- Skills Section -->
+        <section class="skills-section" aria-labelledby="skills">
+            <h2 class="skills-title" id="skills">Skills</h2>
+            <div class="skills-container" id="skills_container" role="region"
+                aria-label="Technical skills organized by category"></div>
+        </section>
 
-    <div class="certification-section" id="certificates-redirect">
-        <h1 class="certification-title" id="certificates">Certifications</h1>
+        <div class="break"></div>
 
-        <div class="certificates-container">
-            <!-- Dynamic certification cards will be injected here by JavaScript -->
-        </div>
-    </div>
-    <div class="break"></div>
-    <div class="certification-section" id="badges-redirect">
-        <h1 class="certification-title badges" id="certificates">Badges</h1>
-        <div class="badge-container">
-            <!-- Dynamic badge images will be injected here by JavaScript -->
-        </div>
-    </div>
-    <div class="break"></div>
+        <!-- Projects Section -->
+        <section class="projects-section" aria-labelledby="projects">
+            <h2 class="projects-title" id="projects">Projects</h2>
+            <div class="projects-container" role="region" aria-label="Portfolio projects">
+                <!-- Dynamic project cards will be injected here by JavaScript -->
+            </div>
+        </section>
 
-    <h1 class="timeline-heading">Education</h1>
-    <div class="timeline">
-    </div>
+        <div class="break"></div>
 
-    </div>
+        <!-- Certifications Section -->
+        <section class="certification-section" id="certificates-redirect" aria-labelledby="certificates">
+            <h2 class="certification-title" id="certificates">Certifications</h2>
+            <div class="certificates-container" role="region" aria-label="Professional certifications">
+                <!-- Dynamic certification cards will be injected here by JavaScript -->
+            </div>
+        </section>
 
-    <div class="break education-break"></div>
-    <!-- Contact Me Section -->
-    <!-- Contact Section Container -->
-    <section id="contact"></section>
+        <div class="break"></div>
+
+        <!-- Badges Section -->
+        <section class="certification-section" id="badges-redirect" aria-labelledby="certificates">
+            <h2 class="certification-title badges" id="certificates">Badges</h2>
+            <div class="badge-container" role="region" aria-label="Achievement badges">
+                <!-- Dynamic badge images will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <div class="break"></div>
+
+        <!-- Education Section -->
+        <section aria-labelledby="education-heading">
+            <h2 class="timeline-heading" id="education-heading">Educational Background</h2>
+            <div class="timeline" role="region" aria-label="Educational timeline"></div>
+        </section>
+
+        <div class="break education-break"></div>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <!-- Contact content will be dynamically generated -->
+        </section>
+    </main>
 
     <!-- Blog Post Modal -->
     <div id="blogModal" class="blog-modal">
@@ -136,7 +368,9 @@
     </div>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer role="contentinfo" aria-label="Site footer">
+        <!-- Footer content will be dynamically generated -->
+    </footer>
 
 
     <script src="markdown-parser.js" crossorigin="anonymous"></script>
@@ -208,15 +442,15 @@
             // Add multiple event listeners to ensure it works
             burger.addEventListener('click', handleBurgerClick);
             burger.addEventListener('touchstart', handleBurgerClick);
-            
+
             function handleBurgerClick(e) {
                 e.preventDefault();
                 e.stopPropagation();
-                
+
                 console.log('Burger clicked!');
-                
+
                 const isActive = nav.classList.contains('nav-active');
-                
+
                 if (isActive) {
                     closeMobileMenu();
                 } else {
@@ -230,7 +464,7 @@
         function openMobileMenu() {
             nav.classList.add('nav-active');
             burger.classList.add('burger-active');
-            
+
             // Prevent scrolling on both html and body
             document.documentElement.classList.add('nav-open');
             document.body.classList.add('nav-open');
@@ -243,11 +477,11 @@
         function closeMobileMenu() {
             nav.classList.remove('nav-active');
             burger.classList.remove('burger-active');
-            
+
             // Restore scrolling
             document.documentElement.classList.remove('nav-open');
             document.body.classList.remove('nav-open');
-            
+
             dropdowns.forEach(d => d.classList.remove('active'));
             navLinks.forEach(link => link.style.animation = '');
         }
