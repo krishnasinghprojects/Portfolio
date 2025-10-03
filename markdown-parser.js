@@ -174,7 +174,7 @@ class MarkdownParser {
 class BlogRenderer {
     constructor() {
         this.parser = new MarkdownParser();
-        this.blogFolder = 'Blogs/';
+        this.blogFolder = 'blogs/';
         
         // Add cache to avoid repeated requests
         this.cache = new Map();

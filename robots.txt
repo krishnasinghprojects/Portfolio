@@ -13,7 +13,6 @@ Disallow: /LightChangeTheme.mp3
 Allow: /Project Images/
 Allow: /Certifications/
 Allow: /Icons/
-Allow: /Blogs/
 Allow: /blogs/
 Allow: /Favicon.png
 Allow: /style.css
