@@ -38,7 +38,7 @@ const details = {
             description:
                 "Portfolio showcases my projects, skills, and achievements in a clean, responsive design. It includes project previews, tech stacks, and an organized layout that adapts across devices."
         },
-        
+
         {
             name: "Academic Archive",
             url: "https://krishnasinghprojects.github.io/AcademicArchive/",
@@ -53,122 +53,146 @@ const details = {
                 "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management."
         },
     ],
-    certificates: [
-        {
-            imgSrc: "Certifications/Certificate1.jpeg",
-            imgAlt: "Certificate 1",
-        },
-        {
-            imgSrc: "Certifications/Certificate2.jpg",
-            imgAlt: "Certificate 2",
-        },
-        {
-            imgSrc: "Certifications/Certificate3.jpg",
-            imgAlt: "Certificate 3",
-        },
-        {
-            imgSrc: "Certifications/Certificate4.jpg",
-            imgAlt: "Certificate 4",
-        },
-        {
-            imgSrc: "Certifications/Certificate5.jpg",
-            imgAlt: "Certificate 5",
-        },
-        {
-            imgSrc: "Certifications/Certificate6.jpg",
-            imgAlt: "Certificate 6",
-        },
-        {
-            imgSrc: "Certifications/Certificate7.png",
-            imgAlt: "Certificate 7",
-        },
-        {
-            imgSrc: "Certifications/Certificate8.png",
-            imgAlt: "Certificate 8",
-        },
-        {
-            imgSrc: "Certifications/Certificate9.jpg",
-            imgAlt: "Certificate 9",
-        },
-        {
-            imgSrc: "Certifications/Certificate10.png",
-            imgAlt: "Certificate 10",
-        },
-        {
-            imgSrc: "Certifications/Certificate11.png",
-            imgAlt: "Certificate 11",
-        },
-        {
-            imgSrc: "Certifications/Certificate12.jpg",
-            imgAlt: "Certificate 12",
-        },
-        {
-            imgSrc: "Certifications/Certificate13.jpg",
-            imgAlt: "Certificate 13",
-        },
-        {
-            imgSrc: "Certifications/Certificate14.jpeg",
-            imgAlt: "Certificate 14",
-        },
-        {
-            imgSrc: "Certifications/Certificate15.jpg",
-            imgAlt: "Certificate 15",
-        },
-    ],
-    badges: [
-        {
-            imgSrc: 'Certifications/Badge1.png',
-            imgAlt: 'Badge 1',
-        },
-        {
-            imgSrc: 'Certifications/Badge2.png',
-            imgAlt: 'Badge 2',
-        },
-        {
-            imgSrc: 'Certifications/Badge3.png',
-            imgAlt: 'Badge 3',
-        },
-        {
-            imgSrc: 'Certifications/Badge4.png',
-            imgAlt: 'Badge 4',
-        },
-        {
-            imgSrc: 'Certifications/Badge5.png',
-            imgAlt: 'Badge 5',
-        },
-        {
-            imgSrc: 'Certifications/Badge6.png',
-            imgAlt: 'Badge 6',
-        },
-        {
-            imgSrc: 'Certifications/Badge7.png',
-            imgAlt: 'Badge 7',
-        },
-        {
-            imgSrc: 'Certifications/Badge8.png',
-            imgAlt: 'Badge 8',
-        },
-        {
-            imgSrc: 'Certifications/Badge9.png',
-            imgAlt: 'Badge 9',
-        },
-        {
-            imgSrc: 'Certifications/Badge10.png',
-            imgAlt: 'Badge 10',
-        },
-        {
-            imgSrc: 'Certifications/Badge11.png',
-            imgAlt: 'Badge 11',
-        },
-        {
-            imgSrc: 'Certifications/Badge12.png',
-            imgAlt: 'Badge 12',
-        },
-        {
-            imgSrc: 'Certifications/Badge13.png',
-            imgAlt: 'Badge 13',
-        },
-    ],
+    certificates: {
+        "Hackathons And Events": [
+            {
+                imgSrc: "Certifications/Certificates/Hackathons/1.jpeg",
+                imgAlt: "Certificate 1",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Hackathons/2.jpg",
+                imgAlt: "Certificate 2",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Hackathons/3.jpeg",
+                imgAlt: "Certificate 3",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Hackathons/4.jpg",
+                imgAlt: "Certificate 4",
+            }, {
+                imgSrc: "Certifications/Certificates/Hackathons/5.jpeg",
+                imgAlt: "Certificate 5",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Hackathons/6.jpeg",
+                imgAlt: "Certificate 6",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Hackathons/7.jpg",
+                imgAlt: "Certificate 7",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Hackathons/8.jpg",
+                imgAlt: "Certificate 8",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Hackathons/9.jpg",
+                imgAlt: "Certificate 9",
+            },
+        ],
+        "Skills And Tools": [
+            {
+                imgSrc: "Certifications/Certificates/Skills/1.jpg",
+                imgAlt: "Certificate 1",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/2.jpg",
+                imgAlt: "Certificate 2",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/3.jpg",
+                imgAlt: "Certificate 3",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/4.jpg",
+                imgAlt: "Certificate 4",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/5.jpg",
+                imgAlt: "Certificate 5",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/6.jpeg",
+                imgAlt: "Certificate 6",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/7.jpeg",
+                imgAlt: "Certificate 7",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/8.jpg",
+                imgAlt: "Certificate 8",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/9.jpg",
+                imgAlt: "Certificate 9",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/10.jpg",
+                imgAlt: "Certificate 10",
+            },
+        ],
+    },
+    badges: {
+        "Skill Badges": [
+            {
+                imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge1.png',
+                imgAlt: 'Achievement Badge 1',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge2.png',
+                imgAlt: 'Achievement Badge 2',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge3.png',
+                imgAlt: 'Achievement Badge 3',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge4.png',
+                imgAlt: 'Achievement Badge 4',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge5.png',
+                imgAlt: 'Achievement Badge 5',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge6.png',
+                imgAlt: 'Achievement Badge 6',
+            },
+        ],
+        "Arcade Badges": [
+            {
+                imgSrc: 'Certifications/Badges/Arcade/1.png',
+                imgAlt: 'Skill Badge 1',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Arcade/1.png',
+                imgAlt: 'Skill Badge 1',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Arcade/1.png',
+                imgAlt: 'Skill Badge 1',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Arcade/1.png',
+                imgAlt: 'Skill Badge 1',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Arcade/1.png',
+                imgAlt: 'Skill Badge 1',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Arcade/1.png',
+                imgAlt: 'Skill Badge 1',
+            },
+            {
+                imgSrc: 'Certifications/Badges/Arcade/1.png',
+                imgAlt: 'Skill Badge 1',
+            },
+
+        ],
+    },
     // Social Links
     social: [
         {
@@ -575,6 +599,7 @@ async function openBlogPost(project) {
     if (nav && nav.classList.contains('nav-active')) {
         nav.classList.remove('nav-active');
         burger.classList.remove('burger-active');
+        document.body.classList.remove('nav-open');
         document.querySelectorAll('.nav-links li').forEach(link => link.style.animation = '');
     }
 
@@ -601,12 +626,12 @@ async function openBlogPost(project) {
     try {
         // Load and render markdown content
         const { html, metadata } = await window.blogRenderer.renderBlogWithMetadata(project.name);
-        
+
         // Update modal content
         title.textContent = metadata.title;
         subtitle.textContent = metadata.subtitle;
         content.innerHTML = html;
-        
+
         // Add date if available
         if (metadata.date) {
             const dateElement = document.createElement('p');
@@ -705,31 +730,102 @@ document.addEventListener('DOMContentLoaded', function () {
             forceRestoreScrolling();
         }
     });
+
+
 });
 
-details.certificates.forEach((certificate) => {
-    // Create the image element
-    const certImage = document.createElement("img");
-    certImage.src = certificate.imgSrc;
-    certImage.alt = certificate.alt || "Certificate";
-    certImage.classList.add("certificate-image");
+// -- Dynamic Certificates Section --
+const certificatesContainer = document.querySelector(".certificates-container");
+certificatesContainer.innerHTML = "";
 
-    const certContainer = document.querySelector(".certificates-container");
+// Create rows for certificates layout
+const certFirstRow = document.createElement("div");
+certFirstRow.classList.add("certificates-row", "certificates-row-first");
 
-    // Add image directly to container
-    certContainer.appendChild(certImage);
+const certSecondRow = document.createElement("div");
+certSecondRow.classList.add("certificates-row", "certificates-row-second");
+
+// Get all certificate categories and distribute them between rows
+const certCategories = Object.keys(details.certificates);
+
+certCategories.forEach((category, index) => {
+    // Create category container
+    const categoryContainer = document.createElement("div");
+    categoryContainer.classList.add("certificate-category");
+
+    // Create category title
+    const categoryTitle = document.createElement("h2");
+    categoryTitle.classList.add("certificate-category-title");
+    categoryTitle.innerText = category;
+    categoryContainer.appendChild(categoryTitle);
+
+    // Create certificates grid for this category
+    const certificatesGrid = document.createElement("div");
+    certificatesGrid.classList.add("certificates-grid");
+
+    // Add certificates to the grid
+    details.certificates[category].forEach((certificate) => {
+        const certImage = document.createElement("img");
+        certImage.src = certificate.imgSrc;
+        certImage.alt = certificate.imgAlt || "Certificate";
+        certImage.classList.add("certificate-image");
+        certificatesGrid.appendChild(certImage);
+    });
+
+    categoryContainer.appendChild(certificatesGrid);
+
+    // First 2 categories go to first row, remaining go to second row
+    if (index < 2) {
+        certFirstRow.appendChild(categoryContainer);
+    } else {
+        certSecondRow.appendChild(categoryContainer);
+    }
 });
-details.badges.forEach((badge) => {
-    // Create the image element
-    const badgeImage = document.createElement("img");
-    badgeImage.src = badge.imgSrc;
-    badgeImage.alt = badge.alt || "Badge";
-    badgeImage.classList.add("badge");
 
-    // Append to the badge container
-    const badgeContainer = document.querySelector(".badge-container");
-    badgeContainer.appendChild(badgeImage);
+// Append rows to the main container
+certificatesContainer.appendChild(certFirstRow);
+certificatesContainer.appendChild(certSecondRow);
+// -- Dynamic Badges Section --
+const badgesContainer = document.querySelector(".badge-container");
+badgesContainer.innerHTML = "";
+
+// Create a single row for badges (since there are fewer categories)
+const badgesRow = document.createElement("div");
+badgesRow.classList.add("badges-row");
+
+// Get all badge categories
+const badgeCategories = Object.keys(details.badges);
+
+badgeCategories.forEach((category) => {
+    // Create category container
+    const categoryContainer = document.createElement("div");
+    categoryContainer.classList.add("badge-category");
+
+    // Create category title
+    const categoryTitle = document.createElement("h2");
+    categoryTitle.classList.add("badge-category-title");
+    categoryTitle.innerText = category;
+    categoryContainer.appendChild(categoryTitle);
+
+    // Create badges grid for this category
+    const badgesGrid = document.createElement("div");
+    badgesGrid.classList.add("badges-grid");
+
+    // Add badges to the grid
+    details.badges[category].forEach((badge) => {
+        const badgeImage = document.createElement("img");
+        badgeImage.src = badge.imgSrc;
+        badgeImage.alt = badge.imgAlt || "Badge";
+        badgeImage.classList.add("badge");
+        badgesGrid.appendChild(badgeImage);
+    });
+
+    categoryContainer.appendChild(badgesGrid);
+    badgesRow.appendChild(categoryContainer);
 });
+
+// Append row to the main container
+badgesContainer.appendChild(badgesRow);
 
 
 
