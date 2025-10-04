@@ -27,7 +27,7 @@ const details = {
     projects: [
         {
             name: "Portfolio",
-            url: "https://krishnasinghprojects.github.io/Portfolio/",
+            url: "",
             imgSrc: "Project Images/PortfolioSS.jpg",
             imgAlt: "Portfolio Project",
             tech: [
@@ -38,10 +38,23 @@ const details = {
             description:
                 "Portfolio showcases my projects, skills, and achievements in a clean, responsive design. It includes project previews, tech stacks, and an organized layout that adapts across devices."
         },
-
+        {
+            "name": "Academic Notes",
+            "url": "https://github.com/krishnasinghprojects/AcademicNotes",
+            "imgSrc": "Project Images/AcademicNotesSS.jpg",
+            "imgAlt": "Academic Notes",
+            "tech": [
+                { "imgSrc": "https://img.icons8.com/?size=100&id=123603&format=png&color=000000", "alt": "React" },
+                { "imgSrc": "https://img.icons8.com/?size=100&id=dJjTWMogzFzg&format=png&color=000000", "alt": "Vite" },
+                { "imgSrc": "https://img.icons8.com/?size=100&id=54087&format=png&color=000000", "alt": "Node JS" },
+                { "imgSrc": "https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000", "alt": "Express JS" },
+                { "imgSrc": "https://img.icons8.com/?size=100&id=rnK88i9FvAFO&format=png&color=000000", "alt": "Gemini SDK" },
+            ],
+            "description": "Academic Notes is an AI-powered learning application for academic support. It transforms audio, PDFs, and images into structured notes, generates interactive quizzes, provides in-depth content analysis."
+        },
         {
             name: "Academic Archive",
-            url: "https://krishnasinghprojects.github.io/AcademicArchive/",
+            url: "",
             imgSrc: "Project Images/AcademicArchiveSS.jpg",
             imgAlt: "Academic Archive Project",
             tech: [
@@ -51,6 +64,21 @@ const details = {
             ],
             description:
                 "Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management."
+        },
+        {
+            name: "Ecosync Nexus",
+            url: "",
+            imgSrc: "Project Images/EcosyncNexusSS.jpg",
+            imgAlt: "Ecosync Nexus",
+            tech:[
+                    { "imgSrc": "https://img.icons8.com/?size=100&id=54087&format=png&color=000000", "alt": "Node JS" },
+                    { "imgSrc": "https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000", "alt": "Express JS" },
+                    { "imgSrc": "https://img.icons8.com/?size=100&id=t4YbEbA834uH&format=png&color=000000", "alt": "React Native" },
+                    { "imgSrc": "https://img.icons8.com/?size=100&id=40669&format=png&color=000000", "alt": "C++" },
+                    { "imgSrc": "https://img.icons8.com/?size=100&id=rnK88i9FvAFO&format=png&color=000000", "alt": "Gemini SDK" }
+                ],
+            description:
+                "Ecosync Nexus is a full-stack smart home system for energy management. It retrofits appliances with custom hardware, offers remote control via a mobile app, and uses an AI-powered backend to automate energy savings and track budgets."
         },
     ],
     certificates: {
