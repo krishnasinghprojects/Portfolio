@@ -8,7 +8,7 @@ const details = {
         name_abbrivation: "KS",
         resume: {
             text: "Resume",
-            url: "https://drive.google.com/file/d/11jxzIugquY2VEaXx7q4kysZuBjye1JV4/view",
+            url: "Resume/Krishna Singh - Resume - 2025.pdf",
         },
     },
 
@@ -20,7 +20,7 @@ const details = {
             "An engineering student skilled in Full-Stack Development for Web and Mobile Platforms using React and React Native. I specialize in integrating AI functionalities directly into applications to build smarter, more responsive user experiences.",
         downloadCV: {
             text: "Download CV",
-            url: "https://drive.google.com/file/d/11jxzIugquY2VEaXx7q4kysZuBjye1JV4/view",
+            url: "Resume/Krishna Singh - Resume - 2025.pdf",
         },
     },
     // Project Details
