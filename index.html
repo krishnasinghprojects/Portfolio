@@ -392,7 +392,7 @@
         document.querySelector('.name .logo').addEventListener('click', function (e) {
             e.preventDefault();
 
-            // Prevent spamming.
+            // Prevent spamming during transition
             if (!canClick) return;
             canClick = false;
 
@@ -412,19 +412,21 @@
                 lightSound.play();
             }
 
-            // Start the blink animation on the body.
-            document.body.classList.add('blink');
+            // Start fade out transition
+            document.body.classList.add('theme-transition');
 
-            // After half of the total duration (1250ms in a 2.5s animation), toggle the theme.
+            // After fade out completes (150ms), toggle the theme
             setTimeout(() => {
                 document.body.classList.toggle('light-theme');
-            }, 1250);
-
-            // After the full 2.5s duration, remove the blink class and re-enable clicking.
-            setTimeout(() => {
-                document.body.classList.remove('blink');
-                canClick = true;
-            }, 2500);
+                
+                // Start fade in by removing transition class
+                document.body.classList.remove('theme-transition');
+                
+                // Re-enable clicking after fade in completes
+                setTimeout(() => {
+                    canClick = true;
+                }, 150);
+            }, 150);
         });
 
 

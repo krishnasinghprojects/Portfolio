@@ -1,45 +1,34 @@
 :root {
-  --bgcolor-gradient: linear-gradient(
-    315deg,
-    #0a0a1a,
-    #0d0d2a,
-    #000000,
-    #0f1a2a,
-    #000000,
-    #0a0a1a,
-    #0a0a1a
-  );
-  --bg-gradient: linear-gradient(
-    315deg,
-    #000000,
-    #0a0a1a,
-    #0f1f2f,
-    #0a0a1a,
-    #000000
-  );
-  --nav-bg-gradient: linear-gradient(
-    315deg,
-    #0d0d1a,
-    #1a1a2a,
-    #2a3a5a,
-    #1a1a2a,
-    #0d0d1a
-  );
+  --bgcolor-gradient:
+    radial-gradient(800px circle at 0% 0%, rgba(74, 144, 255, 0.15) 0%, rgba(15, 26, 42, 0.8) 30%, transparent 70%),
+    radial-gradient(1000px circle at 100% 100%, rgba(160, 184, 255, 0.12) 0%, rgba(13, 13, 42, 0.6) 25%, transparent 65%),
+    radial-gradient(600px circle at 100% 0%, rgba(74, 144, 255, 0.1) 0%, rgba(10, 10, 26, 0.4) 35%, transparent 70%),
+    radial-gradient(700px circle at 0% 100%, rgba(160, 184, 255, 0.08) 0%, rgba(15, 26, 42, 0.5) 30%, transparent 65%),
+    linear-gradient(135deg, #000000, #0a0a1a, #0d0d2a, #0a0a1a, #000000);
+  --bg-gradient:
+    radial-gradient(500px circle at 20% 30%, rgba(74, 144, 255, 0.12) 0%, rgba(15, 31, 47, 0.6) 25%, transparent 60%),
+    radial-gradient(400px circle at 80% 70%, rgba(160, 184, 255, 0.08) 0%, rgba(10, 10, 26, 0.4) 30%, transparent 65%),
+    linear-gradient(135deg, #000000, #0a0a1a, #0f1f2f, #0a0a1a, #000000);
+  --nav-bg-gradient:
+    radial-gradient(400px circle at 30% 40%, rgba(74, 144, 255, 0.2) 0%, rgba(42, 58, 90, 0.7) 20%, transparent 55%),
+    radial-gradient(300px circle at 70% 60%, rgba(160, 184, 255, 0.15) 0%, rgba(26, 26, 42, 0.5) 25%, transparent 60%),
+    linear-gradient(135deg, #0d0d1a, #1a1a2a, #2a3a5a, #1a1a2a, #0d0d1a);
 
   --text-color: #e0e8ff;
   --nav-link-color: #cfd8ff;
-  --nav-link-hover-color: #4a90ff; /* bright blue hover */
+  --nav-link-hover-color: #4a90ff;
+  /* bright blue hover */
 
-  --basic-color: #2f5dff; /* primary accent blue */
-  --basic-shadow-color: #5dadef48; /* subtle glow shadow */
+  --basic-color: #2f5dff;
+  /* primary accent blue */
+  --basic-shadow-color: #5dadef48;
+  /* subtle glow shadow */
 
-  --logo-bg-gradient: linear-gradient(
-    45deg,
-    #1a3aff,
-    #4a90ff,
-    #2f7fff,
-    #1a5fff
-  );
+  --logo-bg-gradient: linear-gradient(45deg,
+      #1a3aff,
+      #4a90ff,
+      #2f7fff,
+      #1a5fff);
   --logo-text-color: #ffffff;
 
   --dropdown-bg: #0f0f1a;
@@ -49,18 +38,14 @@
   --burger-line-color: #e0e8ff;
   --mobile-nav-bg: var(--nav-bg-gradient);
 
-  --break-gradient: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(90, 140, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  --frame-animation-color: linear-gradient(
-    45deg,
-    transparent 20%,
-    rgba(20, 60, 140, 0.4) 50%,
-    transparent 80%
-  );
+  --break-gradient: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(90, 140, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  --frame-animation-color: linear-gradient(45deg,
+      transparent 20%,
+      rgba(20, 60, 140, 0.4) 50%,
+      transparent 80%);
 
   --title-texts: linear-gradient(45deg, #4a90ff, #a0b8ff);
   --profile-img-url: url("KrishnaDark.jpg");
@@ -68,66 +53,56 @@
 
 /* Light theme overrides based on a cyan palette */
 body.light-theme {
-  --bgcolor-gradient: linear-gradient(
-    315deg,
-    #c7dbff,
-    #d4e2ff,
-    #e0ebff,
-    #d4e2ff,
-    #c7dbff
-  );
-  --bg-gradient: linear-gradient(
-    315deg,
-    #d6e4ff,
-    #c7dbff,
-    #b5d0ff,
-    #c7dbff,
-    #d6e4ff
-  );
-  --nav-bg-gradient: linear-gradient(
-    315deg,
-    #b0caff,
-    #9ab8ff,
-    #80a7ff,
-    #9ab8ff,
-    #b0caff
-  );
+  --bgcolor-gradient:
+    radial-gradient(800px circle at 0% 0%, rgba(31, 79, 255, 0.08) 0%, rgba(199, 219, 255, 0.6) 25%, transparent 65%),
+    radial-gradient(1000px circle at 100% 100%, rgba(111, 170, 255, 0.06) 0%, rgba(212, 226, 255, 0.5) 20%, transparent 60%),
+    radial-gradient(600px circle at 100% 0%, rgba(31, 79, 255, 0.05) 0%, rgba(224, 235, 255, 0.4) 30%, transparent 65%),
+    radial-gradient(700px circle at 0% 100%, rgba(111, 170, 255, 0.04) 0%, rgba(199, 219, 255, 0.3) 25%, transparent 60%),
+    linear-gradient(135deg, #c7dbff, #d4e2ff, #e0ebff, #d4e2ff, #c7dbff);
+  --bg-gradient:
+    radial-gradient(500px circle at 20% 30%, rgba(31, 79, 255, 0.06) 0%, rgba(181, 208, 255, 0.5) 20%, transparent 55%),
+    radial-gradient(400px circle at 80% 70%, rgba(111, 170, 255, 0.04) 0%, rgba(199, 219, 255, 0.3) 25%, transparent 60%),
+    linear-gradient(135deg, #d6e4ff, #c7dbff, #b5d0ff, #c7dbff, #d6e4ff);
+  --nav-bg-gradient:
+    radial-gradient(400px circle at 30% 40%, rgba(31, 79, 255, 0.1) 0%, rgba(128, 167, 255, 0.6) 15%, transparent 50%),
+    radial-gradient(300px circle at 70% 60%, rgba(111, 170, 255, 0.08) 0%, rgba(154, 184, 255, 0.4) 20%, transparent 55%),
+    linear-gradient(135deg, #b0caff, #9ab8ff, #80a7ff, #9ab8ff, #b0caff);
 
-  --text-color: #0a1633; /* rich navy text */
+  --text-color: #0a1633;
+  /* rich navy text */
   --nav-link-color: #10214d;
-  --nav-link-hover-color: #1f4fff; /* electric blue hover */
+  --nav-link-hover-color: #1f4fff;
+  /* electric blue hover */
 
-  --basic-color: #2f5dff; /* bold accent blue */
-  --basic-shadow-color: #2f5dff44; /* light blue glow */
+  --basic-color: #2f5dff;
+  /* bold accent blue */
+  --basic-shadow-color: #2f5dff44;
+  /* light blue glow */
 
-  --logo-bg-gradient: linear-gradient(
-    45deg,
-    #1f4fff,
-    #4a7dff,
-    #6faaff,
-    #92bdff
-  );
+  --logo-bg-gradient: linear-gradient(45deg,
+      #1f4fff,
+      #4a7dff,
+      #6faaff,
+      #92bdff);
   --logo-text-color: #ffffff;
 
-  --dropdown-bg: #c7dbff; /* soft light blue dropdown */
-  --dropdown-hover-bg: #b0caff; /* darker hover */
+  --dropdown-bg: #c7dbff;
+  /* soft light blue dropdown */
+  --dropdown-hover-bg: #b0caff;
+  /* darker hover */
   --dropdown-text-color: #0a1633;
 
   --burger-line-color: #0a1633;
   --mobile-nav-bg: var(--nav-bg-gradient);
 
-  --break-gradient: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(47, 93, 255, 0.35) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  --frame-animation-color: linear-gradient(
-    45deg,
-    transparent 20%,
-    rgba(47, 93, 255, 0.25) 50%,
-    transparent 80%
-  );
+  --break-gradient: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(47, 93, 255, 0.35) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  --frame-animation-color: linear-gradient(45deg,
+      transparent 20%,
+      rgba(47, 93, 255, 0.25) 50%,
+      transparent 80%);
 
   --title-texts: linear-gradient(45deg, #1f4fff, #6faaff);
   --profile-img-url: url("KrishnaLight.jpg");
@@ -157,8 +132,7 @@ body {
 
 body {
   background: var(--bgcolor-gradient);
-  background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+  background-attachment: fixed;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -167,6 +141,76 @@ body {
   overflow-x: hidden;
   width: 100%;
   max-width: 100vw;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(1px 1px at 50px 80px, rgba(74, 144, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 150px 40px, rgba(160, 184, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 220px 120px, rgba(74, 144, 255, 0.5), transparent),
+    radial-gradient(1px 1px at 80px 180px, rgba(160, 184, 255, 0.3), transparent);
+  background-repeat: repeat;
+  background-size: 400px 300px;
+  animation: shimmer 6s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body.light-theme::before {
+  background:
+    radial-gradient(1px 1px at 60px 90px, rgba(31, 79, 255, 0.15), transparent),
+    radial-gradient(1px 1px at 180px 50px, rgba(111, 170, 255, 0.1), transparent);
+  background-repeat: repeat;
+  background-size: 500px 400px;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(1px 1px at 120px 30px, rgba(74, 144, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 30px 160px, rgba(160, 184, 255, 0.3), transparent),
+    radial-gradient(1px 1px at 280px 90px, rgba(74, 144, 255, 0.5), transparent);
+  background-repeat: repeat;
+  background-size: 450px 350px;
+  animation: shimmer 8s ease-in-out infinite alternate-reverse;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body.light-theme::after {
+  background:
+    radial-gradient(1px 1px at 150px 40px, rgba(31, 79, 255, 0.08), transparent);
+  background-repeat: repeat;
+  background-size: 600px 500px;
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
 }
 
 nav {
@@ -203,10 +247,12 @@ nav {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(74, 144, 255, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.6s ease-in-out;
   transform-style: preserve-3d;
 }
 
@@ -217,12 +263,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -230,27 +274,20 @@ nav {
   left: 100%;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+/* Direct fade transition for theme switching */
+body {
+  transition: opacity 0.3s ease-in-out;
 }
 
-.blink {
-  animation: blink 2.5s ease-in-out forwards;
+.theme-transition {
+  opacity: 0;
 }
 
 .logo:hover {
   transform: translateY(-3px) rotateX(5deg) scale(1.05);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(74, 144, 255, 0.6),
+    0 0 60px rgba(74, 144, 255, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -286,10 +323,10 @@ nav {
   align-items: center;
 
   list-style: none;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.nav-links > li {
+.nav-links>li {
   position: relative;
 }
 
@@ -300,13 +337,16 @@ nav {
   font-size: 20px;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, 
+              text-shadow 0.5s ease-in-out;
   display: block;
 }
 
 .nav-links li a:hover {
   color: var(--nav-link-hover-color);
-  text-shadow: 0 2px 2px rgba(2, 2, 2, 0.296);
+  text-shadow: 0 2px 2px rgba(2, 2, 2, 0.296),
+    0 0 10px rgba(74, 144, 255, 0.6),
+    0 0 20px rgba(74, 144, 255, 0.3);
   transform: scale(1.1);
 }
 
@@ -355,12 +395,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -426,19 +464,7 @@ nav {
   border-radius: 2px;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-
-  50% {
-    background-position: 100% 100%;
-  }
-
-  100% {
-    background-position: 0% 0%;
-  }
-}
+/* Removed moving gradient animation */
 
 .break {
   width: 90%;
@@ -467,6 +493,7 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0px);
@@ -514,9 +541,6 @@ nav {
     max-width: 300px;
     border-left: solid var(--dropdown-hover-bg) 1px;
     background: var(--nav-bg-gradient);
-
-    background-size: 400% 400%;
-    animation: gradient 7.5s ease infinite;
     font-size: larger;
     flex-direction: column;
     padding: 80px 2rem 2rem 2rem;
@@ -524,7 +548,7 @@ nav {
     box-shadow: -4px 0 15px rgba(0, 0, 0, 0.3);
     z-index: 9998;
     overflow-y: auto;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
@@ -637,16 +661,20 @@ nav {
   border-radius: 20px;
   padding: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(74, 144, 255, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.6s ease-in-out;
   transform-style: preserve-3d;
 }
 
 .profile-frame:hover {
   transform: translateY(-5px) rotateX(3deg) scale(1.02);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(74, 144, 255, 0.4),
+    0 0 60px rgba(74, 144, 255, 0.2),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -658,12 +686,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -733,10 +759,12 @@ nav {
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(74, 144, 255, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.6s ease-in-out;
   transform-style: preserve-3d;
   color: var(--text-color);
 }
@@ -748,12 +776,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -769,6 +795,8 @@ nav {
 .cta-button:hover {
   transform: translateY(-5px) rotateX(5deg);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(74, 144, 255, 0.5),
+    0 0 50px rgba(74, 144, 255, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -863,10 +891,12 @@ nav {
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(74, 144, 255, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.6s ease-in-out;
   transform-style: preserve-3d;
   flex: 1;
   min-width: 300px;
@@ -880,12 +910,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -896,6 +924,8 @@ nav {
 .skill-category:hover {
   transform: translateY(-5px) rotateX(3deg) scale(1.02);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(74, 144, 255, 0.4),
+    0 0 60px rgba(74, 144, 255, 0.2),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -1029,7 +1059,7 @@ nav {
   object-fit: cover;
   transition: opacity 0.3s ease-in-out;
   filter: grayscale(100%);
-  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .social a:hover {
@@ -1072,10 +1102,12 @@ nav {
   padding: 20px;
   width: 300px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(74, 144, 255, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.6s ease-in-out;
   transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
@@ -1090,12 +1122,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -1106,6 +1136,8 @@ nav {
 .project-card:hover {
   transform: translateY(-5px) rotateX(3deg) scale(1.02);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(74, 144, 255, 0.4),
+    0 0 50px rgba(74, 144, 255, 0.2),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -1207,10 +1239,12 @@ nav {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 10px rgba(74, 144, 255, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.6s ease-in-out;
   transform-style: preserve-3d;
   color: var(--text-color);
 }
@@ -1222,12 +1256,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -1238,6 +1270,8 @@ nav {
 .blog-indicator:hover {
   transform: translateY(-3px) rotateX(3deg);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4),
+    0 0 20px rgba(74, 144, 255, 0.4),
+    0 0 40px rgba(74, 144, 255, 0.2),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.3);
 }
@@ -1282,6 +1316,7 @@ nav {
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(74, 144, 255, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -1299,12 +1334,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -1315,6 +1348,8 @@ nav {
 .certificate-category:hover {
   transform: translateY(-5px) rotateX(3deg) scale(1.02);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(74, 144, 255, 0.4),
+    0 0 60px rgba(74, 144, 255, 0.2),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -1516,13 +1551,12 @@ nav {
 .timeline-content {
   padding: 1.75rem;
   background: var(--bg-gradient);
-  background-size: 400% 400%;
-  animation: gradient 7.5s ease infinite;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(74, 144, 255, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   color: var(--text-color);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1541,12 +1575,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -1557,6 +1589,8 @@ nav {
 .timeline-content:hover {
   transform: translateY(-3px) rotateX(2deg) scale(1.01);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3),
+    0 0 25px rgba(74, 144, 255, 0.3),
+    0 0 50px rgba(74, 144, 255, 0.15),
     inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.1);
   border-color: rgba(255, 255, 255, 0.3);
 }
@@ -1569,6 +1603,7 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(74, 144, 255, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
@@ -1583,12 +1618,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -1599,6 +1632,8 @@ nav {
 .timeline-component:hover {
   transform: translateY(-3px) rotateX(2deg) scale(1.01);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(74, 144, 255, 0.25),
+    0 0 40px rgba(74, 144, 255, 0.12),
     inset 0 2px 0 rgba(255, 255, 255, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.1);
   border-color: rgba(255, 255, 255, 0.3);
 }
@@ -1621,8 +1656,6 @@ nav {
   .timeline-middle {
     position: relative;
     background: var(--nav-bg-gradient);
-    background-size: 400% 400%;
-    animation: gradient 7.5s ease infinite;
     width: 3px;
     height: 100%;
   }
@@ -1639,8 +1672,7 @@ nav {
     height: 15px;
     border-radius: 50%;
     background: var(--nav-bg-gradient);
-    background-size: 400% 400%;
-    animation: gradient 7.5s ease infinite;
+    box-shadow: 0 0 10px rgba(74, 144, 255, 0.6);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -1654,8 +1686,7 @@ nav {
     width: 50px;
     border-radius: 25px;
     background: var(--nav-bg-gradient);
-    background-size: 400% 400%;
-    animation: gradient 7.5s ease infinite;
+    box-shadow: 0 0 15px rgba(74, 144, 255, 0.5);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -1682,6 +1713,7 @@ nav {
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 25px rgba(74, 144, 255, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -1697,12 +1729,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -1713,6 +1743,8 @@ nav {
 .contact-container:hover {
   transform: translateY(-5px) rotateX(3deg) scale(1.02);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 35px rgba(74, 144, 255, 0.4),
+    0 0 70px rgba(74, 144, 255, 0.2),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -1765,6 +1797,7 @@ nav {
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(74, 144, 255, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -1780,12 +1813,10 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -1796,6 +1827,8 @@ nav {
 .contact-btn:hover {
   transform: translateY(-5px) rotateX(5deg);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(74, 144, 255, 0.5),
+    0 0 50px rgba(74, 144, 255, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -1848,6 +1881,7 @@ footer {
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(74, 144, 255, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
@@ -1865,12 +1899,10 @@ footer {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -1881,6 +1913,8 @@ footer {
 .badge-category:hover {
   transform: translateY(-5px) rotateX(3deg) scale(1.02);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(74, 144, 255, 0.4),
+    0 0 60px rgba(74, 144, 255, 0.2),
     inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
@@ -1955,16 +1989,19 @@ body.nav-open .nav-links {
 
 /* Ensure mobile menu doesn't interfere with modal */
 @media (max-width: 768px) {
-  .blog-modal.show ~ nav .nav-links.nav-active {
-    z-index: 9000; /* Lower than modal */
+  .blog-modal.show~nav .nav-links.nav-active {
+    z-index: 9000;
+    /* Lower than modal */
   }
 
   .blog-modal.show {
-    z-index: 10000; /* Highest priority */
+    z-index: 10000;
+    /* Highest priority */
   }
 
   .burger {
-    z-index: 9999; /* Below modal but above nav */
+    z-index: 9999;
+    /* Below modal but above nav */
   }
 }
 
@@ -1993,8 +2030,6 @@ body.nav-open .nav-links {
 
 .blog-modal-content {
   background: var(--bgcolor-gradient);
-  background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
   margin: 2% auto;
   padding: 0;
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -2019,6 +2054,7 @@ body.nav-open .nav-links {
 .blog-modal.hide .blog-modal-content {
   transform: scale(0.8) translateY(50px);
 }
+
 .blog-content {
   padding: 40px;
   line-height: 1.8;
@@ -2317,12 +2353,10 @@ body.nav-open .nav-links {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -2366,7 +2400,8 @@ body.nav-open .nav-links {
     line-height: 1.2;
     margin-bottom: 0.5rem;
     text-align: center;
-    padding-right: 50px; /* Make room for close button */
+    padding-right: 50px;
+    /* Make room for close button */
   }
 
   .blog-subtitle {
@@ -2469,7 +2504,8 @@ body.nav-open .nav-links {
     font-size: 1.2rem;
     text-align: center;
     line-height: 1.1;
-    padding-right: 45px; /* Make room for close button */
+    padding-right: 45px;
+    /* Make room for close button */
   }
 
   .blog-subtitle {
@@ -2572,9 +2608,9 @@ body.nav-open .nav-links {
 }
 
 /* Improve readability for long content */
-.blog-content p + h1,
-.blog-content p + h2,
-.blog-content p + h3 {
+.blog-content p+h1,
+.blog-content p+h2,
+.blog-content p+h3 {
   margin-top: 2.5rem;
 }
 
@@ -2754,7 +2790,8 @@ body.nav-open .nav-links {
   width: 100%;
   max-width: 600px;
   margin: 20px auto;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   height: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -2800,12 +2837,10 @@ body.nav-open .nav-links {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -2961,12 +2996,10 @@ body.nav-open .nav-links {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
 }
 
@@ -2986,6 +3019,7 @@ body.nav-open .nav-links {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
+
 /* Blog date styling */
 .blog-date {
   font-size: 0.9em;
@@ -3006,7 +3040,8 @@ body.nav-open .nav-links {
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   margin: 1.5rem 0;
   border-radius: 12px;
   overflow: hidden;
@@ -3059,6 +3094,7 @@ body.nav-open .nav-links {
   border-radius: 8px;
   border: 1px solid rgba(255, 107, 107, 0.3);
 }
+
 .blog-content a {
   color: var(--basic-color);
   text-decoration: none;
@@ -3085,12 +3121,10 @@ body.nav-open .nav-links {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.6s ease;
   border-radius: 10px;
 }
@@ -3178,12 +3212,10 @@ body.nav-open .nav-links {
   margin: 3rem 0;
   border: none;
   height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--basic-color),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--basic-color),
+      transparent);
   border-radius: 2px;
   opacity: 0.6;
   box-shadow: 0 0 10px var(--basic-color);
@@ -3309,7 +3341,8 @@ body.nav-open .nav-links {
   padding: 0.5rem 1rem;
   font-size: 0.9em;
   margin: 0.2rem;
-  display: inline-block; /* Allows for margin and padding */
+  display: inline-block;
+  /* Allows for margin and padding */
   text-decoration: none;
   color: var(--text-color);
   font-weight: bold;
@@ -3324,7 +3357,7 @@ body.nav-open .nav-links {
   display: block;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
 }
 
 .blog-content .blog-image:hover {
