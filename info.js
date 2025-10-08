@@ -88,14 +88,6 @@ const details = {
                 imgAlt: "Certificate 1",
             },
             {
-                imgSrc: "Certifications/Certificates/Hackathons/2.jpg",
-                imgAlt: "Certificate 2",
-            },
-            {
-                imgSrc: "Certifications/Certificates/Hackathons/3.jpeg",
-                imgAlt: "Certificate 3",
-            },
-            {
                 imgSrc: "Certifications/Certificates/Hackathons/4.jpg",
                 imgAlt: "Certificate 4",
             }, {
@@ -110,55 +102,31 @@ const details = {
                 imgSrc: "Certifications/Certificates/Hackathons/7.jpg",
                 imgAlt: "Certificate 7",
             },
-            {
-                imgSrc: "Certifications/Certificates/Hackathons/8.jpg",
-                imgAlt: "Certificate 8",
-            },
-            {
-                imgSrc: "Certifications/Certificates/Hackathons/9.jpg",
-                imgAlt: "Certificate 9",
-            },
         ],
         "Skills And Tools": [
             {
-                imgSrc: "Certifications/Certificates/Skills/1.jpg",
-                imgAlt: "Certificate 1",
-            },
-            {
-                imgSrc: "Certifications/Certificates/Skills/2.jpg",
-                imgAlt: "Certificate 2",
-            },
-            {
-                imgSrc: "Certifications/Certificates/Skills/3.jpg",
-                imgAlt: "Certificate 3",
-            },
-            {
-                imgSrc: "Certifications/Certificates/Skills/4.jpg",
-                imgAlt: "Certificate 4",
-            },
-            {
-                imgSrc: "Certifications/Certificates/Skills/5.jpg",
-                imgAlt: "Certificate 5",
-            },
-            {
-                imgSrc: "Certifications/Certificates/Skills/6.jpeg",
-                imgAlt: "Certificate 6",
+                imgSrc: "Certifications/Certificates/Skills/10.jpg",
+                imgAlt: "Certificate 10",
             },
             {
                 imgSrc: "Certifications/Certificates/Skills/7.jpeg",
                 imgAlt: "Certificate 7",
             },
             {
-                imgSrc: "Certifications/Certificates/Skills/8.jpg",
-                imgAlt: "Certificate 8",
+                imgSrc: "Certifications/Certificates/Skills/4.jpg",
+                imgAlt: "Certificate 4",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/11.jpg",
+                imgAlt: "Certificate 11",
+            },
+            {
+                imgSrc: "Certifications/Certificates/Skills/12.jpeg",
+                imgAlt: "Certificate 12",
             },
             {
                 imgSrc: "Certifications/Certificates/Skills/9.jpg",
                 imgAlt: "Certificate 9",
-            },
-            {
-                imgSrc: "Certifications/Certificates/Skills/10.jpg",
-                imgAlt: "Certificate 10",
             },
         ],
     },
@@ -189,37 +157,7 @@ const details = {
                 imgAlt: 'Achievement Badge 6',
             },
         ],
-        "Arcade Badges": [
-            {
-                imgSrc: 'Certifications/Badges/Arcade/1.png',
-                imgAlt: 'Skill Badge 1',
-            },
-            {
-                imgSrc: 'Certifications/Badges/Arcade/1.png',
-                imgAlt: 'Skill Badge 1',
-            },
-            {
-                imgSrc: 'Certifications/Badges/Arcade/1.png',
-                imgAlt: 'Skill Badge 1',
-            },
-            {
-                imgSrc: 'Certifications/Badges/Arcade/1.png',
-                imgAlt: 'Skill Badge 1',
-            },
-            {
-                imgSrc: 'Certifications/Badges/Arcade/1.png',
-                imgAlt: 'Skill Badge 1',
-            },
-            {
-                imgSrc: 'Certifications/Badges/Arcade/1.png',
-                imgAlt: 'Skill Badge 1',
-            },
-            {
-                imgSrc: 'Certifications/Badges/Arcade/1.png',
-                imgAlt: 'Skill Badge 1',
-            },
-
-        ],
+        
     },
     // Social Links
     social: [

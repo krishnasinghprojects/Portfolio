@@ -259,6 +259,9 @@
                     <a href="#projects" role="menuitem" aria-label="Go to projects section">Projects</a>
                 </li>
                 <li role="none">
+                    <a href="#timeline-heading" role="menuitem" aria-label="Go to developer journey timeline">Journey</a>
+                </li>
+                <li role="none">
                     <a href="#certificates-redirect" role="menuitem"
                         aria-label="Go to certifications section">Certificates</a>
                 </li>
@@ -351,6 +354,21 @@
 
         <div class="break education-break"></div>
 
+        <!-- Developer Journey Timeline Section -->
+        <section class="timeline-section" aria-labelledby="timeline-heading">
+            <h2 class="timeline-heading" id="timeline-heading">My Developer Journey</h2>
+            <div class="timeline-container" role="region" aria-label="Developer journey timeline">
+                <!-- Timeline cards will be dynamically generated -->
+            </div>
+            <div class="journey-map-button-container">
+                <button class="journey-map-button glass-button" id="journeyMapBtn">
+                    <span>View My Developer Journey Map</span>
+                </button>
+            </div>
+        </section>
+
+        <div class="break"></div>
+
         <!-- Contact Section -->
         <section id="contact" aria-labelledby="contact-heading">
             <!-- Contact content will be dynamically generated -->
@@ -376,6 +394,8 @@
 
 
     <script src="markdown-parser.js" crossorigin="anonymous"></script>
+    <script src="timeline-parser.js" crossorigin="anonymous"></script>
+    <script src="modal-manager.js" crossorigin="anonymous"></script>
     <script src="info.js" crossorigin="anonymous"></script>
 
 
@@ -557,6 +577,60 @@
         `;
         document.head.appendChild(style);
     </script>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal image-modal" role="dialog" aria-labelledby="imageModalTitle" aria-hidden="true">
+        <div class="modal-overlay" aria-hidden="true"></div>
+        <div class="modal-content image-modal-content">
+            <button class="modal-close" aria-label="Close image modal">&times;</button>
+            <div class="modal-header">
+                <h3 id="imageModalTitle">Certificate</h3>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Certificate" />
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF Modal -->
+    <div id="pdfModal" class="modal pdf-modal" role="dialog" aria-labelledby="pdfModalTitle" aria-hidden="true">
+        <div class="modal-overlay" aria-hidden="true"></div>
+        <div class="modal-content pdf-modal-content">
+            <button class="modal-close" aria-label="Close PDF modal">&times;</button>
+            <div class="modal-header">
+                <h3 id="pdfModalTitle">Resume</h3>
+                <div class="modal-actions">
+                    <a id="downloadPdfBtn" href="" download class="glass-button down-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download
+                    </a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <iframe id="modalPdf" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Journey Map Modal -->
+    <div id="journeyMapModal" class="modal journey-map-modal" role="dialog" aria-labelledby="journeyMapModalTitle" aria-hidden="true">
+        <div class="modal-overlay" aria-hidden="true"></div>
+        <div class="modal-content journey-map-modal-content">
+            <button class="modal-close" aria-label="Close journey map modal">&times;</button>
+            <div class="modal-header">
+                <h3 id="journeyMapModalTitle">Developer Journey Map</h3>
+            </div>
+            <div class="modal-body">
+                <div id="journeyMapContainer">
+                    <!-- SVG will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
