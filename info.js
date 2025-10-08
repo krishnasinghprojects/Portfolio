@@ -85,48 +85,48 @@ const details = {
         "Hackathons And Events": [
             {
                 imgSrc: "Certifications/Certificates/Hackathons/1.jpeg",
-                imgAlt: "Certificate 1",
+                imgAlt: "Front End Battle 2.0 Finalist",
             },
             {
                 imgSrc: "Certifications/Certificates/Hackathons/4.jpg",
-                imgAlt: "Certificate 4",
+                imgAlt: "Sustainovation 2025 Finalist",
             }, {
                 imgSrc: "Certifications/Certificates/Hackathons/5.jpeg",
-                imgAlt: "Certificate 5",
+                imgAlt: "Agentic A.I. Day Participation",
             },
             {
                 imgSrc: "Certifications/Certificates/Hackathons/6.jpeg",
-                imgAlt: "Certificate 6",
+                imgAlt: "Hackorbit Finalist",
             },
             {
                 imgSrc: "Certifications/Certificates/Hackathons/7.jpg",
-                imgAlt: "Certificate 7",
+                imgAlt: "Smallest A.I. Finalists",
             },
         ],
-        "Skills And Tools": [
+        "Skills And Others": [
             {
                 imgSrc: "Certifications/Certificates/Skills/10.jpg",
-                imgAlt: "Certificate 10",
+                imgAlt: "Generative A.I. Academy",
             },
             {
                 imgSrc: "Certifications/Certificates/Skills/7.jpeg",
-                imgAlt: "Certificate 7",
+                imgAlt: "Firebase Studio Bootcamp",
             },
             {
                 imgSrc: "Certifications/Certificates/Skills/4.jpg",
-                imgAlt: "Certificate 4",
+                imgAlt: "JavaScript Coding Interview Preparation",
             },
             {
                 imgSrc: "Certifications/Certificates/Skills/11.jpg",
-                imgAlt: "Certificate 11",
+                imgAlt: "GDG Lucknow Nirmana",
             },
             {
                 imgSrc: "Certifications/Certificates/Skills/12.jpeg",
-                imgAlt: "Certificate 12",
+                imgAlt: "Bhartiya Antariksh Idea",
             },
             {
                 imgSrc: "Certifications/Certificates/Skills/9.jpg",
-                imgAlt: "Certificate 9",
+                imgAlt: "C++ Bootcamp",
             },
         ],
     },
@@ -134,27 +134,27 @@ const details = {
         "Skill Badges": [
             {
                 imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge1.png',
-                imgAlt: 'Achievement Badge 1',
+                imgAlt: 'Badge 1',
             },
             {
                 imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge2.png',
-                imgAlt: 'Achievement Badge 2',
+                imgAlt: 'Badge 2',
             },
             {
                 imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge3.png',
-                imgAlt: 'Achievement Badge 3',
+                imgAlt: 'Badge 3',
             },
             {
                 imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge4.png',
-                imgAlt: 'Achievement Badge 4',
+                imgAlt: 'Badge 4',
             },
             {
                 imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge5.png',
-                imgAlt: 'Achievement Badge 5',
+                imgAlt: 'Badge 5',
             },
             {
                 imgSrc: 'Certifications/Badges/Google Cloud Skills/Badge6.png',
-                imgAlt: 'Achievement Badge 6',
+                imgAlt: 'Badge 6',
             },
         ],
         

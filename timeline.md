@@ -355,7 +355,7 @@ From a kid who didn't understand Java OOP to building full-stack applications wi
 Time to put all this learning to the test! Looking for full-stack developer internship opportunities where I can contribute real value while learning from experienced developers. Ready to work with production codebases and tackle real-world challenges.
 
 **DSA Grind Mode:**
-Can't ignore the fundamentals anymore. Time to get serious about Data Structures and Algorithms. LeetCode, here I come! Need to master the classics - arrays, linked lists, trees, graphs, dynamic programming. The interview prep is real, but more importantly, I want to think like a proper computer scientist.
+Can't ignore the fundamentals anymore. Time to get serious about Data Structures and Algorithms. LeetCode, here I come! Need to master the classics - arrays, linked lists, trees, graphs, dynamic programming.
 
 **AI Deep Dive:**
 The AI revolution is happening, and I want to be part of it. Planning to dive deeper into machine learning, neural networks, and AI model training. Want to understand not just how to use AI APIs, but how to build and train models from scratch.
@@ -367,9 +367,6 @@ This is where the rubber meets the road. All the projects, all the learning - no
 - Land a meaningful full-stack developer internship
 - Master DSA fundamentals and ace technical interviews  
 - Build AI-powered applications from scratch
-- Contribute to open-source projects
-- Network with industry professionals
-- Keep the learning momentum going
 
 **The Adventure Continues:**
 From that 4GB laptop struggling with BlueJ to building full-stack applications with AI integrations - what a ride it's been! But this is just the beginning. The real adventure starts now.

@@ -4674,10 +4674,6 @@ body.light-theme .image-modal .modal-body {
     max-height: 60vh;
     object-fit: contain;
     border-radius: 12px;
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.4),
-        0 0 20px rgba(74, 144, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 body.light-theme .image-modal img {
