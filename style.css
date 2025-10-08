@@ -49,6 +49,7 @@
 
     --title-texts: linear-gradient(45deg, #4a90ff, #a0b8ff);
     --profile-img-url: url("KrishnaDark.jpg");
+    --page-color: #0c1025;
 }
 
 /* Light theme overrides based on a cyan palette */
@@ -106,6 +107,7 @@ body.light-theme {
 
     --title-texts: linear-gradient(45deg, #1f4fff, #6faaff);
     --profile-img-url: url("KrishnaLight.jpg");
+     --page-color: #dee9fe;
 }
 
 * {
@@ -114,6 +116,7 @@ body.light-theme {
     box-sizing: border-box;
     font-family: "Lora", Georgia, serif;
     scroll-behavior: smooth;
+   
 
 }
 
@@ -122,6 +125,7 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: var(--page-color);
 }
 
 .timeline,
@@ -1963,6 +1967,15 @@ body {
 @media (max-width: 768px) {
     .timeline-container {
         gap: 1.5rem;
+        /* Improve touch scrolling on mobile */
+        -webkit-overflow-scrolling: touch;
+        /* Allow horizontal scrolling only within the container */
+        touch-action: pan-x;
+    }
+
+    /* Ensure timeline section doesn't interfere with page scrolling */
+    .timeline-section {
+        touch-action: pan-y pinch-zoom;
     }
 
     .timeline-card {
@@ -4959,4 +4972,50 @@ body.light-theme .badge-container img:hover {
 .certificates-container img:active,
 .badge-container img:active {
     transform: scale(0.98) translateY(-2px) !important;
+}
+
+/*
+ Mobile Touch Scrolling Fixes */
+@media (max-width: 768px) {
+
+    /* Ensure body can scroll vertically */
+    body {
+        touch-action: pan-y pinch-zoom;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Timeline container should only handle horizontal scrolling */
+    .timeline-container {
+        touch-action: pan-x;
+        overscroll-behavior-x: contain;
+        overscroll-behavior-y: none;
+    }
+
+    /* Timeline cards should not interfere with scrolling */
+    .timeline-main-card,
+    .timeline-card-wrapper {
+        touch-action: manipulation;
+    }
+
+    /* Expanded panels should allow vertical scrolling within them */
+    .timeline-expanded-panel {
+        touch-action: pan-y;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Journey map button should not interfere */
+    .journey-map-button {
+        touch-action: manipulation;
+    }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 480px) {
+    .timeline-container {
+        /* Reduce gap on very small screens */
+        gap: 1rem;
+        /* Ensure proper padding */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
