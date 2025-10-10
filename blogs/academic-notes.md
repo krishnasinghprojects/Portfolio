@@ -76,6 +76,6 @@ Key backend features include:
 
 The Academic Notes application is a powerful and versatile tool that can help students of all levels to learn more effectively. By combining a modern and intuitive user interface with the power of Google's Gemini AI, the application provides a rich and engaging learning experience that is second to none.
 
-## Repository Link
+## Deployed Link
 
 [View Live](https://notes.krishnasingh.live)
