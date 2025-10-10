@@ -107,7 +107,7 @@ body.light-theme {
 
     --title-texts: linear-gradient(45deg, #1f4fff, #6faaff);
     --profile-img-url: url("KrishnaLight.jpg");
-     --page-color: #dee9fe;
+    --page-color: #dee9fe;
 }
 
 * {
@@ -116,7 +116,7 @@ body.light-theme {
     box-sizing: border-box;
     font-family: "Lora", Georgia, serif;
     scroll-behavior: smooth;
-   
+
 
 }
 
@@ -4981,11 +4981,14 @@ body.light-theme .badge-container img:hover {
         -webkit-overflow-scrolling: touch;
     }
 
-    /* Timeline container should only handle horizontal scrolling */
+    /* Timeline container allows both directions but prioritizes horizontal */
     .timeline-container {
-        touch-action: pan-x;
+        touch-action: pan-x pan-y;
         overscroll-behavior-x: contain;
-        overscroll-behavior-y: none;
+        overscroll-behavior-y: auto;
+        /* Enable hardware acceleration for smooth scrolling */
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
     }
 
     /* Timeline cards should not interfere with scrolling */
