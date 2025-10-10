@@ -1168,11 +1168,6 @@ body {
 
 .timeline-main-card:hover:not(.timeline-card-wrapper.expanded .timeline-main-card) {
     transform: translateY(-8px) rotateX(3deg) scale(1.02);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4),
-        0 0 30px rgba(74, 144, 255, 0.4),
-        0 0 60px rgba(74, 144, 255, 0.2),
-        inset 0 2px 0 rgba(255, 255, 255, 0.3),
-        inset 0 -2px 0 rgba(0, 0, 0, 0.2);
     border-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -1967,15 +1962,21 @@ body {
 @media (max-width: 768px) {
     .timeline-container {
         gap: 1.5rem;
-        /* Improve touch scrolling on mobile */
+        /* Smooth native scrolling on mobile */
         -webkit-overflow-scrolling: touch;
-        /* Allow horizontal scrolling only within the container */
-        touch-action: pan-x;
+        /* Allow both horizontal scrolling in container and vertical page scrolling */
+        touch-action: pan-x pan-y;
+        /* Improve scrolling performance */
+        will-change: scroll-position;
+        /* Ensure smooth momentum scrolling */
+        scroll-behavior: smooth;
     }
 
-    /* Ensure timeline section doesn't interfere with page scrolling */
+    /* Ensure timeline section allows vertical page scrolling */
     .timeline-section {
         touch-action: pan-y pinch-zoom;
+        /* Prevent horizontal overscroll from affecting page */
+        overscroll-behavior-x: contain;
     }
 
     .timeline-card {

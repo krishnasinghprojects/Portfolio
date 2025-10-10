@@ -466,53 +466,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         }, 100);
     });
 
-    // Add touch/swipe support for mobile
-    let startX = 0;
-    let startY = 0;
-    let scrollLeft = 0;
-    let isHorizontalSwipe = false;
-    const container = document.querySelector('.timeline-container');
-
-    if (container) {
-        container.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].pageX - container.offsetLeft;
-            startY = e.touches[0].pageY;
-            scrollLeft = container.scrollLeft;
-            isHorizontalSwipe = false;
-        });
-
-        container.addEventListener('touchmove', (e) => {
-            if (!startX) return;
-            
-            const x = e.touches[0].pageX - container.offsetLeft;
-            const y = e.touches[0].pageY;
-            const deltaX = Math.abs(x - startX);
-            const deltaY = Math.abs(y - startY);
-            
-            // Determine if this is a horizontal or vertical swipe
-            if (!isHorizontalSwipe && deltaX > 10 && deltaY > 10) {
-                // If both deltas are significant, determine primary direction
-                isHorizontalSwipe = deltaX > deltaY;
-            } else if (!isHorizontalSwipe && deltaX > 10) {
-                // Clear horizontal movement
-                isHorizontalSwipe = true;
-            }
-            
-            // Only handle horizontal scrolling and prevent default if it's a horizontal swipe
-            if (isHorizontalSwipe && deltaX > 5) {
-                e.preventDefault();
-                const walk = (x - startX) * 2;
-                container.scrollLeft = scrollLeft - walk;
-            }
-            // For vertical swipes or unclear direction, let the browser handle it naturally
-        });
-
-        container.addEventListener('touchend', () => {
-            startX = 0;
-            startY = 0;
-            isHorizontalSwipe = false;
-        });
-    }
+    // Let browser handle scrolling naturally on mobile
+    // No custom touch handling needed - CSS touch-action properties handle this properly
 });
 
 window.HorizontalTimelineParser = HorizontalTimelineParser;
