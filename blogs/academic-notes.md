@@ -78,4 +78,4 @@ The Academic Notes application is a powerful and versatile tool that can help st
 
 ## Repository Link
 
-[View On Github](https://github.com/krishnasinghprojects/AcademicNotes)
+[View Live](https://notes.krishnasingh.live)
