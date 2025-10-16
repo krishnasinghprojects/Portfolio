@@ -48,7 +48,7 @@
             transparent 80%);
 
     --title-texts: linear-gradient(45deg, #4a90ff, #a0b8ff);
-    --profile-img-url: url("KrishnaDark.jpg");
+    --profile-img-url: url("https://ik.imagekit.io/krishnasingh/Others/KrishnaDark.jpg");
     --page-color: #0c1025;
 }
 
@@ -106,7 +106,7 @@ body.light-theme {
             transparent 80%);
 
     --title-texts: linear-gradient(45deg, #1f4fff, #6faaff);
-    --profile-img-url: url("KrishnaLight.jpg");
+    --profile-img-url: url("https://ik.imagekit.io/krishnasingh/Others/KrishnaLight.jpg");
     --page-color: #dee9fe;
 }
 

@@ -40,7 +40,7 @@
     <meta property="og:description"
         content="Explore Krishna Singh's portfolio showcasing expertise in Full-Stack Development for Web and Mobile Platforms using React and React Native, with AI integration capabilities.">
     <meta property="og:image"
-        content="https://krishnasingh.live/Project%20Images/PortfolioSS.jpg">
+        content="https://ik.imagekit.io/krishnasingh/ProjectsSS/PortfolioSS.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Krishna Singh Portfolio - Full Stack Web Developer">
@@ -54,14 +54,14 @@
     <meta name="twitter:description"
         content="Explore Krishna Singh's portfolio showcasing expertise in Full-Stack Development for Web and Mobile Platforms using React and React Native, with AI integration capabilities.">
     <meta name="twitter:image"
-        content="https://krishnasingh.live/Project%20Images/PortfolioSS.jpg">
+        content="https://ik.imagekit.io/krishnasingh/ProjectsSS/PortfolioSS.jpg">
     <meta name="twitter:image:alt" content="Krishna Singh Portfolio - Full Stack Web Developer">
     <meta name="twitter:creator" content="@krishnasingh_28">
     <meta name="twitter:site" content="@krishnasingh_28">
 
     <!-- LinkedIn -->
     <meta property="og:image:secure_url"
-        content="https://krishnasingh.live/Project%20Images/PortfolioSS.jpg">
+        content="https://ik.imagekit.io/krishnasingh/ProjectsSS/PortfolioSS.jpg">
 
     <!-- WhatsApp -->
     <meta property="og:image:type" content="image/jpeg">
@@ -71,7 +71,7 @@
 
     <!-- Instagram -->
     <meta property="instagram:image"
-        content="https://krishnasingh.live/Project%20Images/PortfolioSS.jpg">
+        content="https://ik.imagekit.io/krishnasingh/ProjectsSS/PortfolioSS.jpg">
     
     <!-- Additional Social Media Meta Tags -->
     <meta property="article:author" content="Krishna Singh">
@@ -99,7 +99,7 @@
         "jobTitle": "Full Stack Software Developer",
         "description": "Engineering student skilled in Full-Stack Development for Web and Mobile Platforms using React and React Native, specializing in integrating AI functionalities into applications",
         "url": "https://krishnasingh.live",
-        "image": "https://krishnasingh.live/Project%20Images/PortfolioSS.jpg",
+        "image": "https://ik.imagekit.io/krishnasingh/ProjectsSS/PortfolioSS.jpg",
         "sameAs": [
             "https://github.com/krishnasinghprojects",
             "https://www.linkedin.com/in/krishnasinghprojects",
@@ -236,10 +236,6 @@
     <link rel="dns-prefetch" href="//linkedin.com">
     <link rel="dns-prefetch" href="//x.com">
     <link rel="dns-prefetch" href="//instagram.com">
-    
-    <!-- Resource hints for better performance -->
-    <link rel="prefetch" href="Project Images/PortfolioSS.jpg">
-    <link rel="prefetch" href="Project Images/AcademicArchiveSS.jpg">
 </head>
 
 <body>
@@ -387,13 +383,12 @@
         </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
 
-
-
-    <script src="markdown-parser.js" crossorigin="anonymous"></script>
+    <script src="renderingEngine.js" crossorigin="anonymous"></script>
     <script src="timeline-parser.js" crossorigin="anonymous"></script>
-    <script src="modal-manager.js" crossorigin="anonymous"></script>
-    <script src="info.js" crossorigin="anonymous"></script>
+    <script src="script.js" crossorigin="anonymous"></script>
 
 
 
@@ -416,19 +411,18 @@
             canClick = false;
 
             // Define separate audio objects for dark and light theme changes.
-            const darkSound = new Audio('DarkChangeTheme.mp3');
-            const lightSound = new Audio('LightChangeTheme.mp3');
+            const Sound = new Audio('ThemeChange.mp3');
+            Sound.playbackRate = 1.25;
 
             // Determine current theme and choose the appropriate sound.
             const wasLight = document.body.classList.contains('light-theme');
 
             if (wasLight) {
-                // When switching from light to dark, reduce the dark mode sound volume to 75%.
-                darkSound.volume = 0.20;
-                darkSound.play();
+                // When switching from light to dark.
+                Sound.play();
             } else {
-                // When switching from dark to light, play the light mode sound.
-                lightSound.play();
+                // When switching from dark to light.
+                Sound.play();
             }
 
             // Start fade out transition

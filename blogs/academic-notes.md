@@ -10,15 +10,15 @@ author: Krishna Singh
 
 Welcome to a behind-the-scenes look at my Academic Notes application. My goal was to create more than just a simple note-taking app; I wanted a **dynamic, intelligent, and comprehensive academic assistant** that could handle a wide variety of inputs and provide a rich, interactive learning experience. This project is built with the MERN (MongoDB, Express.js, React, Node.js) stack and leverages the power of Google's Gemini AI to provide a suite of advanced features.
 
-![Academic Notes Screenshot 1](../Blogs Images/Notes Images/SS6.png "width:60%")
-![Academic Notes Screenshot 2](../Blogs Images/Notes Images/SS1.jpg "width:20%")
+![Academic Notes Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS6.png "width:60%")
+![Academic Notes Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS1.jpg "width:20%")
 
 ## Core Philosophy: An All-in-One AI-Powered Academic Hub
 
 The standout feature of this application is its **multi-modal, AI-driven core**. The application accepts a wide variety of inputs, including typed text, audio recordings, PDFs, and even images of handwritten notes. All of this content is processed by a powerful backend that uses the Google Gemini API to generate structured notes, provide in-depth analysis, and even create interactive quizzes. This approach allows students to use the application in whatever way best suits their learning style and the materials they have on hand.
 
-![Academic Notes Screenshot 1](../Blogs Images/Notes Images/SS7.png "width:70%")
-![Academic Notes Screenshot 2](../Blogs Images/Notes Images/SS2.jpg "width:20%")
+![Academic Notes Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS7.png "width:70%")
+![Academic Notes Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS2.jpg "width:20%")
 
 ## Key Features
 
@@ -31,8 +31,8 @@ The standout feature of this application is its **multi-modal, AI-driven core**.
 * **Subject-Specific Intelligence:** Customize notes and solutions based on syllabus and topics with context-aware AI that aligns with academic requirements.
 * **Export, Sharing & Real-Time Streaming:** Copy notes to clipboard, share easily, and watch them generate in real time with advanced streaming technology.
 
-![Academic Notes Screenshot 1](../Blogs Images/Notes Images/SS8.png "width:40%")
-![Academic Notes Screenshot 2](../Blogs Images/Notes Images/SS3.jpg "width:20%")
+![Academic Notes Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS8.png "width:40%")
+![Academic Notes Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS3.jpg "width:20%")
 
 ## Technical Implementation
 
@@ -48,8 +48,8 @@ Key frontend components and features include:
 * **An interactive quiz component** with multiple-choice questions, a timer, and a results screen.
 * **A chat interface** for real-time interaction with the AI, allowing users to ask questions and get instant feedback.
 
-![Academic Notes Screenshot 1](../Blogs Images/Notes Images/SS9.png "width:30%")
-![Academic Notes Screenshot 2](../Blogs Images/Notes Images/SS4.jpg "width:25%")
+![Academic Notes Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS9.png "width:30%")
+![Academic Notes Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS4.jpg "width:25%")
 
 ### Backend: A Powerful and Scalable Foundation with Node.js and Express
 
@@ -62,8 +62,8 @@ Key backend features include:
 * **Real-time streaming** of AI-generated content to the frontend, providing a dynamic and engaging user experience.
 * **File upload and processing** for a variety of file types, including audio, PDF, and image files.
 
-![Academic Notes Screenshot 1](../Blogs Images/Notes Images/SS10.png "width:60%")
-![Academic Notes Screenshot 2](../Blogs Images/Notes Images/SS5.jpg "width:30%")
+![Academic Notes Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS10.png "width:60%")
+![Academic Notes Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Notes%20Images/SS5.jpg "width:30%")
 
 ## A Tour Through the Application's Features
 

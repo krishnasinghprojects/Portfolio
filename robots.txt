@@ -13,11 +13,11 @@ Disallow: /LightChangeTheme.mp3
 Allow: /Project Images/
 Allow: /Certifications/
 Allow: /Icons/
-Allow: /blogs/
+Allow: /Blogs/
 Allow: /Favicon.png
 Allow: /style.css
 Allow: /info.js
-Allow: /markdown-parser.js
+Allow: /renderingEngine.js
 
 # Crawl delay (optional)
 Crawl-delay: 1

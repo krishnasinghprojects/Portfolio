@@ -10,8 +10,8 @@ author: Krishna Singh
 
 Welcome to a behind-the-scenes look at the Academic Archive. My vision was to create a centralized, digital repository for academic resources—notes, syllabi, code, and more. I wanted a platform that was not only easy to navigate but also incredibly simple to update. This project is built entirely with vanilla HTML, CSS, and JavaScript, with a focus on a clean, modern aesthetic and a dynamic, content-driven architecture that pulls everything directly from GitHub.
 
-![Academic Archive Screenshot 1](../Blogs Images/Archive Images/SS1.png "width:60%")
-![Academic Archive Screenshot 2](../Blogs Images/Archive Images/SS3.jpg "width:20%")
+![Academic Archive Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Archive%20Images/SS1.png "width:60%")
+![Academic Archive Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Archive%20Images/SS3.jpg "width:20%")
 
 ## Core Philosophy: A GitHub-Powered Digital Library
 
@@ -28,8 +28,8 @@ The standout feature of the Academic Archive is its **dynamic nature**. All the 
 * **Powerful Search**: A responsive search bar allows you to quickly find any resource, even within nested folders, ensuring you can locate what you need without delay.
 * **Pinning and Filtering**: Pin your most important folders for quick access, and use the toggle to view only your pinned items for a focused, personalized experience.
 
-![Academic Archive Screenshot 1](../Blogs Images/Archive Images/SS2.png "width:60%")
-![Academic Archive Screenshot 2](../Blogs Images/Archive Images/SS4.jpg "width:20%")
+![Academic Archive Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Archive%20Images/SS2.png "width:60%")
+![Academic Archive Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Archive%20Images/SS4.jpg "width:20%")
 
 ## Technical Implementation
 

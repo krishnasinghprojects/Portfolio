@@ -10,8 +10,8 @@ author: Krishna Singh
 
 Welcome to a deep dive into Ecosync Nexus, a complete smart home ecosystem I engineered from the ground up during the 30-hour Sustainovation 2025 hackathon. My vision was to create a seamless, intuitive, and intelligent platform that not only offers remote control over home appliances but also empowers users with actionable insights to promote energy efficiency and sustainable living. This project spans the full stack, from custom hardware firmware to a secure cloud backend and a polished cross-platform mobile application.
 
-![Ecosync Nexus Screenshot 1](../Blogs Images/Ecosync Images/SS1.png "width:60%")
-![Ecosync Nexus Screenshot 2](../Blogs Images/Ecosync Images/SS6.jpg "width:20%")
+![Ecosync Nexus Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS1.png "width:60%")
+![Ecosync Nexus Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS6.jpg "width:20%")
 
 ## Core Philosophy: An Integrated and Intelligent Ecosystem
 
@@ -28,8 +28,8 @@ The standout feature of Ecosync Nexus is its **holistic, end-to-end architecture
 * **Customizable Routines**: Create personalized routines to automate daily tasks, such as turning off all lights at bedtime or starting the coffee maker in the morning.
 * **Secure User Authentication**: Robust and secure user management handled via Firebase Google Authentication for a frictionless and safe onboarding experience.
 
-![Ecosync Nexus Screenshot 1](../Blogs Images/Ecosync Images/SS2.png "width:60%")
-![Ecosync Nexus Screenshot 2](../Blogs Images/Ecosync Images/SS9.jpg "width:20%")
+![Ecosync Nexus Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS2.png "width:60%")
+![Ecosync Nexus Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS9.jpg "width:20%")
 
 ## Technical Implementation
 
@@ -50,8 +50,8 @@ To bring smart capabilities to existing appliances, I developed custom firmware 
 * **Hardware Integration**: The ESP32 is integrated with relays to physically control the power flow to appliances, effectively retrofitting them with smart capabilities.
 * **Backend Communication**: The firmware is programmed to communicate with the dedicated IoT endpoint on the backend, sending status updates and fetching commands over Wi-Fi.
 
-![Ecosync Nexus Screenshot 1](../Blogs Images/Ecosync Images/SS3.png "width:60%")
-![Ecosync Nexus Screenshot 2](../Blogs Images/Ecosync Images/SS7.jpg "width:20%")
+![Ecosync Nexus Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS3.png "width:60%")
+![Ecosync Nexus Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS7.jpg "width:20%")
 
 ### Mobile Application: The React Native Command Center
 
@@ -62,8 +62,8 @@ The user-facing component of Ecosync Nexus is a sleek and feature-rich Android a
 * **Intuitive Controls**: Users can remotely control their appliances with simple taps, create custom routines, and even use voice commands for a hands-free experience.
 * **Budget and Alerts**: A dedicated section for budget tracking allows users to set monthly goals and receive alerts when they are approaching their limits, encouraging more mindful energy consumption.
 
-![Ecosync Nexus Screenshot 1](../Blogs Images/Ecosync Images/SS4.png "width:60%")
-![Ecosync Nexus Screenshot 2](../Blogs Images/Ecosync Images/SS8.jpg "width:20%")
+![Ecosync Nexus Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS4.png "width:60%")
+![Ecosync Nexus Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS8.jpg "width:20%")
 
 ## A Tour Through the Application's Features
 
@@ -72,8 +72,8 @@ The user-facing component of Ecosync Nexus is a sleek and feature-rich Android a
 * **Routine Creation**: The routines section allows you to create custom automation rules based on time of day or specific triggers, making your home work for you.
 * **AI Autonomous Mode**: With the flip of a switch, you can enable the AI-powered Autonomous Mode and let Ecosync Nexus intelligently manage your appliances to save energy and money.
 
-![Ecosync Nexus Screenshot 1](../Blogs Images/Ecosync Images/SS5.png "width:60%")
-![Ecosync Nexus Screenshot 2](../Blogs Images/Ecosync Images/SS10.jpg "width:20%")
+![Ecosync Nexus Screenshot 1](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS5.png "width:60%")
+![Ecosync Nexus Screenshot 2](https://ik.imagekit.io/krishnasingh/Project%20Images/Ecosync%20Images/SS10.jpg "width:20%")
 
 ## Conclusion
 
