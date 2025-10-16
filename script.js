@@ -66,7 +66,119 @@ function showErrorMessage(message) {
     document.body.appendChild(errorContainer);
 }
 
-// Blog Post Functions - Updated for Markdown
+// Global variable to store portfolio details for blog access
+let portfolioDetails = null;
+
+// Make sure it's also available on window object
+window.portfolioDetails = null;
+
+// Function to load blog content from Firebase
+async function loadBlogFromFirebase(projectName) {
+    try {
+        if (!db) {
+            throw new Error('Firebase database not initialized');
+        }
+
+        console.log(`Loading blog content for project: ${projectName}`);
+
+        // First, try to get blog content from the main portfolio details if available
+        if (portfolioDetails && portfolioDetails.blogs) {
+            const blogKey = projectName.toLowerCase().replace(/\s+/g, '-');
+            if (portfolioDetails.blogs[blogKey]) {
+                console.log(`Blog content found in main details for ${projectName}`);
+                return portfolioDetails.blogs[blogKey];
+            }
+        }
+
+        // Fallback: Try to load from separate blogs collection
+        const blogRef = db.collection("blogs").doc(projectName.toLowerCase().replace(/\s+/g, '-'));
+
+        // Fetch the blog document
+        const blogSnap = await blogRef.get();
+
+        if (blogSnap.exists) {
+            const blogData = blogSnap.data();
+            console.log(`Blog content loaded from separate collection for ${projectName}:`, blogData);
+            return blogData;
+        } else {
+            console.log(`No blog content found for project: ${projectName}`);
+            return null;
+        }
+    } catch (error) {
+        console.error('Error loading blog from Firebase:', error);
+        return null;
+    }
+}
+
+// Use the existing MarkdownParser from renderingEngine.js
+function formatBlogContent(content) {
+    if (!content) return '<p>No content available.</p>';
+
+    // If content is already HTML (contains HTML tags), return as is
+    if (content.includes('<') && content.includes('>')) {
+        console.log('Content appears to be HTML, returning as is');
+        return content;
+    }
+
+    // Remove any remaining frontmatter that might be in the content
+    let cleanContent = content;
+    
+    // Debug: Log the first 200 characters of content
+    console.log('Original content preview:', content.substring(0, 200));
+    
+    // Remove frontmatter if it exists (between --- markers)
+    const frontmatterRegex = /^---\s*\n[\s\S]*?\n---\s*\n?/;
+    if (frontmatterRegex.test(cleanContent)) {
+        cleanContent = cleanContent.replace(frontmatterRegex, '');
+        console.log('Removed frontmatter from content');
+    }
+    
+    // More aggressive frontmatter removal - remove any lines that start with frontmatter keys
+    cleanContent = cleanContent.replace(/^(title|subtitle|author|date):\s*.*$/gm, '');
+    
+    // Remove any standalone --- lines that might be leftover
+    cleanContent = cleanContent.replace(/^---\s*$/gm, '');
+    
+    // Remove any loose frontmatter-like lines at the beginning
+    const lines = cleanContent.split('\n');
+    let startIndex = 0;
+    
+    // Skip empty lines and frontmatter-like lines at the start
+    while (startIndex < lines.length) {
+        const line = lines[startIndex].trim();
+        if (line === '' || 
+            line === '---' || 
+            line.match(/^(title|subtitle|author|date):\s*.+$/) ||
+            line.match(/^---\s*$/)) {
+            startIndex++;
+        } else {
+            break;
+        }
+    }
+    
+    if (startIndex > 0) {
+        cleanContent = lines.slice(startIndex).join('\n');
+        console.log('Removed loose frontmatter lines');
+    }
+    
+    // Clean up multiple consecutive newlines
+    cleanContent = cleanContent.replace(/\n{3,}/g, '\n\n').trim();
+    
+    // Debug: Log the first 200 characters of cleaned content
+    console.log('Cleaned content preview:', cleanContent.substring(0, 200));
+
+    // Use the existing MarkdownParser class from renderingEngine.js
+    if (window.blogRenderer && window.blogRenderer.parser) {
+        console.log('Using existing MarkdownParser from renderingEngine.js');
+        return window.blogRenderer.parser.parse(cleanContent);
+    } else {
+        console.error('MarkdownParser not available, falling back to simple formatting');
+        // Simple fallback - just wrap in paragraphs
+        return cleanContent.split('\n\n').map(p => p.trim() ? `<p>${p.replace(/\n/g, '<br>')}</p>` : '').join('\n');
+    }
+}
+
+// Blog Post Functions - Updated for Firebase
 async function openBlogPost(project) {
     const modal = document.getElementById('blogModal');
     const title = document.getElementById('blogTitle');
@@ -104,20 +216,27 @@ async function openBlogPost(project) {
     document.body.classList.add('modal-open');
 
     try {
-        // Load and render markdown content
-        const { html, metadata } = await window.blogRenderer.renderBlogWithMetadata(project.name);
+        // Load blog content from Firebase data
+        const blogData = await loadBlogFromFirebase(project.name);
 
-        // Update modal content
-        title.textContent = metadata.title;
-        subtitle.textContent = metadata.subtitle;
-        content.innerHTML = html;
+        if (blogData && blogData.content) {
+            // Create metadata object similar to what the existing system expects
+            const metadata = {
+                title: blogData.title || project.name,
+                subtitle: blogData.subtitle || '',
+                date: blogData.date || '',
+                author: blogData.author || ''
+            };
 
-        // Add date if available
-        if (metadata.date) {
-            const dateElement = document.createElement('p');
-            dateElement.className = 'blog-date';
-            dateElement.textContent = `Published: ${metadata.date}`;
-            content.insertBefore(dateElement, content.firstChild);
+            // Update modal content with Firebase data
+            title.textContent = metadata.title;
+            subtitle.textContent = metadata.subtitle;
+
+            // Use the existing markdown parser to format content
+            const formattedContent = formatBlogContent(blogData.content);
+            content.innerHTML = formattedContent;
+        } else {
+            throw new Error('Blog content not found in Firebase');
         }
     } catch (error) {
         console.error('Error loading blog content:', error);
@@ -174,8 +293,29 @@ function renderPortfolio(details) {
         return;
     }
 
+    // Store details globally for blog access
+    portfolioDetails = details;
+    window.portfolioDetails = details;
+    
+    console.log('Global portfolioDetails set:', !!window.portfolioDetails);
+    console.log('Journey data available globally:', !!(window.portfolioDetails && window.portfolioDetails.journey));
+
     console.log('Starting to render portfolio with data:', details);
     console.log('Available data keys:', Object.keys(details));
+
+    // Check if blogs are included in the main data
+    if (details.blogs) {
+        console.log('Blog data found in main details:', Object.keys(details.blogs));
+    }
+    
+    // Check if journey data is included and initialize timeline
+    if (details.journey) {
+        console.log('Journey data found in main details:', details.journey.length, 'entries');
+        // Initialize timeline after portfolio data is loaded with a small delay to ensure global variable is set
+        setTimeout(() => {
+            initializeTimeline();
+        }, 100);
+    }
 
 
 
@@ -633,4 +773,51 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// Function to initialize timeline after Firebase data is loaded
+async function initializeTimeline() {
+    try {
+        console.log('initializeTimeline called');
+        console.log('portfolioDetails available:', !!window.portfolioDetails);
+        console.log('journey data available:', !!(window.portfolioDetails && window.portfolioDetails.journey));
+        
+        if (window.portfolioDetails && window.portfolioDetails.journey) {
+            console.log('Journey entries count:', window.portfolioDetails.journey.length);
+        }
+        
+        // Check if timeline parser is available
+        if (typeof HorizontalTimelineParser !== 'undefined') {
+            console.log('Initializing timeline with Firebase data...');
+            const timelineParser = new HorizontalTimelineParser();
+            await timelineParser.loadTimeline();
+            timelineParser.renderTimeline();
+            
+            // Store timeline parser globally for event handlers
+            window.timelineParser = timelineParser;
+            
+            // Add keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (timelineParser.activeCard && e.key === 'Escape') {
+                    timelineParser.collapsePanel(timelineParser.activeCard);
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                if (timelineParser.activeCard) {
+                    timelineParser.updateCardPositions(timelineParser.activeCard);
+                }
+                setTimeout(() => {
+                    timelineParser.equalizeCardHeights();
+                }, 100);
+            });
+            
+            console.log('Timeline initialized successfully');
+        } else {
+            console.error('HorizontalTimelineParser not available');
+        }
+    } catch (error) {
+        console.error('Error initializing timeline:', error);
+    }
+}
 
