@@ -54,14 +54,93 @@ async function loadPortfolioData() {
 
 function showErrorMessage(message) {
     const errorContainer = document.createElement('div');
-    errorContainer.style.cssText = 'text-align: center; padding: 50px; color: white; background: #1a1a1a; min-height: 100vh;';
-    errorContainer.innerHTML = `
-        <h1>Error Loading Portfolio</h1>
-        <p>${message}</p>
-        <button onclick="location.reload()" style="padding: 10px 20px; margin-top: 20px; background: #ff0000; color: white; border: none; border-radius: 5px; cursor: pointer;">
-            Refresh Page
-        </button>
+    errorContainer.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bgcolor-gradient);
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        color: var(--text-color);
+        font-family: "Lora", Georgia, serif;
     `;
+
+    errorContainer.innerHTML = `
+        <div style="
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+                        0 0 20px rgba(74, 144, 255, 0.15),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        ">
+            <h1 style="
+                font-size: 2rem;
+                font-family: 'Young Serif', serif;
+                margin-bottom: 1.5rem;
+                background: var(--title-texts);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: none;
+            ">Error Loading Portfolio</h1>
+            
+            <p style="
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 2rem;
+                color: var(--text-color);
+                opacity: 0.9;
+            ">${message}</p>
+            
+            <button onclick="location.reload()" style="
+                font-family: 'Lora', serif;
+                font-weight: 600;
+                padding: 0.8rem 2rem;
+                border-radius: 25px;
+                border: none;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                color: var(--text-color);
+                cursor: pointer;
+                font-size: 1rem;
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+                            0 0 15px rgba(74, 144, 255, 0.2),
+                            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                            inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+                position: relative;
+                overflow: hidden;
+            " onmouseover="
+                this.style.transform = 'translateY(-3px) scale(1.02)';
+                this.style.boxShadow = '0 15px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(74, 144, 255, 0.5), 0 0 50px rgba(74, 144, 255, 0.3), inset 0 2px 0 rgba(255, 255, 255, 0.3), inset 0 -2px 0 rgba(0, 0, 0, 0.2)';
+                this.style.borderColor = 'rgba(255, 255, 255, 0.4)';
+            " onmouseout="
+                this.style.transform = 'translateY(0) scale(1)';
+                this.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3), 0 0 15px rgba(74, 144, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.1)';
+                this.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+            ">
+                🔄 Refresh Page
+            </button>
+        </div>
+    `;
+
     document.body.innerHTML = '';
     document.body.appendChild(errorContainer);
 }
@@ -122,32 +201,32 @@ function formatBlogContent(content) {
 
     // Remove any remaining frontmatter that might be in the content
     let cleanContent = content;
-    
+
     // Debug: Log the first 200 characters of content
     console.log('Original content preview:', content.substring(0, 200));
-    
+
     // Remove frontmatter if it exists (between --- markers)
     const frontmatterRegex = /^---\s*\n[\s\S]*?\n---\s*\n?/;
     if (frontmatterRegex.test(cleanContent)) {
         cleanContent = cleanContent.replace(frontmatterRegex, '');
         console.log('Removed frontmatter from content');
     }
-    
+
     // More aggressive frontmatter removal - remove any lines that start with frontmatter keys
     cleanContent = cleanContent.replace(/^(title|subtitle|author|date):\s*.*$/gm, '');
-    
+
     // Remove any standalone --- lines that might be leftover
     cleanContent = cleanContent.replace(/^---\s*$/gm, '');
-    
+
     // Remove any loose frontmatter-like lines at the beginning
     const lines = cleanContent.split('\n');
     let startIndex = 0;
-    
+
     // Skip empty lines and frontmatter-like lines at the start
     while (startIndex < lines.length) {
         const line = lines[startIndex].trim();
-        if (line === '' || 
-            line === '---' || 
+        if (line === '' ||
+            line === '---' ||
             line.match(/^(title|subtitle|author|date):\s*.+$/) ||
             line.match(/^---\s*$/)) {
             startIndex++;
@@ -155,15 +234,15 @@ function formatBlogContent(content) {
             break;
         }
     }
-    
+
     if (startIndex > 0) {
         cleanContent = lines.slice(startIndex).join('\n');
         console.log('Removed loose frontmatter lines');
     }
-    
+
     // Clean up multiple consecutive newlines
     cleanContent = cleanContent.replace(/\n{3,}/g, '\n\n').trim();
-    
+
     // Debug: Log the first 200 characters of cleaned content
     console.log('Cleaned content preview:', cleanContent.substring(0, 200));
 
@@ -296,7 +375,7 @@ function renderPortfolio(details) {
     // Store details globally for blog access
     portfolioDetails = details;
     window.portfolioDetails = details;
-    
+
     console.log('Global portfolioDetails set:', !!window.portfolioDetails);
     console.log('Journey data available globally:', !!(window.portfolioDetails && window.portfolioDetails.journey));
 
@@ -307,7 +386,7 @@ function renderPortfolio(details) {
     if (details.blogs) {
         console.log('Blog data found in main details:', Object.keys(details.blogs));
     }
-    
+
     // Check if journey data is included and initialize timeline
     if (details.journey) {
         console.log('Journey data found in main details:', details.journey.length, 'entries');
@@ -780,21 +859,21 @@ async function initializeTimeline() {
         console.log('initializeTimeline called');
         console.log('portfolioDetails available:', !!window.portfolioDetails);
         console.log('journey data available:', !!(window.portfolioDetails && window.portfolioDetails.journey));
-        
+
         if (window.portfolioDetails && window.portfolioDetails.journey) {
             console.log('Journey entries count:', window.portfolioDetails.journey.length);
         }
-        
+
         // Check if timeline parser is available
         if (typeof HorizontalTimelineParser !== 'undefined') {
             console.log('Initializing timeline with Firebase data...');
             const timelineParser = new HorizontalTimelineParser();
             await timelineParser.loadTimeline();
             timelineParser.renderTimeline();
-            
+
             // Store timeline parser globally for event handlers
             window.timelineParser = timelineParser;
-            
+
             // Add keyboard navigation
             document.addEventListener('keydown', (e) => {
                 if (timelineParser.activeCard && e.key === 'Escape') {
@@ -811,7 +890,7 @@ async function initializeTimeline() {
                     timelineParser.equalizeCardHeights();
                 }, 100);
             });
-            
+
             console.log('Timeline initialized successfully');
         } else {
             console.error('HorizontalTimelineParser not available');
