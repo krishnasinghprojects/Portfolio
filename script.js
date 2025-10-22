@@ -619,6 +619,12 @@ function renderPortfolio(details) {
         });
     }
 
+    // -- Dynamic Blog Posts Section --
+    // Show loading state first
+    renderBlogPostsLoading();
+    // Then load the actual posts
+    loadBlogPosts();
+
     // -- Dynamic Skills Section --
     const skillsContainer = document.getElementById("skills_container");
     if (skillsContainer) {
@@ -898,5 +904,225 @@ async function initializeTimeline() {
     } catch (error) {
         console.error('Error initializing timeline:', error);
     }
+}
+
+// Blog Posts Functions
+async function loadBlogPosts() {
+    try {
+        console.log('Loading blog posts from Medium RSS feed...');
+
+        // Try multiple CORS proxy services for better reliability
+        const proxies = [
+            'https://api.allorigins.win/get?url=',
+            'https://corsproxy.io/?',
+            'https://cors-anywhere.herokuapp.com/'
+        ];
+
+        const rssUrl = 'https://medium.com/feed/@krishnasinghprojects';
+        let xmlText = null;
+
+        // Try each proxy until one works
+        for (const proxyUrl of proxies) {
+            try {
+                console.log(`Trying proxy: ${proxyUrl}`);
+                const response = await fetch(proxyUrl + encodeURIComponent(rssUrl));
+
+                if (response.ok) {
+                    if (proxyUrl.includes('allorigins')) {
+                        const data = await response.json();
+                        xmlText = data.contents;
+                    } else {
+                        xmlText = await response.text();
+                    }
+                    console.log('Successfully fetched RSS feed');
+                    break;
+                }
+            } catch (proxyError) {
+                console.log(`Proxy ${proxyUrl} failed:`, proxyError.message);
+                continue;
+            }
+        }
+
+        // If all proxies fail, use the local tempdata.xml as fallback
+        if (!xmlText) {
+            console.log('All proxies failed, using local tempdata.xml as fallback');
+            const response = await fetch('tempdata.xml');
+            if (response.ok) {
+                xmlText = await response.text();
+                console.log('Successfully loaded local tempdata.xml');
+            } else {
+                throw new Error('Failed to load both remote RSS and local fallback');
+            }
+        }
+
+        // Parse the XML
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+        // Check for XML parsing errors
+        const parseError = xmlDoc.querySelector('parsererror');
+        if (parseError) {
+            throw new Error('XML parsing failed: ' + parseError.textContent);
+        }
+
+        // Extract blog posts from RSS
+        const items = xmlDoc.querySelectorAll('item');
+        const blogPosts = [];
+
+        console.log(`Found ${items.length} blog posts in RSS feed`);
+
+        // Get only the first 2 posts for the section
+        for (let i = 0; i < Math.min(items.length, 2); i++) {
+            const item = items[i];
+
+            const title = item.querySelector('title')?.textContent || 'Untitled';
+            const link = item.querySelector('link')?.textContent || '#';
+            const description = item.querySelector('description')?.textContent || '';
+            const pubDate = item.querySelector('pubDate')?.textContent || '';
+            const content = item.querySelector('content\\:encoded, encoded')?.textContent || '';
+
+            // Extract categories
+            const categories = Array.from(item.querySelectorAll('category')).map(cat => cat.textContent);
+
+            // Extract subtitle from content (look for h4 tag in CDATA)
+            let subtitle = '';
+            if (content) {
+                // Try to extract h4 content which is typically the subtitle in Medium posts
+                const h4Match = content.match(/<h4[^>]*>(.*?)<\/h4>/i);
+                if (h4Match) {
+                    subtitle = h4Match[1].replace(/<[^>]*>/g, '').trim();
+                } else {
+                    // Fallback: try to extract first paragraph or any meaningful text
+                    const pMatch = content.match(/<p[^>]*>(.*?)<\/p>/i);
+                    if (pMatch) {
+                        let fallbackText = pMatch[1].replace(/<[^>]*>/g, '').trim();
+                        if (fallbackText.length > 150) {
+                            fallbackText = fallbackText.substring(0, 150) + '...';
+                        }
+                        subtitle = fallbackText;
+                    }
+                }
+            }
+
+            // If no subtitle found, use cleaned description as fallback
+            if (!subtitle && description) {
+                let cleanDescription = description.replace(/<[^>]*>/g, '').trim();
+                if (cleanDescription.length > 150) {
+                    cleanDescription = cleanDescription.substring(0, 150) + '...';
+                }
+                subtitle = cleanDescription;
+            }
+
+            // Format date
+            const formattedDate = pubDate ? new Date(pubDate).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            }) : '';
+
+            // Clean title (remove CDATA markers if present)
+            const cleanTitle = title.replace(/^\[CDATA\[|\]\]$/g, '').trim();
+
+            blogPosts.push({
+                title: cleanTitle,
+                link: link,
+                subtitle: subtitle || 'Click to read more about this post...',
+                content: content,
+                date: formattedDate,
+                categories: categories.slice(0, 5) // Limit to 5 categories
+            });
+        }
+
+        console.log('Blog posts processed:', blogPosts.length);
+        renderBlogPosts(blogPosts);
+
+    } catch (error) {
+        console.error('Error loading blog posts:', error);
+        renderBlogPostsError();
+    }
+}
+
+function renderBlogPosts(posts) {
+    const container = document.querySelector('.blog-posts-container');
+    if (!container) {
+        console.error('Blog posts container not found');
+        return;
+    }
+
+    container.innerHTML = '';
+
+    posts.forEach((post, index) => {
+        const postCard = document.createElement('div');
+        postCard.className = 'blog-post-card';
+        postCard.style.cursor = 'pointer';
+
+        // Create post content
+        postCard.innerHTML = `
+            <div class="blog-post-content">
+                <h3 class="blog-post-title">${post.title}</h3>
+                <div class="blog-post-meta">
+                    <span class="blog-post-date">${post.date}</span>
+                    <div class="blog-post-categories">
+                        ${post.categories.map(cat => `<span class="blog-post-category">${cat}</span>`).join('')}
+                    </div>
+                </div>
+                <p class="blog-post-description">${post.subtitle}</p>
+            </div>
+            <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="blog-post-read-more">
+                <span>Read on Medium</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                </svg>
+            </a>
+        `;
+
+        // Add click event to open the post
+        postCard.addEventListener('click', (e) => {
+            // Don't trigger if clicking the read more button
+            if (!e.target.closest('.blog-post-read-more')) {
+                window.open(post.link, '_blank', 'noopener,noreferrer');
+            }
+        });
+
+        container.appendChild(postCard);
+    });
+}
+
+function renderBlogPostsLoading() {
+    const container = document.querySelector('.blog-posts-container');
+    if (!container) return;
+
+    container.innerHTML = `
+        <div class="blog-post-card" style="text-align: center; cursor: default;">
+            <div class="blog-post-content">
+                <h3 class="blog-post-title">Loading Blog Posts...</h3>
+                <p class="blog-post-description">
+                    Fetching the latest articles from Medium...
+                </p>
+            </div>
+        </div>
+    `;
+}
+
+function renderBlogPostsError() {
+    const container = document.querySelector('.blog-posts-container');
+    if (!container) return;
+
+    container.innerHTML = `
+        <div class="blog-post-card" style="text-align: center; cursor: default;">
+            <div class="blog-post-content">
+                <h3 class="blog-post-title">Blog Posts Coming Soon</h3>
+                <p class="blog-post-description">
+                    Unable to load blog posts at the moment. Please visit my Medium profile directly to read my latest articles.
+                </p>
+            </div>
+            <a href="https://medium.com/@krishnasinghprojects" target="_blank" rel="noopener noreferrer" class="blog-post-read-more">
+                <span>Visit Medium Profile</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                </svg>
+            </a>
+        </div>
+    `;
 }
 
