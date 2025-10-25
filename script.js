@@ -898,12 +898,78 @@ async function initializeTimeline() {
             });
 
             console.log('Timeline initialized successfully');
+            
+            // Initialize timeline scroll buttons
+            initializeTimelineScrollButtons();
         } else {
             console.error('HorizontalTimelineParser not available');
         }
     } catch (error) {
         console.error('Error initializing timeline:', error);
     }
+}
+
+// Timeline Scroll Buttons Functionality
+function initializeTimelineScrollButtons() {
+    const timelineContainer = document.querySelector('.timeline-container');
+    const scrollLeftBtn = document.getElementById('timelineScrollLeft');
+    const scrollRightBtn = document.getElementById('timelineScrollRight');
+    
+    if (!timelineContainer || !scrollLeftBtn || !scrollRightBtn) {
+        console.log('Timeline scroll elements not found');
+        return;
+    }
+    
+    // Scroll amount based on screen size
+    function getScrollAmount() {
+        if (window.innerWidth <= 480) {
+            return 300; // Smaller scroll for mobile
+        } else if (window.innerWidth <= 768) {
+            return 320; // Medium scroll for tablet
+        } else {
+            return 340; // Full scroll for desktop
+        }
+    }
+    
+    // Left scroll button click handler
+    scrollLeftBtn.addEventListener('click', () => {
+        timelineContainer.scrollBy({
+            left: -getScrollAmount(),
+            behavior: 'smooth'
+        });
+    });
+    
+    // Right scroll button click handler
+    scrollRightBtn.addEventListener('click', () => {
+        timelineContainer.scrollBy({
+            left: getScrollAmount(),
+            behavior: 'smooth'
+        });
+    });
+    
+    // Update button states based on scroll position
+    function updateScrollButtons() {
+        const { scrollLeft, scrollWidth, clientWidth } = timelineContainer;
+        
+        // Disable left button if at the start
+        scrollLeftBtn.disabled = scrollLeft <= 0;
+        
+        // Disable right button if at the end
+        scrollRightBtn.disabled = scrollLeft >= scrollWidth - clientWidth - 10; // 10px tolerance
+    }
+    
+    // Listen for scroll events to update button states
+    timelineContainer.addEventListener('scroll', updateScrollButtons);
+    
+    // Initial button state update
+    setTimeout(updateScrollButtons, 100);
+    
+    // Update button states on window resize
+    window.addEventListener('resize', () => {
+        setTimeout(updateScrollButtons, 100);
+    });
+    
+    console.log('Timeline scroll buttons initialized');
 }
 
 // Blog Posts Functions

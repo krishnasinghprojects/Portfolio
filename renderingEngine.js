@@ -183,7 +183,6 @@ class BlogRenderer {
     async loadMarkdownFile(filename) {
         // Check cache first
         if (this.cache.has(filename)) {
-            console.log(`Cache hit for: ${filename}`);
             return this.cache.get(filename);
         }
 
@@ -197,18 +196,18 @@ class BlogRenderer {
         for (let i = 0; i < pathStrategies.length; i++) {
             const filePath = pathStrategies[i];
             try {
-                console.log(`Attempt ${i + 1}: Loading markdown file: ${filePath}`);
+            
 
                 const response = await fetch(filePath);
                 if (response.ok) {
                     const content = await response.text();
-                    console.log(`Success: Loaded ${filePath}`);
+                   
 
                     // Cache the successful result
                     this.cache.set(filename, content);
                     return content;
                 }
-                console.log(`Failed: ${filePath} - HTTP ${response.status}: ${response.statusText}`);
+                
             } catch (error) {
                 console.log(`Error with ${filePath}:`, error.message);
             }
@@ -256,7 +255,6 @@ class BlogRenderer {
 
     async renderBlogWithMetadata(projectName) {
         const filename = projectName.toLowerCase().replace(/\s+/g, '-');
-        console.log(`Rendering blog for project: "${projectName}" -> filename: "${filename}"`);
 
         const markdown = await this.loadMarkdownFile(filename);
 
@@ -538,17 +536,10 @@ class HorizontalTimelineParser {
     async loadTimeline() {
         try {
             // Check if journey data is available from Firebase (global portfolioDetails)
-            if (window.portfolioDetails && window.portfolioDetails.journey) {
-                console.log('Loading timeline from Firebase data, entries:', window.portfolioDetails.journey.length);
+            if (window.portfolioDetails && window.portfolioDetails.journey) {    
                 this.timelineData = window.portfolioDetails.journey;
-                console.log('Timeline data loaded:', this.timelineData);
                 return this.timelineData;
             }
-
-            // Fallback to markdown file if Firebase data not available
-            console.log('Fallback: Loading timeline from markdown file');
-            console.log('portfolioDetails available:', !!window.portfolioDetails);
-            console.log('journey available:', !!(window.portfolioDetails && window.portfolioDetails.journey));
 
             const response = await fetch('timeline.md');
             const markdown = await response.text();
@@ -677,23 +668,22 @@ class HorizontalTimelineParser {
     }
 
     renderTimeline() {
-        console.log('renderTimeline called');
+       
         const container = document.querySelector('.timeline-container');
         if (!container) {
             console.error('Timeline container not found');
             return;
         }
 
-        console.log('Timeline container found, rendering', this.timelineData.length, 'entries');
+       
         container.innerHTML = '';
 
         this.timelineData.forEach((entry, index) => {
-            console.log('Rendering entry:', entry.year, entry.title);
+          
             const cardWrapper = this.createTimelineCardWrapper(entry, index);
             container.appendChild(cardWrapper);
         });
 
-        console.log('Timeline cards rendered, equalizing heights...');
         // Equalize card heights after rendering
         setTimeout(() => {
             this.equalizeCardHeights();
@@ -739,11 +729,6 @@ class HorizontalTimelineParser {
     }
 
     createMainCard(entry) {
-        console.log('Creating main card for entry:', entry);
-        console.log('Entry year:', entry.year);
-        console.log('Entry title:', entry.title);
-        console.log('Entry subtitle:', entry.subtitle);
-        console.log('Entry summary:', entry.summary);
 
         const card = document.createElement('div');
         card.className = 'timeline-main-card';
@@ -756,7 +741,6 @@ class HorizontalTimelineParser {
         yearBadge.style.color = '#ffffff';
         yearBadge.style.fontSize = '1.2rem';
         yearBadge.style.fontWeight = 'bold';
-        console.log('Year badge text:', yearBadge.textContent);
 
         const duration = document.createElement('div');
         duration.className = 'timeline-duration';
@@ -764,7 +748,7 @@ class HorizontalTimelineParser {
         // Force visibility for debugging
         duration.style.color = '#4a90ff';
         duration.style.fontSize = '0.85rem';
-        console.log('Duration text:', duration.textContent);
+
 
         const title = document.createElement('h3');
         title.className = 'timeline-title';
@@ -773,7 +757,7 @@ class HorizontalTimelineParser {
         // Force visibility for debugging
         title.style.color = '#ffffff';
         title.style.fontSize = '1.4rem';
-        console.log('Title HTML:', titleText);
+       
 
         const subtitle = document.createElement('h4');
         subtitle.className = 'timeline-subtitle';
@@ -782,16 +766,15 @@ class HorizontalTimelineParser {
         // Force visibility for debugging
         subtitle.style.color = '#4a90ff';
         subtitle.style.fontSize = '1rem';
-        console.log('Subtitle HTML:', subtitleText);
+       
 
         const summary = document.createElement('p');
         summary.className = 'timeline-summary';
         const summaryText = this.parseMarkdown(entry.summary || 'No summary available.');
         summary.innerHTML = summaryText;
         // Force visibility for debugging
-        summary.style.color = '#e0e8ff';
         summary.style.fontSize = '0.9rem';
-        console.log('Summary HTML:', summaryText);
+
 
         const readButton = document.createElement('button');
         readButton.className = 'timeline-read-button';
