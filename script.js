@@ -38,7 +38,7 @@ async function loadPortfolioData() {
         if (docSnap.exists) {
             // Get the entire object from the document
             const details = docSnap.data();
-            console.log("Portfolio data loaded from Firebase:", details);
+           
 
             // Now, call your rendering function with the fetched data
             renderPortfolio(details);
@@ -376,16 +376,6 @@ function renderPortfolio(details) {
     portfolioDetails = details;
     window.portfolioDetails = details;
 
-    console.log('Global portfolioDetails set:', !!window.portfolioDetails);
-    console.log('Journey data available globally:', !!(window.portfolioDetails && window.portfolioDetails.journey));
-
-    console.log('Starting to render portfolio with data:', details);
-    console.log('Available data keys:', Object.keys(details));
-
-    // Check if blogs are included in the main data
-    if (details.blogs) {
-        console.log('Blog data found in main details:', Object.keys(details.blogs));
-    }
 
     // Check if journey data is included and initialize timeline
     if (details.journey) {
@@ -642,7 +632,6 @@ function renderPortfolio(details) {
             return details.skills[b].length - details.skills[a].length;
         });
 
-        console.log('Skills categories ordered by count:', categories.map(cat => `${cat}: ${details.skills[cat].length}`));
 
         categories.forEach((category, index) => {
             // Create category container
@@ -897,8 +886,7 @@ async function initializeTimeline() {
                 }, 100);
             });
 
-            console.log('Timeline initialized successfully');
-            
+        
             // Initialize timeline scroll buttons
             initializeTimelineScrollButtons();
         } else {
@@ -990,7 +978,6 @@ async function loadBlogPosts() {
         // Try each proxy until one works
         for (const proxyUrl of proxies) {
             try {
-                console.log(`Trying proxy: ${proxyUrl}`);
                 const response = await fetch(proxyUrl + encodeURIComponent(rssUrl));
 
                 if (response.ok) {
@@ -1000,7 +987,6 @@ async function loadBlogPosts() {
                     } else {
                         xmlText = await response.text();
                     }
-                    console.log('Successfully fetched RSS feed');
                     break;
                 }
             } catch (proxyError) {
@@ -1015,7 +1001,7 @@ async function loadBlogPosts() {
             const response = await fetch('tempdata.xml');
             if (response.ok) {
                 xmlText = await response.text();
-                console.log('Successfully loaded local tempdata.xml');
+               
             } else {
                 throw new Error('Failed to load both remote RSS and local fallback');
             }
@@ -1035,7 +1021,7 @@ async function loadBlogPosts() {
         const items = xmlDoc.querySelectorAll('item');
         const blogPosts = [];
 
-        console.log(`Found ${items.length} blog posts in RSS feed`);
+    
 
         // Get only the first 2 posts for the section
         for (let i = 0; i < Math.min(items.length, 2); i++) {
@@ -1099,7 +1085,6 @@ async function loadBlogPosts() {
             });
         }
 
-        console.log('Blog posts processed:', blogPosts.length);
         renderBlogPosts(blogPosts);
 
     } catch (error) {
