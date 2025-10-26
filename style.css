@@ -254,6 +254,7 @@ nav {
     justify-content: center;
     align-items: center;
     color: white;
+    background: var(--logo-bg-gradient);
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
@@ -329,11 +330,11 @@ body {
         inset 0 1px 0 rgba(255, 255, 255, 0.2),
         inset 0 -1px 0 rgba(0, 0, 0, 0.1);
     background-image: url("DarkMode.svg");
-    filter: invert(1);
     animation: themeIndicatorPulse 3s ease-in-out infinite;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 12px 12px;
+    transform: scale(2);
 }
 
 body.light-theme .logo::after {
@@ -351,16 +352,16 @@ body.light-theme .logo::after {
 /* System theme indicator (when following system preference) */
 .logo[data-theme="system"]::after {
     background-image: url("Default.svg");
-    filter: invert(1);
+
 }
 
 body.light-theme .logo[data-theme="system"]::after {
    background-image: url("Default.svg");
-    filter: invert(1);
+
 }
 
 .logo:hover::after {
-    transform: scale(1.2);
+    transform: scale(1.25);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3),
         0 0 15px rgba(74, 144, 255, 0.4),
         inset 0 2px 0 rgba(255, 255, 255, 0.3),
