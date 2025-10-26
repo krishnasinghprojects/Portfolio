@@ -1223,6 +1223,9 @@ body.light-theme .theme-notification {
         min-width: 250px;
         padding: 1rem;
     }
+    #navbar_name {
+        font-size: 1.25rem;
+    }
 }
 
 /* Timeline Section */
