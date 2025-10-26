@@ -448,7 +448,7 @@ class ModalManager {
             if (svg) {
                 svg.style.maxWidth = '100%';
                 svg.style.height = 'auto';
-                svg.style.background = 'white';
+                svg.style.background = 'rgba(255, 255, 255, 0.75)';
                 svg.style.borderRadius = '10px';
                 svg.style.padding = '1rem';
             }

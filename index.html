@@ -240,7 +240,7 @@
                 <li role="none">
                     <a href="#blog-posts-heading" role="menuitem" aria-label="Go to blog posts section">Blogs</a>
                 </li>
-                
+
                 <li role="none">
                     <a href="#" id="resume_link" role="menuitem" aria-label="Download Krishna Singh's resume"
                         target="_blank" rel="noopener">Resume</a>
@@ -259,8 +259,10 @@
             <h1>Krishna Singh (krishnasinghprojects)</h1>
             <h2>Full Stack Software Engineer</h2>
             <p>
-                An engineering student skilled in Full-Stack Development for Web and Mobile Platforms using React and React Native. 
-                I specialize in integrating AI functionalities directly into applications to build smarter, more responsive user experiences.
+                An engineering student skilled in Full-Stack Development for Web and Mobile Platforms using React and
+                React Native.
+                I specialize in integrating AI functionalities directly into applications to build smarter, more
+                responsive user experiences.
             </p>
 
             <h2>Skills</h2>
@@ -273,18 +275,23 @@
             </ul>
 
             <h2>Projects</h2>
-            
+
             <h3>Portfolio Forge</h3>
-            <p>Portfolio showcases my projects, skills, and achievements in a clean, responsive design. It includes project previews, tech stacks, and an organized layout that adapts across devices.</p>
+            <p>Portfolio showcases my projects, skills, and achievements in a clean, responsive design. It includes
+                project previews, tech stacks, and an organized layout that adapts across devices.</p>
 
             <h3>Academic Notes</h3>
-            <p>Academic Notes is an AI-powered learning application for academic support. It transforms audio, PDFs, and images into structured notes, generates interactive quizzes, provides in-depth content analysis.</p>
+            <p>Academic Notes is an AI-powered learning application for academic support. It transforms audio, PDFs, and
+                images into structured notes, generates interactive quizzes, provides in-depth content analysis.</p>
 
             <h3>Ecosync Nexus</h3>
-            <p>Ecosync Nexus is a full-stack smart home system for energy management. It retrofits appliances with custom hardware, offers remote control via a mobile app, and uses an AI-powered backend to automate energy savings and track budgets.</p>
+            <p>Ecosync Nexus is a full-stack smart home system for energy management. It retrofits appliances with
+                custom hardware, offers remote control via a mobile app, and uses an AI-powered backend to automate
+                energy savings and track budgets.</p>
 
             <h3>Academic Archive</h3>
-            <p>Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It offers folder pinning, dark mode, and an intuitive folder interface for easy resource management.</p>
+            <p>Academic Archive helps users organize and access educational files like notes, PDFs, images, and code. It
+                offers folder pinning, dark mode, and an intuitive folder interface for easy resource management.</p>
 
         </noscript>
 
@@ -321,7 +328,7 @@
         <section class="projects-section" aria-labelledby="projects">
             <h2 class="projects-title" id="projects">Projects</h2>
             <div class="projects-container" role="region" aria-label="Portfolio projects">
-                </div>
+            </div>
         </section>
 
         <div class="break"></div>
@@ -329,7 +336,7 @@
         <section class="certification-section" id="certificates-redirect" aria-labelledby="certificates">
             <h2 class="certification-title" id="certificates">Certifications</h2>
             <div class="certificates-container" role="region" aria-label="Professional certifications">
-                </div>
+            </div>
         </section>
 
         <div class="break"></div>
@@ -337,14 +344,14 @@
         <section class="certification-section" id="badges-redirect" aria-labelledby="certificates">
             <h2 class="certification-title badges" id="certificates">Badges</h2>
             <div class="badge-container" role="region" aria-label="Achievement badges">
-                </div>
+            </div>
         </section>
 
         <div class="break"></div>
 
         <section aria-labelledby="education-heading">
             <h2 class="timeline-heading" id="education-heading">Educational Background</h2>
-            <div class="timeline" role="region"aria-label="Educational timeline"></div>
+            <div class="timeline" role="region" aria-label="Educational timeline"></div>
         </section>
 
         <div class="break education-break"></div>
@@ -352,20 +359,19 @@
         <section class="timeline-section" aria-labelledby="timeline-heading">
             <h2 class="timeline-heading" id="timeline-heading">My Developer Journey</h2>
             <div class="timeline-container" role="region" aria-label="Developer journey timeline">
-                </div>
+            </div>
             <div class="journey-map-button-container">
                 <button class="timeline-scroll-button timeline-scroll-left glass-button" id="timelineScrollLeft"
                     aria-label="Scroll timeline left">
-                    <img src="https://img.icons8.com/?size=100&id=mUkoi5cNdORz&format=png"
-                        alt="Scroll Left" style="transform: scaleX(-1);">
+                    <img src="https://img.icons8.com/?size=100&id=mUkoi5cNdORz&format=png" alt="Scroll Left"
+                        style="transform: scaleX(-1);">
                 </button>
                 <button class="journey-map-button glass-button" id="journeyMapBtn">
                     <span>View My Developer Journey Map</span>
                 </button>
                 <button class="timeline-scroll-button timeline-scroll-right glass-button" id="timelineScrollRight"
                     aria-label="Scroll timeline right">
-                    <img src="https://img.icons8.com/?size=100&id=mUkoi5cNdORz&format=png"
-                        alt="Scroll Right">
+                    <img src="https://img.icons8.com/?size=100&id=mUkoi5cNdORz&format=png" alt="Scroll Right">
                 </button>
             </div>
         </section>
@@ -375,13 +381,13 @@
         <section class="blog-posts-section" aria-labelledby="blog-posts-heading">
             <h2 class="blog-posts-title" id="blog-posts-heading">Latest Blog Posts</h2>
             <div class="blog-posts-container" role="region" aria-label="Latest blog posts">
-                </div>
+            </div>
         </section>
 
         <div class="break"></div>
 
         <section id="contact" aria-labelledby="contact-heading">
-            </section>
+        </section>
     </main>
 
     <div id="blogModal" class="blog-modal">
@@ -412,46 +418,192 @@
 
     <script>
 
-        let canClick = true;
-
-        document.querySelector('.name .logo').addEventListener('click', function (e) {
-            e.preventDefault();
-
-            // Prevent spamming during transition
-            if (!canClick) return;
-            canClick = false;
-
-            // Define separate audio objects for dark and light theme changes.
-            const Sound = new Audio('ThemeChange.mp3');
-            Sound.playbackRate = 1.25;
-
-            // Determine current theme and choose the appropriate sound.
-            const wasLight = document.body.classList.contains('light-theme');
-
-            if (wasLight) {
-                // When switching from light to dark.
-                Sound.play();
-            } else {
-                // When switching from dark to light.
-                Sound.play();
+        // Theme Management System
+        class ThemeManager {
+            constructor() {
+                this.canClick = true;
+                this.themes = {
+                    DARK: 'dark',
+                    LIGHT: 'light',
+                    SYSTEM: 'system'
+                };
+                this.currentTheme = this.themes.SYSTEM;
+                this.init();
             }
 
-            // Start fade out transition
-            document.body.classList.add('theme-transition');
+            init() {
+                // Load saved preference or default to system
+                const savedTheme = localStorage.getItem('portfolio-theme') || this.themes.SYSTEM;
+                this.setTheme(savedTheme);
 
-            // After fade out completes (150ms), toggle the theme
-            setTimeout(() => {
-                document.body.classList.toggle('light-theme');
+                // Listen for system theme changes
+                if (window.matchMedia) {
+                    const mediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+                    mediaQuery.addEventListener('change', () => {
+                        if (this.currentTheme === this.themes.SYSTEM) {
+                            this.applySystemTheme();
+                        }
+                    });
+                }
 
-                // Start fade in by removing transition class
-                document.body.classList.remove('theme-transition');
+                // Add click listener to logo for theme toggle
+                const logo = document.querySelector('.name .logo');
+                if (logo) {
+                    logo.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.toggleTheme();
+                    });
 
-                // Re-enable clicking after fade in completes
+                    // Add tooltip
+                    logo.setAttribute('title', 'Click to cycle themes: System → Light → Dark → System');
+                }
+            }
+
+            setTheme(theme) {
+                this.currentTheme = theme;
+                localStorage.setItem('portfolio-theme', theme);
+
+                // Update logo indicator
+                const logo = document.querySelector('.logo');
+                if (logo) {
+                    logo.setAttribute('data-theme', theme);
+                }
+
+                if (theme === this.themes.SYSTEM) {
+                    this.applySystemTheme();
+                    console.log('Theme set to: System (following OS preference)');
+                } else if (theme === this.themes.LIGHT) {
+                    this.applyLightTheme();
+                    console.log('Theme set to: Light');
+                } else {
+                    this.applyDarkTheme();
+                    console.log('Theme set to: Dark');
+                }
+            }
+
+            applySystemTheme() {
+                const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (prefersDark) {
+                    this.applyDarkTheme();
+                    console.log('System theme detected: Dark');
+                } else {
+                    this.applyLightTheme();
+                    console.log('System theme detected: Light');
+                }
+            }
+
+            applyLightTheme() {
+                document.body.classList.add('light-theme');
+            }
+
+            applyDarkTheme() {
+                document.body.classList.remove('light-theme');
+            }
+
+            toggleTheme() {
+                // Prevent spamming during transition
+                if (!this.canClick) return;
+                this.canClick = false;
+
+                // Play theme change sound
+                try {
+                    const sound = new Audio('ThemeChange.mp3');
+                    sound.playbackRate = 1.25;
+                    sound.play().catch(() => { }); // Ignore audio errors
+                } catch (e) {
+                    // Ignore audio errors
+                }
+
+                // Cycle through themes: system -> light -> dark -> system
+                let nextTheme;
+                if (this.currentTheme === this.themes.SYSTEM) {
+                    nextTheme = this.themes.LIGHT;
+                } else if (this.currentTheme === this.themes.LIGHT) {
+                    nextTheme = this.themes.DARK;
+                } else {
+                    nextTheme = this.themes.SYSTEM;
+                }
+
+                // Start fade out transition
+                document.body.classList.add('theme-transition');
+
+                // After fade out completes (150ms), apply new theme
                 setTimeout(() => {
-                    canClick = true;
+                    this.setTheme(nextTheme);
+
+                    // Show theme change notification
+                    this.showThemeNotification();
+
+                    // Start fade in by removing transition class
+                    document.body.classList.remove('theme-transition');
+
+                    // Re-enable clicking after fade in completes
+                    setTimeout(() => {
+                        this.canClick = true;
+                    }, 150);
                 }, 150);
-            }, 150);
-        });
+            }
+
+            getCurrentThemeInfo() {
+                const isLight = document.body.classList.contains('light-theme');
+                const appliedTheme = isLight ? this.themes.LIGHT : this.themes.DARK;
+
+                return {
+                    preference: this.currentTheme,
+                    applied: appliedTheme,
+                    isSystem: this.currentTheme === this.themes.SYSTEM,
+                    description: this.getThemeDescription()
+                };
+            }
+
+            getThemeDescription() {
+                if (this.currentTheme === this.themes.SYSTEM) {
+                    const isLight = document.body.classList.contains('light-theme');
+                    return `System (Currently ${isLight ? 'Light' : 'Dark'})`;
+                }
+                return this.currentTheme.charAt(0).toUpperCase() + this.currentTheme.slice(1);
+            }
+
+            showThemeNotification() {
+                // Remove existing notification if any
+                const existing = document.querySelector('.theme-notification');
+                if (existing) {
+                    existing.remove();
+                }
+
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.className = 'theme-notification';
+                notification.textContent = `Theme: ${this.getThemeDescription()}`;
+
+                document.body.appendChild(notification);
+
+                // Show notification
+                setTimeout(() => {
+                    notification.classList.add('show');
+                }, 10);
+
+                // Hide and remove notification
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => {
+                        if (notification.parentNode) {
+                            notification.remove();
+                        }
+                    }, 300);
+                }, 2000);
+            }
+        }
+
+        // Initialize theme manager
+        const themeManager = new ThemeManager();
+
+        // Make it globally available for debugging
+        window.themeManager = themeManager;
+
+        // Log initial theme status
+        console.log('Theme Manager initialized:', themeManager.getCurrentThemeInfo().description);
+        console.log('Click the logo to cycle through themes: System → Light → Dark → System');
 
 
 
@@ -622,7 +774,7 @@
             </div>
             <div class="modal-body">
                 <div id="journeyMapContainer">
-                    </div>
+                </div>
             </div>
         </div>
     </div>
