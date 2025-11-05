@@ -419,7 +419,7 @@ function renderPortfolio(details) {
     const downloadCVLink = document.getElementById("download_cv");
     if (downloadCVLink) {
         downloadCVLink.innerText = details.about.downloadCV.text;
-        downloadCVLink.href = details.about.downloadCV.url;
+        downloadCVLink.href = "https://ik.imagekit.io/krishnasingh/Krishna%20Singh%20Resume.pdf";
     }
 
     // -- Dynamic Project Cards --

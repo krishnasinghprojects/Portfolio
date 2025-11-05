@@ -386,7 +386,7 @@ class ModalManager {
         if (resumeLink) {
             resumeLink.addEventListener('click', (e) => {
                 e.preventDefault();
-                const resumePath = 'https://krishnasingh.live/Resume/Krishna%20Singh%20-%20Resume%20-%202025.pdf';
+                const resumePath = 'https://ik.imagekit.io/krishnasingh/Krishna%20Singh%20Resume.pdf';
 
                 // For mobile devices, open PDF in new tab instead of modal
                 if (window.innerWidth <= 768) {
