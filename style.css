@@ -1030,7 +1030,7 @@ body.light-theme .theme-notification {
 
 /* Skills Section */
 .skills-section {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -2140,6 +2140,7 @@ ease-in-out;
 @media (max-width: 768px) {
     .social {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         gap: 15px;
@@ -3099,6 +3100,10 @@ ease-in-out;
 }
 
 @media (max-width: 768px) {
+    .social img {
+    width: 25px;
+    height: 25px;
+}
     .blog-posts-section {
         padding: 1.5rem;
     }
