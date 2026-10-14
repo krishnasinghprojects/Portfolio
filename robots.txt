@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://krishnasingh.live/sitemap.xml
+Sitemap: https://krishnasinghprojects.com/sitemap.xml
 
 # Disallow crawling of certain file types
 Disallow: /*.mp3$
